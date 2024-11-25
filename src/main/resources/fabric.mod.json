@@ -22,7 +22,7 @@
 			"com.theunderworld.TheUnderworldClient"
 		],
 		"fabric-datagen": [
-			"com.theunderworld.TheUnderworldDataGenerator"
+			"com.theunderworld.datagen.TheUnderworldDataGenerator"
 		]
 	},
 	"mixins": [
