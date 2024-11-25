@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import com.theunderworld.Collections.BlocksCollection;
 
 public class TheUnderworld implements ModInitializer {
-	public static final String modID = "the-underworld";
+	public static final String modID = "theunderworld";
 	public static final String modName = "The Underworld";
 	public static final Logger LOGGER = LoggerFactory.getLogger(modID);
 
