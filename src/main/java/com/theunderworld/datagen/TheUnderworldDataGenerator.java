@@ -9,5 +9,8 @@ public class TheUnderworldDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = generator.createPack();
 
 		pack.addProvider(TUModelProvider::new);
+		pack.addProvider(TUBlockLootTableProvider::new);
+		pack.addProvider(TUBlockTagProvider::new);
+		pack.addProvider(TUItemTagProvider::new);
 	}
 }
