@@ -14,7 +14,11 @@ public class TUModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerLog(BlocksCollection.HOLLOW_OAK_LOG).log(BlocksCollection.HOLLOW_OAK_LOG);
+        blockStateModelGenerator.registerLog(BlocksCollection.HOLLOW_OAK_LOG)
+            .log(BlocksCollection.HOLLOW_OAK_LOG)
+            .log(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG);
+
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.HOLLOW_OAK_PLANKS);
     }
 
     @Override

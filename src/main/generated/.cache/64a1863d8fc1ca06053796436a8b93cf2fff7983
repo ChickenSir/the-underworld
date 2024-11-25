@@ -1,5 +1,12 @@
-// 1.20.1	2024-11-25T22:57:17.0873462	The Underworld/Model Definitions
+// 1.20.1	2024-11-25T23:09:31.8053771	The Underworld/Model Definitions
 520957efabd74d73da9d1ad7fbcef0abcb90a2d0 assets\theunderworld\models\block\hollow_oak_log_horizontal.json
+352b1751e4341e37c346ceaec0bcab932d3d41a7 assets\theunderworld\blockstates\hollow_oak_planks.json
+137b00ab4ad679efcbc74929dc6d34f894ff41a2 assets\theunderworld\models\item\hollow_oak_planks.json
+e93b0060e45a9a950ad195d284ad31e61469a3cf assets\theunderworld\models\item\stripped_hollow_oak_log.json
 635094119cf138bd88a4a1d605400804fe02827b assets\theunderworld\models\item\hollow_oak_log.json
+215f774de4336b79e0baadd734b1ed41df8ac68e assets\theunderworld\models\block\stripped_hollow_oak_log.json
+c47652b14674a63ee01dd1d86b24e2a967079aed assets\theunderworld\blockstates\stripped_hollow_oak_log.json
+520957efabd74d73da9d1ad7fbcef0abcb90a2d0 assets\theunderworld\models\block\stripped_hollow_oak_log_horizontal.json
 7d95c287ac51e63b1670a619549a8a550b6bd08b assets\theunderworld\blockstates\hollow_oak_log.json
+b8b76040c796f58044d1bd010429be83ccf8c210 assets\theunderworld\models\block\hollow_oak_planks.json
 215f774de4336b79e0baadd734b1ed41df8ac68e assets\theunderworld\models\block\hollow_oak_log.json

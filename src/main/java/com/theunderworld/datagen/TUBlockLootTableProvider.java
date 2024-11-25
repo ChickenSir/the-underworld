@@ -13,6 +13,8 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(BlocksCollection.HOLLOW_OAK_LOG);
+        addDrop(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG);
+        addDrop(BlocksCollection.HOLLOW_OAK_PLANKS);
     }
     
 }

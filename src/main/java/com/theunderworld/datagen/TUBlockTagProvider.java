@@ -18,7 +18,9 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-            .add(BlocksCollection.HOLLOW_OAK_LOG);
+            .add(BlocksCollection.HOLLOW_OAK_LOG)
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
+            .add(BlocksCollection.HOLLOW_OAK_PLANKS);
     }
     
 }
