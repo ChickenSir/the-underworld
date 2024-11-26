@@ -52,6 +52,9 @@ public class BlocksCollection {
     public static final Block DREADWOOD_BUTTON = new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY, 30, true);
     public static final Block DREADWOOD_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
 
+    public static final Block DREADWOOD_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
+    public static final Block DREADWOOD_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
+
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_log"), new BlockItem(HOLLOW_OAK_LOG, new FabricItemSettings()));
@@ -124,5 +127,11 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_pressure_plate"), DREADWOOD_PRESSURE_PLATE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_pressure_plate"), new BlockItem(DREADWOOD_PRESSURE_PLATE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_door"), DREADWOOD_DOOR);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_door"), new BlockItem(DREADWOOD_DOOR, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_trapdoor"), DREADWOOD_TRAPDOOR);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_trapdoor"), new BlockItem(DREADWOOD_TRAPDOOR, new FabricItemSettings()));
     }
 }
