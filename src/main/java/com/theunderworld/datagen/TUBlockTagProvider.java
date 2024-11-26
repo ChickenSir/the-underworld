@@ -44,6 +44,10 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
             .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE)
             .add(BlocksCollection.DREADWOOD_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+            .add(BlocksCollection.DREADSTONE)
+            .add(BlocksCollection.COBBLED_DREADSTONE);
     }
     
 }
