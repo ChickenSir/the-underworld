@@ -33,6 +33,7 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.HOLLOW_OAK_SLAB);
 			entries.add(BlocksCollection.HOLLOW_OAK_FENCE);
 			entries.add(BlocksCollection.HOLLOW_OAK_FENCE_GATE);
+			entries.add(BlocksCollection.HOLLOW_OAK_BUTTON);
 			entries.add(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE);
 			entries.add(BlocksCollection.HOLLOW_OAK_DOOR);
 			entries.add(BlocksCollection.HOLLOW_OAK_TRAPDOOR);
