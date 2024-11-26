@@ -1,5 +1,10 @@
 {
     "block.theunderworld.hollow_oak_log": "Hollow Oak Log",
+    "block.theunderworld.hollow_oak_wood": "Hollow Oak Wood",
     "block.theunderworld.stripped_hollow_oak_log": "Stripped Hollow Oak Log",
-    "block.theunderworld.hollow_oak_planks": "Hollow Oak Planks"
+    "block.theunderworld.stripped_hollow_oak_wood": "Stripped Hollow Oak Wood",
+    "block.theunderworld.hollow_oak_planks": "Hollow Oak Planks",
+    "block.theunderworld.hollow_oak_stairs": "Hollow Oak Stairs",
+    "block.theunderworld.hollow_oak_slab": "Hollow Oak Slab",
+    "block.theunderworld.hollow_oak_fence": "Hollow Oak Fence"
 }

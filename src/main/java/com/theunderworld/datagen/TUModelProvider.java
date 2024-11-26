@@ -22,8 +22,6 @@ public class TUModelProvider extends FabricModelProvider {
             .log(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
             .wood(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD);
 
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.HOLLOW_OAK_PLANKS);
-
         BlockStateModelGenerator.BlockTexturePool hollow_oak_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.HOLLOW_OAK_PLANKS);
         hollow_oak_pool.fence(BlocksCollection.HOLLOW_OAK_FENCE);
         hollow_oak_pool.stairs(BlocksCollection.HOLLOW_OAK_STAIRS);

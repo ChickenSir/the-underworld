@@ -25,8 +25,13 @@ public class TheUnderworld implements ModInitializer {
 		.displayName(Text.translatable(modName))
 		.entries((context, entries) -> {
 			entries.add(BlocksCollection.HOLLOW_OAK_LOG);
+			entries.add(BlocksCollection.HOLLOW_OAK_WOOD);
 			entries.add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG);
+			entries.add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD);
 			entries.add(BlocksCollection.HOLLOW_OAK_PLANKS);
+			entries.add(BlocksCollection.HOLLOW_OAK_STAIRS);
+			entries.add(BlocksCollection.HOLLOW_OAK_SLAB);
+			entries.add(BlocksCollection.HOLLOW_OAK_FENCE);
 		})
 		.build();
 
