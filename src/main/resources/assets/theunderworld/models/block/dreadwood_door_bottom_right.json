@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "theunderworld:block/dreadwood_door_bottom",
+    "top": "theunderworld:block/dreadwood_door_top"
+  }
+}

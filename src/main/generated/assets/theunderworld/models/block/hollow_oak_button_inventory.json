@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "theunderworld:block/hollow_oak_planks"
+  }
+}

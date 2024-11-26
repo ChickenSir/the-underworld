@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "theunderworld:block/hollow_oak_planks"
+  }
+}

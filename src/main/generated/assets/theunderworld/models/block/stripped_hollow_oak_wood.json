@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "theunderworld:block/stripped_hollow_oak_log",
+    "side": "theunderworld:block/stripped_hollow_oak_log"
+  }
+}
