@@ -6,5 +6,10 @@
     "block.theunderworld.hollow_oak_planks": "Hollow Oak Planks",
     "block.theunderworld.hollow_oak_stairs": "Hollow Oak Stairs",
     "block.theunderworld.hollow_oak_slab": "Hollow Oak Slab",
-    "block.theunderworld.hollow_oak_fence": "Hollow Oak Fence"
+    "block.theunderworld.hollow_oak_fence": "Hollow Oak Fence",
+    "block.theunderworld.hollow_oak_fence_gate": "Hollow Oak Fence Gate",
+    "block.theunderworld.hollow_oak_button": "Hollow Oak Button",
+    "block.theunderworld.hollow_oak_pressure_plate": "Hollow Oak Pressure Plate",
+    "block.theunderworld.hollow_oak_door": "Hollow Oak Door",
+    "block.theunderworld.hollow_oak_trapdoor": "Hollow Oak Trapdoor"
 }
