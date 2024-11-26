@@ -23,5 +23,7 @@
     "block.theunderworld.dreadwood_fence": "Dreadwood Fence",
     "block.theunderworld.dreadwood_fence_gate": "Dreadwood Fence Gate",
     "block.theunderworld.dreadwood_button": "Dreadwood Button",
-    "block.theunderworld.dreadwood_pressure_plate": "Dreadwood Pressure Plate"
+    "block.theunderworld.dreadwood_pressure_plate": "Dreadwood Pressure Plate",
+    "block.theunderworld.dreadwood_door": "Dreadwood Door",
+    "block.theunderworld.dreadwood_trapdoor": "Dreadwood Trapdoor"
 }
