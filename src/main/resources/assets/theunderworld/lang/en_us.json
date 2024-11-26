@@ -25,5 +25,8 @@
     "block.theunderworld.dreadwood_button": "Dreadwood Button",
     "block.theunderworld.dreadwood_pressure_plate": "Dreadwood Pressure Plate",
     "block.theunderworld.dreadwood_door": "Dreadwood Door",
-    "block.theunderworld.dreadwood_trapdoor": "Dreadwood Trapdoor"
+    "block.theunderworld.dreadwood_trapdoor": "Dreadwood Trapdoor",
+
+    "block.theunderworld.dreadstone": "Dreadstone",
+    "block.theunderworld.cobbled_dreadstone": "Cobbled Dreadstone"
 }
