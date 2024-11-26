@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "theunderworld:block/hollow_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "theunderworld:block/hollow_oak_pressure_plate_down"
+    }
+  }
+}

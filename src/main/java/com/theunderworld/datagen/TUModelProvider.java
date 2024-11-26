@@ -24,8 +24,13 @@ public class TUModelProvider extends FabricModelProvider {
 
         BlockStateModelGenerator.BlockTexturePool hollow_oak_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.HOLLOW_OAK_PLANKS);
         hollow_oak_pool.fence(BlocksCollection.HOLLOW_OAK_FENCE);
+        hollow_oak_pool.fenceGate(BlocksCollection.HOLLOW_OAK_FENCE_GATE);
         hollow_oak_pool.stairs(BlocksCollection.HOLLOW_OAK_STAIRS);
         hollow_oak_pool.slab(BlocksCollection.HOLLOW_OAK_SLAB);
+        hollow_oak_pool.button(BlocksCollection.HOLLOW_OAK_BUTTON);
+        hollow_oak_pool.pressurePlate(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE);
+        blockStateModelGenerator.registerDoor(BlocksCollection.HOLLOW_OAK_DOOR);
+        blockStateModelGenerator.registerTrapdoor(BlocksCollection.HOLLOW_OAK_TRAPDOOR);
     }
 
     @Override

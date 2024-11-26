@@ -32,6 +32,9 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SLABS)
             .add(BlocksCollection.HOLLOW_OAK_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+            .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE);
     }
     
 }
