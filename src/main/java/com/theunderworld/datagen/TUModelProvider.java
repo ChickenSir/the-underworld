@@ -47,6 +47,8 @@ public class TUModelProvider extends FabricModelProvider {
         dreadwood_pool.slab(BlocksCollection.DREADWOOD_SLAB);
         dreadwood_pool.button(BlocksCollection.DREADWOOD_BUTTON);
         dreadwood_pool.pressurePlate(BlocksCollection.DREADWOOD_PRESSURE_PLATE);
+        blockStateModelGenerator.registerDoor(BlocksCollection.DREADWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(BlocksCollection.DREADWOOD_TRAPDOOR);
     }
 
     @Override
