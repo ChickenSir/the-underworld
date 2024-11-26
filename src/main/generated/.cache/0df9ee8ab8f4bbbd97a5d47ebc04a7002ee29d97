@@ -1,6 +1,7 @@
-// 1.20.1	2024-11-26T17:58:38.9256836	The Underworld/Block Loot Tables
+// 1.20.1	2024-11-26T21:36:17.6227065	The Underworld/Block Loot Tables
 bc490037ff945259a0b15a397ba1fff75b4e5816 data\theunderworld\loot_tables\blocks\hollow_oak_fence_gate.json
 3ccd489295dd4715f950829b2f423e77a40a4370 data\theunderworld\loot_tables\blocks\dreadwood_fence_gate.json
+700b35f21144936522fff95a38c245fd85665c87 data\theunderworld\loot_tables\blocks\dreadstone.json
 5ff62968fa1bd9935a165e7522ac4f734ab032b2 data\theunderworld\loot_tables\blocks\hollow_oak_stairs.json
 f2cdb95c66d181b0f82a65115a2a322156dc5227 data\theunderworld\loot_tables\blocks\stripped_hollow_oak_wood.json
 db8b0227566edb32ed7ff24f89db7b6f3f4b5603 data\theunderworld\loot_tables\blocks\dreadwood_door.json
@@ -13,6 +14,7 @@ e1e96d154a9fbd22801bb5de94485a7f509449b5 data\theunderworld\loot_tables\blocks\h
 52fb57e9acf9ab66da4cfa1d937ddf5598ae74c9 data\theunderworld\loot_tables\blocks\hollow_oak_log.json
 9f122dc61a33233147cb32c7b81caabf18568bdf data\theunderworld\loot_tables\blocks\hollow_oak_planks.json
 d5c77ec1f3cc669b90ed5bcf523ed8c80d91bc90 data\theunderworld\loot_tables\blocks\hollow_oak_button.json
+700b35f21144936522fff95a38c245fd85665c87 data\theunderworld\loot_tables\blocks\cobbled_dreadstone.json
 a2eb9fc8a5da4b87f4a4c18d99d33125d40909e2 data\theunderworld\loot_tables\blocks\hollow_oak_door.json
 a568100cf0857c0d8d057864ca35bb6cc116c00f data\theunderworld\loot_tables\blocks\hollow_oak_slab.json
 a6ff331c649ae3ec7d316225b236e33b718fb7f8 data\theunderworld\loot_tables\blocks\dreadwood_button.json
