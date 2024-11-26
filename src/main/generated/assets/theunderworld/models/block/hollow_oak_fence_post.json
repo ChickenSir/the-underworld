@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/fence_post",
-  "textures": {
-    "texture": "theunderworld:block/hollow_oak_planks"
-  }
-}

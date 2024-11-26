@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "theunderworld:block/dreadwood_planks",
-    "side": "theunderworld:block/dreadwood_planks",
-    "top": "theunderworld:block/dreadwood_planks"
-  }
-}

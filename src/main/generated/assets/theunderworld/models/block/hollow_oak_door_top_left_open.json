@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_left_open",
-  "textures": {
-    "bottom": "theunderworld:block/hollow_oak_door_bottom",
-    "top": "theunderworld:block/hollow_oak_door_top"
-  }
-}

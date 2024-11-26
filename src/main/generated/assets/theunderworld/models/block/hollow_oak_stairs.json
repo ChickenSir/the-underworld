@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "theunderworld:block/hollow_oak_planks",
-    "side": "theunderworld:block/hollow_oak_planks",
-    "top": "theunderworld:block/hollow_oak_planks"
-  }
-}
