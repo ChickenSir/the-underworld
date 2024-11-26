@@ -35,8 +35,8 @@ public class BlocksCollection {
     public static final Block HOLLOW_OAK_BUTTON = new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true);
     public static final Block HOLLOW_OAK_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK);
 
-    public static final Block HOLLOW_OAK_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK);
-    public static final Block HOLLOW_OAK_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK);
+    public static final Block HOLLOW_OAK_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR), BlockSetType.OAK);
+    public static final Block HOLLOW_OAK_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK);
     
     // Dreadwood Blocks
     public static final Block DREADWOOD_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG));
@@ -52,8 +52,8 @@ public class BlocksCollection {
     public static final Block DREADWOOD_BUTTON = new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY, 30, true);
     public static final Block DREADWOOD_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
 
-    public static final Block DREADWOOD_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
-    public static final Block DREADWOOD_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
+    public static final Block DREADWOOD_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR), BlockSetType.CHERRY);
+    public static final Block DREADWOOD_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR), BlockSetType.CHERRY);
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
