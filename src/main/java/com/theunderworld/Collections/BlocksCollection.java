@@ -55,6 +55,11 @@ public class BlocksCollection {
     public static final Block DREADWOOD_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).nonOpaque(), BlockSetType.CHERRY);
     public static final Block DREADWOOD_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).nonOpaque(), BlockSetType.CHERRY);
 
+    // Dreadstone Blocks
+
+    public static final Block DREADSTONE = new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool());
+    public static final Block COBBLED_DREADSTONE = new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool());
+
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_log"), new BlockItem(HOLLOW_OAK_LOG, new FabricItemSettings()));
@@ -133,5 +138,11 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_trapdoor"), DREADWOOD_TRAPDOOR);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_trapdoor"), new BlockItem(DREADWOOD_TRAPDOOR, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone"), DREADSTONE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone"), new BlockItem(DREADSTONE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "cobbled_dreadstone"), COBBLED_DREADSTONE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "cobbled_dreadstone"), new BlockItem(COBBLED_DREADSTONE, new FabricItemSettings()));
     }
 }
