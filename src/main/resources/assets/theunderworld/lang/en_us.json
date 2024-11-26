@@ -11,5 +11,17 @@
     "block.theunderworld.hollow_oak_button": "Hollow Oak Button",
     "block.theunderworld.hollow_oak_pressure_plate": "Hollow Oak Pressure Plate",
     "block.theunderworld.hollow_oak_door": "Hollow Oak Door",
-    "block.theunderworld.hollow_oak_trapdoor": "Hollow Oak Trapdoor"
+    "block.theunderworld.hollow_oak_trapdoor": "Hollow Oak Trapdoor",
+
+    "block.theunderworld.dreadwood_log": "Dreadwood Log",
+    "block.theunderworld.dreadwood_wood": "Dreadwood",
+    "block.theunderworld.stripped_dreadwood_log": "Stripped Dreadwood Log",
+    "block.theunderworld.stripped_dreadwood_wood": "Stripped Dreadwood",
+    "block.theunderworld.dreadwood_planks": "Dreadwood Planks",
+    "block.theunderworld.dreadwood_stairs": "Dreadwood Stairs",
+    "block.theunderworld.dreadwood_slab": "Dreadwood Slab",
+    "block.theunderworld.dreadwood_fence": "Dreadwood Fence",
+    "block.theunderworld.dreadwood_fence_gate": "Dreadwood Fence Gate",
+    "block.theunderworld.dreadwood_button": "Dreadwood Button",
+    "block.theunderworld.dreadwood_pressure_plate": "Dreadwood Pressure Plate"
 }
