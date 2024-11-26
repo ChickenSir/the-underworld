@@ -37,6 +37,17 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE);
 			entries.add(BlocksCollection.HOLLOW_OAK_DOOR);
 			entries.add(BlocksCollection.HOLLOW_OAK_TRAPDOOR);
+			entries.add(BlocksCollection.DREADWOOD_LOG);
+			entries.add(BlocksCollection.DREADWOOD_WOOD);
+			entries.add(BlocksCollection.STRIPPED_DREADWOOD_LOG);
+			entries.add(BlocksCollection.STRIPPED_DREADWOOD_WOOD);
+			entries.add(BlocksCollection.DREADWOOD_PLANKS);
+			entries.add(BlocksCollection.DREADWOOD_STAIRS);
+			entries.add(BlocksCollection.DREADWOOD_SLAB);
+			entries.add(BlocksCollection.DREADWOOD_FENCE);
+			entries.add(BlocksCollection.DREADWOOD_FENCE_GATE);
+			entries.add(BlocksCollection.DREADWOOD_BUTTON);
+			entries.add(BlocksCollection.DREADWOOD_PRESSURE_PLATE);
 		})
 		.build();
 
