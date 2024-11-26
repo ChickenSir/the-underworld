@@ -1,6 +1,6 @@
-// 1.20.1	2024-11-26T13:18:10.2170701	The Underworld/Tags for minecraft:block
-0c76b4e875d0f6d016ab469a72c8f517e1ae6ab1 data\minecraft\tags\blocks\fence_gates.json
-293a549645e4bf20dbc44931a49e373c0f8562f9 data\minecraft\tags\blocks\logs_that_burn.json
-cb73c9a0668a5ec2c31b5c95b3d35e8b61240b4b data\minecraft\tags\blocks\slabs.json
-c2bcb2fc46e741c8d225ec548b28cb1988f718c7 data\minecraft\tags\blocks\stairs.json
-f04fa0eaee3296c263e343b8711a18aab0f13d60 data\minecraft\tags\blocks\fences.json
+// 1.20.1	2024-11-26T16:18:10.8681921	The Underworld/Tags for minecraft:block
+af730acf6372c709f98ec2251be3b0550f3949e8 data\minecraft\tags\blocks\fence_gates.json
+335b5c9d0d0bcd2faec254b9efb7db5577ba9b56 data\minecraft\tags\blocks\logs_that_burn.json
+bbb4b9a7d9aba6350849d38386465d695fe7a606 data\minecraft\tags\blocks\slabs.json
+ec9f4b9cc961935d79ad8177d158ef6b336399cc data\minecraft\tags\blocks\stairs.json
+1536b5faa20e49eeb02cc32783cfe6af7dfd9559 data\minecraft\tags\blocks\fences.json

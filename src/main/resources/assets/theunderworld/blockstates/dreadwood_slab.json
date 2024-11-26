@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "theunderworld:block/dreadwood_slab"
+    },
+    "type=double": {
+      "model": "theunderworld:block/dreadwood_planks"
+    },
+    "type=top": {
+      "model": "theunderworld:block/dreadwood_slab_top"
+    }
+  }
+}

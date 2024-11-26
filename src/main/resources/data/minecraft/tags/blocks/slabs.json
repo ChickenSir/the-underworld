@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "theunderworld:hollow_oak_slab"
+    "theunderworld:hollow_oak_slab",
+    "theunderworld:dreadwood_slab"
   ]
 }
