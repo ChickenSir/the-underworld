@@ -22,19 +22,28 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
             .add(BlocksCollection.HOLLOW_OAK_PLANKS)
             .add(BlocksCollection.HOLLOW_OAK_WOOD)
-            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD);
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)
+            .add(BlocksCollection.DREADWOOD_LOG)
+            .add(BlocksCollection.STRIPPED_DREADWOOD_LOG)
+            .add(BlocksCollection.DREADWOOD_WOOD)
+            .add(BlocksCollection.STRIPPED_DREADWOOD_WOOD)
+            .add(BlocksCollection.DREADWOOD_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
-            .add(BlocksCollection.HOLLOW_OAK_FENCE);
+            .add(BlocksCollection.HOLLOW_OAK_FENCE)
+            .add(BlocksCollection.DREADWOOD_FENCE);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
-            .add(BlocksCollection.HOLLOW_OAK_STAIRS);
+            .add(BlocksCollection.HOLLOW_OAK_STAIRS)
+            .add(BlocksCollection.DREADWOOD_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
-            .add(BlocksCollection.HOLLOW_OAK_SLAB);
+            .add(BlocksCollection.HOLLOW_OAK_SLAB)
+            .add(BlocksCollection.DREADWOOD_SLAB);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-            .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE);
+            .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE)
+            .add(BlocksCollection.DREADWOOD_FENCE_GATE);
     }
     
 }
