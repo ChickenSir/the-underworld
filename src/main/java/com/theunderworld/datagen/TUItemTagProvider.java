@@ -20,11 +20,15 @@ public class TUItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PLANKS)
             .add(BlocksCollection.HOLLOW_OAK_LOG.asItem())
             .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG.asItem())
+            .add(BlocksCollection.HOLLOW_OAK_WOOD.asItem())
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD.asItem())
             .add(BlocksCollection.HOLLOW_OAK_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
             .add(BlocksCollection.HOLLOW_OAK_LOG.asItem())
             .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG.asItem())
+            .add(BlocksCollection.HOLLOW_OAK_WOOD.asItem())
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD.asItem())
             .add(BlocksCollection.HOLLOW_OAK_PLANKS.asItem());
     }
     

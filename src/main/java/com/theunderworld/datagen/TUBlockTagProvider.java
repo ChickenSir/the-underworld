@@ -20,7 +20,18 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
             .add(BlocksCollection.HOLLOW_OAK_LOG)
             .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
-            .add(BlocksCollection.HOLLOW_OAK_PLANKS);
+            .add(BlocksCollection.HOLLOW_OAK_PLANKS)
+            .add(BlocksCollection.HOLLOW_OAK_WOOD)
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+            .add(BlocksCollection.HOLLOW_OAK_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+            .add(BlocksCollection.HOLLOW_OAK_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+            .add(BlocksCollection.HOLLOW_OAK_SLAB);
     }
     
 }
