@@ -48,6 +48,8 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.DREADWOOD_FENCE_GATE);
 			entries.add(BlocksCollection.DREADWOOD_BUTTON);
 			entries.add(BlocksCollection.DREADWOOD_PRESSURE_PLATE);
+			entries.add(BlocksCollection.DREADWOOD_DOOR);
+			entries.add(BlocksCollection.DREADWOOD_TRAPDOOR);
 		})
 		.build();
 
