@@ -2,6 +2,12 @@
   "replace": false,
   "values": [
     "theunderworld:dreadstone",
-    "theunderworld:cobbled_dreadstone"
+    "theunderworld:cobbled_dreadstone",
+    "theunderworld:dreadstone_stairs",
+    "theunderworld:dreadstone_slab",
+    "theunderworld:dreadstone_wall",
+    "theunderworld:cobbled_dreadstone_stairs",
+    "theunderworld:cobbled_dreadstone_slab",
+    "theunderworld:cobbled_dreadstone_wall"
   ]
 }

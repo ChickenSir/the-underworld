@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "theunderworld:block/cobbled_dreadstone",
+    "side": "theunderworld:block/cobbled_dreadstone",
+    "top": "theunderworld:block/cobbled_dreadstone"
+  }
+}

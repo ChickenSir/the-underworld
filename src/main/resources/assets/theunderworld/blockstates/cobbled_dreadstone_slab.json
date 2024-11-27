@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "theunderworld:block/cobbled_dreadstone_slab"
+    },
+    "type=double": {
+      "model": "theunderworld:block/cobbled_dreadstone"
+    },
+    "type=top": {
+      "model": "theunderworld:block/cobbled_dreadstone_slab_top"
+    }
+  }
+}
