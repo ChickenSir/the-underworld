@@ -33,13 +33,21 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.HOLLOW_OAK_FENCE)
             .add(BlocksCollection.DREADWOOD_FENCE);
 
+        getOrCreateTagBuilder(BlockTags.WALLS)
+            .add(BlocksCollection.DREADSTONE_WALL)
+            .add(BlocksCollection.COBBLED_DREADSTONE_WALL);
+
         getOrCreateTagBuilder(BlockTags.STAIRS)
             .add(BlocksCollection.HOLLOW_OAK_STAIRS)
-            .add(BlocksCollection.DREADWOOD_STAIRS);
+            .add(BlocksCollection.DREADWOOD_STAIRS)
+            .add(BlocksCollection.DREADSTONE_STAIRS)
+            .add(BlocksCollection.COBBLED_DREADSTONE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
             .add(BlocksCollection.HOLLOW_OAK_SLAB)
-            .add(BlocksCollection.DREADWOOD_SLAB);
+            .add(BlocksCollection.DREADWOOD_SLAB)
+            .add(BlocksCollection.DREADSTONE_SLAB)
+            .add(BlocksCollection.COBBLED_DREADSTONE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
             .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE)
@@ -47,7 +55,13 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
             .add(BlocksCollection.DREADSTONE)
-            .add(BlocksCollection.COBBLED_DREADSTONE);
+            .add(BlocksCollection.COBBLED_DREADSTONE)
+            .add(BlocksCollection.DREADSTONE_STAIRS)
+            .add(BlocksCollection.DREADSTONE_SLAB)
+            .add(BlocksCollection.DREADSTONE_WALL)
+            .add(BlocksCollection.COBBLED_DREADSTONE_STAIRS)
+            .add(BlocksCollection.COBBLED_DREADSTONE_SLAB)
+            .add(BlocksCollection.COBBLED_DREADSTONE_WALL);
     }
     
 }

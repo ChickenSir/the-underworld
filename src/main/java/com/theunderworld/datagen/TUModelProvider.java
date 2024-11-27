@@ -50,8 +50,15 @@ public class TUModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(BlocksCollection.DREADWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(BlocksCollection.DREADWOOD_TRAPDOOR);
 
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.DREADSTONE);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.COBBLED_DREADSTONE);
+        BlockStateModelGenerator.BlockTexturePool dreadstone_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.DREADSTONE);
+        dreadstone_pool.stairs(BlocksCollection.DREADSTONE_STAIRS);
+        dreadstone_pool.slab(BlocksCollection.DREADSTONE_SLAB);
+        dreadstone_pool.wall(BlocksCollection.DREADSTONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool cobbled_dreadstone_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.COBBLED_DREADSTONE);
+        cobbled_dreadstone_pool.stairs(BlocksCollection.COBBLED_DREADSTONE_STAIRS);
+        cobbled_dreadstone_pool.slab(BlocksCollection.COBBLED_DREADSTONE_SLAB);
+        cobbled_dreadstone_pool.wall(BlocksCollection.COBBLED_DREADSTONE_WALL);
     }
 
     @Override
