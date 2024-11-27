@@ -28,5 +28,11 @@
     "block.theunderworld.dreadwood_trapdoor": "Dreadwood Trapdoor",
 
     "block.theunderworld.dreadstone": "Dreadstone",
-    "block.theunderworld.cobbled_dreadstone": "Cobbled Dreadstone"
+    "block.theunderworld.dreadstone_stairs": "Dreadstone Stairs",
+    "block.theunderworld.dreadstone_slab": "Dreadstone Slab",
+    "block.theunderworld.dreadstone_wall": "Dreadstone Wall",
+    "block.theunderworld.cobbled_dreadstone": "Cobbled Dreadstone",
+    "block.theunderworld.cobbled_dreadstone_stairs": "Cobbled Dreadstone Stairs",
+    "block.theunderworld.cobbled_dreadstone_slab": "Cobbled Dreadstone Slab",
+    "block.theunderworld.cobbled_dreadstone_wall": "Cobbled Dreadstone Wall"
 }

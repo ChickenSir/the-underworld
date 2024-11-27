@@ -51,7 +51,13 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.DREADWOOD_DOOR);
 			entries.add(BlocksCollection.DREADWOOD_TRAPDOOR);
 			entries.add(BlocksCollection.DREADSTONE);
+			entries.add(BlocksCollection.DREADSTONE_STAIRS);
+			entries.add(BlocksCollection.DREADSTONE_SLAB);
+			entries.add(BlocksCollection.DREADSTONE_WALL);
 			entries.add(BlocksCollection.COBBLED_DREADSTONE);
+			entries.add(BlocksCollection.COBBLED_DREADSTONE_STAIRS);
+			entries.add(BlocksCollection.COBBLED_DREADSTONE_SLAB);
+			entries.add(BlocksCollection.COBBLED_DREADSTONE_WALL);
 		})
 		.build();
 
