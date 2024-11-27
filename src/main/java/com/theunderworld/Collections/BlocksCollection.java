@@ -14,6 +14,7 @@ import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
@@ -58,7 +59,14 @@ public class BlocksCollection {
     // Dreadstone Blocks
 
     public static final Block DREADSTONE = new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool());
-    public static final Block COBBLED_DREADSTONE = new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool());
+    public static final Block DREADSTONE_STAIRS = new StairsBlock(DREADSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS));
+    public static final Block DREADSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB));
+    public static final Block DREADSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
+
+    public static final Block COBBLED_DREADSTONE = new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE).requiresTool());
+    public static final Block COBBLED_DREADSTONE_STAIRS = new StairsBlock(COBBLED_DREADSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE_STAIRS));
+    public static final Block COBBLED_DREADSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_SLAB));
+    public static final Block COBBLED_DREADSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
@@ -142,7 +150,25 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone"), DREADSTONE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone"), new BlockItem(DREADSTONE, new FabricItemSettings()));
 
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_stairs"), DREADSTONE_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_stairs"), new BlockItem(DREADSTONE_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_slab"), DREADSTONE_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_slab"), new BlockItem(DREADSTONE_SLAB, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_wall"), DREADSTONE_WALL);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_wall"), new BlockItem(DREADSTONE_WALL, new FabricItemSettings()));
+
         Registry.register(Registries.BLOCK, new Identifier(modID, "cobbled_dreadstone"), COBBLED_DREADSTONE);
         Registry.register(Registries.ITEM, new Identifier(modID, "cobbled_dreadstone"), new BlockItem(COBBLED_DREADSTONE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "cobbled_dreadstone_stairs"), COBBLED_DREADSTONE_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "cobbled_dreadstone_stairs"), new BlockItem(COBBLED_DREADSTONE_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "cobbled_dreadstone_slab"), COBBLED_DREADSTONE_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "cobbled_dreadstone_slab"), new BlockItem(COBBLED_DREADSTONE_SLAB, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "cobbled_dreadstone_wall"), COBBLED_DREADSTONE_WALL);
+        Registry.register(Registries.ITEM, new Identifier(modID, "cobbled_dreadstone_wall"), new BlockItem(COBBLED_DREADSTONE_WALL, new FabricItemSettings()));
     }
 }
