@@ -18,16 +18,7 @@ public class TUItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.PLANKS)
-            .add(BlocksCollection.HOLLOW_OAK_LOG.asItem())
-            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG.asItem())
-            .add(BlocksCollection.HOLLOW_OAK_WOOD.asItem())
-            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD.asItem())
             .add(BlocksCollection.HOLLOW_OAK_PLANKS.asItem())
-            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD.asItem())
-            .add(BlocksCollection.DREADWOOD_LOG.asItem())
-            .add(BlocksCollection.STRIPPED_DREADWOOD_LOG.asItem())
-            .add(BlocksCollection.DREADWOOD_WOOD.asItem())
-            .add(BlocksCollection.STRIPPED_DREADWOOD_WOOD.asItem())
             .add(BlocksCollection.DREADWOOD_PLANKS.asItem());
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
