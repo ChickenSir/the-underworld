@@ -7,6 +7,7 @@ import com.theunderworld.Collections.BlocksCollection;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -24,15 +25,34 @@ public class TURecipeProvider extends FabricRecipeProvider {
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG)).offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_WOOD, 3)
-        .input(BlocksCollection.HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_WOOD), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG)).offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_PLANKS, 4)
+        .input(BlocksCollection.HOLLOW_OAK_WOOD).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_WOOD), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_WOOD)).offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD, 3)
-        .input(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG), 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_PLANKS, 4)
+        .input(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_PLANKS, 4)
+        .input(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)).offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_WOOD, 3)
+            .pattern("hh")
+            .pattern("hh")
+            .input('h', BlocksCollection.HOLLOW_OAK_LOG)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD, 3)
+            .pattern("hh")
+            .pattern("hh")
+            .input('h', BlocksCollection.HOLLOW_OAK_LOG)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG))
+            .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_BUTTON)
         .input(BlocksCollection.HOLLOW_OAK_PLANKS).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_BUTTON), 
@@ -44,15 +64,34 @@ public class TURecipeProvider extends FabricRecipeProvider {
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG)).offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_WOOD, 3)
-        .input(BlocksCollection.DREADWOOD_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_WOOD), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG)).offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_PLANKS, 4)
+        .input(BlocksCollection.DREADWOOD_WOOD).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_WOOD), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_WOOD)).offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_DREADWOOD_WOOD, 3)
-        .input(BlocksCollection.STRIPPED_DREADWOOD_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_DREADWOOD_WOOD), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_DREADWOOD_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_DREADWOOD_LOG), 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_PLANKS, 4)
+        .input(BlocksCollection.STRIPPED_DREADWOOD_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_DREADWOOD_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_DREADWOOD_LOG)).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_PLANKS, 4)
+        .input(BlocksCollection.STRIPPED_DREADWOOD_WOOD).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_DREADWOOD_WOOD), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_DREADWOOD_WOOD)).offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_WOOD, 3)
+            .pattern("dd")
+            .pattern("dd")
+            .input('d', BlocksCollection.DREADWOOD_LOG)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_DREADWOOD_WOOD, 3)
+            .pattern("dd")
+            .pattern("dd")
+            .input('d', BlocksCollection.DREADWOOD_LOG)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG))
+            .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_BUTTON)
         .input(BlocksCollection.DREADWOOD_PLANKS).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_BUTTON), 
