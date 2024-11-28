@@ -12,5 +12,6 @@ public class TheUnderworldDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(TUBlockLootTableProvider::new);
 		pack.addProvider(TUBlockTagProvider::new);
 		pack.addProvider(TUItemTagProvider::new);
+		pack.addProvider(TURecipeProvider::new);
 	}
 }
