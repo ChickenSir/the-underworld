@@ -26,12 +26,12 @@ public class TURecipeProvider extends FabricRecipeProvider {
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_WOOD, 3)
         .input(BlocksCollection.HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_WOOD), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_WOOD), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG)).offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD, 3)
         .input(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD), 
-        FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)).offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_BUTTON)
