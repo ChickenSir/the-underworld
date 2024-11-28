@@ -124,6 +124,14 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.DREADWOOD_PLANKS), conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_DOOR)));
 
+        createTrapdoorRecipe(BlocksCollection.HOLLOW_OAK_TRAPDOOR, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
+            .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_TRAPDOOR)));
+
+        createTrapdoorRecipe(BlocksCollection.DREADWOOD_TRAPDOOR, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
+            .criterion(hasItem(BlocksCollection.DREADWOOD_PLANKS), conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_TRAPDOOR)));
+
         createPressurePlateRecipe(RecipeCategory.REDSTONE, BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE)));
