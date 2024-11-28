@@ -2,6 +2,7 @@ package com.theunderworld.Collections;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
 import net.minecraft.block.Blocks;
@@ -108,6 +109,9 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_trapdoor"), HOLLOW_OAK_TRAPDOOR);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_trapdoor"), new BlockItem(HOLLOW_OAK_TRAPDOOR, new FabricItemSettings()));
 
+        StrippableBlockRegistry.register(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
+        StrippableBlockRegistry.register(HOLLOW_OAK_WOOD, STRIPPED_HOLLOW_OAK_WOOD);
+
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_log"), DREADWOOD_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_log"), new BlockItem(DREADWOOD_LOG, new FabricItemSettings()));
 
@@ -146,6 +150,9 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_trapdoor"), DREADWOOD_TRAPDOOR);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_trapdoor"), new BlockItem(DREADWOOD_TRAPDOOR, new FabricItemSettings()));
+
+        StrippableBlockRegistry.register(DREADWOOD_LOG, STRIPPED_DREADWOOD_LOG);
+        StrippableBlockRegistry.register(DREADWOOD_WOOD, STRIPPED_DREADWOOD_WOOD);
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone"), DREADSTONE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone"), new BlockItem(DREADSTONE, new FabricItemSettings()));
