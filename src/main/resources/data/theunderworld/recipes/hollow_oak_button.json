@@ -3,11 +3,10 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "theunderworld:dreadwood_log"
+      "item": "theunderworld:hollow_oak_planks"
     }
   ],
   "result": {
-    "count": 4,
-    "item": "theunderworld:dreadwood_planks"
+    "item": "theunderworld:hollow_oak_button"
   }
 }

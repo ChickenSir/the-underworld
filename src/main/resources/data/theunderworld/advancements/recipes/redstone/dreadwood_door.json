@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobbled_dreadstone": {
+    "has_dreadwood_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "theunderworld:cobbled_dreadstone"
+              "theunderworld:dreadwood_planks"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "theunderworld:cobbled_dreadstone_wall"
+        "recipe": "minecraft:dreadwood_door"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cobbled_dreadstone",
+      "has_dreadwood_planks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "theunderworld:cobbled_dreadstone_wall"
+      "minecraft:dreadwood_door"
     ]
   },
   "sends_telemetry_event": false

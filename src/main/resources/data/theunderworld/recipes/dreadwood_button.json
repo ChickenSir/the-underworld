@@ -3,11 +3,10 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "theunderworld:dreadwood_log"
+      "item": "theunderworld:dreadwood_planks"
     }
   ],
   "result": {
-    "count": 4,
-    "item": "theunderworld:dreadwood_planks"
+    "item": "theunderworld:dreadwood_button"
   }
 }
