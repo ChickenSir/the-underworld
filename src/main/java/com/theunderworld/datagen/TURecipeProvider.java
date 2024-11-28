@@ -20,12 +20,12 @@ public class TURecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_PLANKS)
-        .input(BlocksCollection.HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), 
+        .input(BlocksCollection.HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG)).offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_PLANKS)
-        .input(BlocksCollection.DREADWOOD_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), 
+        .input(BlocksCollection.DREADWOOD_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG)).offerTo(exporter);
 
