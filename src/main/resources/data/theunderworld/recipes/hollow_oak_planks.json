@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "theunderworld:hollow_oak_log"
+    }
+  ],
+  "result": {
+    "item": "theunderworld:hollow_oak_planks"
+  }
+}

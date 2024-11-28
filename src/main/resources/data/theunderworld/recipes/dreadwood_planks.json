@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "theunderworld:dreadwood_log"
+    }
+  ],
+  "result": {
+    "item": "theunderworld:dreadwood_planks"
+  }
+}

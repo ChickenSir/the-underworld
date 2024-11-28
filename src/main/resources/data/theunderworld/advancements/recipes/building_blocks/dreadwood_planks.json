@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dreadwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theunderworld:dreadwood_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_dreadwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theunderworld:dreadwood_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "theunderworld:dreadwood_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dreadwood_planks",
+      "has_dreadwood_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "theunderworld:dreadwood_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

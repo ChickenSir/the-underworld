@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-27T15:29:59.0585127	The Underworld/Model Definitions
+// 1.20.1	2024-11-28T19:36:56.7274448	The Underworld/Model Definitions
 0563773a8c615ed2052887163b6e26216114147c assets\theunderworld\blockstates\dreadwood_door.json
 5198785df0febef57bced37bb0b9a57e133b8876 assets\theunderworld\models\block\dreadwood_stairs.json
 a11079a36e7ffe9f1129c5974daf95ab3e6acdf8 assets\theunderworld\models\block\stripped_dreadwood_log.json
@@ -74,8 +74,8 @@ bdaf3d291f083b35fce9c9e54896549cdb2c40fd assets\theunderworld\models\block\strip
 74bdf7a639902d08fe91f7a7516ad28b01564059 assets\theunderworld\models\block\hollow_oak_trapdoor_top.json
 7542abe6ba37bef711f694470fa254e80e9782f0 assets\theunderworld\models\item\hollow_oak_stairs.json
 823e4c86d4611b1e71952a7df258e9b7ef69c95f assets\theunderworld\models\block\hollow_oak_wood.json
-b207331a8e8c4a166678624c12deb0d424e8d5ab assets\theunderworld\blockstates\hollow_oak_stairs.json
 d4675e1ece1a0568777f51d7e48f445d9a0e2d59 assets\theunderworld\models\item\hollow_oak_fence.json
+b207331a8e8c4a166678624c12deb0d424e8d5ab assets\theunderworld\blockstates\hollow_oak_stairs.json
 520957efabd74d73da9d1ad7fbcef0abcb90a2d0 assets\theunderworld\models\block\hollow_oak_log_horizontal.json
 83add047b72ab6a4602c8dde82a0c256d39d6423 assets\theunderworld\models\item\cobbled_dreadstone_stairs.json
 59838c62b34c2c6bf19c2939ce2ba382122610c1 assets\theunderworld\models\block\cobbled_dreadstone_wall_side_tall.json

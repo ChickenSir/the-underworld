@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "theunderworld:cobbled_dreadstone"
+  },
+  "result": "theunderworld:cobbled_dreadstone_wall"
+}
