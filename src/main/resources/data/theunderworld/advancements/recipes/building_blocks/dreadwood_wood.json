@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_dreadwood_wood": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "theunderworld:dreadwood_wood"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "theunderworld:dreadwood_wood"
@@ -34,7 +22,6 @@
   },
   "requirements": [
     [
-      "has_dreadwood_wood",
       "has_dreadwood_log",
       "has_the_recipe"
     ]

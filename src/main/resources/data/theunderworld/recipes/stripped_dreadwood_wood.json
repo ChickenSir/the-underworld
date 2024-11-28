@@ -1,13 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "building",
-  "ingredients": [
-    {
+  "key": {
+    "d": {
       "item": "theunderworld:stripped_dreadwood_log"
     }
+  },
+  "pattern": [
+    "dd",
+    "dd"
   ],
   "result": {
     "count": 3,
     "item": "theunderworld:stripped_dreadwood_wood"
-  }
+  },
+  "show_notification": true
 }

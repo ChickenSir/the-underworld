@@ -1,24 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_hollow_oak_log": {
+    "has_hollow_oak_log": {
       "conditions": {
         "items": [
           {
             "items": [
-              "theunderworld:stripped_hollow_oak_log"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
-    "has_stripped_hollow_oak_wood": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "theunderworld:stripped_hollow_oak_wood"
+              "theunderworld:hollow_oak_log"
             ]
           }
         ]
@@ -34,8 +22,7 @@
   },
   "requirements": [
     [
-      "has_stripped_hollow_oak_wood",
-      "has_stripped_hollow_oak_log",
+      "has_hollow_oak_log",
       "has_the_recipe"
     ]
   ],

@@ -35,7 +35,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD, 3)
             .pattern("hh")
             .pattern("hh")
-            .input('h', BlocksCollection.HOLLOW_OAK_LOG)
+            .input('h', BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG))
             .offerTo(exporter);
 
@@ -59,7 +59,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.STRIPPED_DREADWOOD_WOOD, 3)
             .pattern("dd")
             .pattern("dd")
-            .input('d', BlocksCollection.DREADWOOD_LOG)
+            .input('d', BlocksCollection.STRIPPED_DREADWOOD_LOG)
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG))
             .offerTo(exporter);
 

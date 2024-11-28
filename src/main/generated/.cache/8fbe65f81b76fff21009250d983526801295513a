@@ -1,8 +1,8 @@
-// 1.20.1	2024-11-28T20:10:31.6322655	The Underworld/Tags for minecraft:block
+// 1.20.1	2024-11-28T21:28:22.512958	The Underworld/Tags for minecraft:block
 e82bd88fdd0b7ff943ba7ad3f8fdf48fc0bf9bf8 data\minecraft\tags\blocks\mineable\pickaxe.json
 af730acf6372c709f98ec2251be3b0550f3949e8 data\minecraft\tags\blocks\fence_gates.json
 335b5c9d0d0bcd2faec254b9efb7db5577ba9b56 data\minecraft\tags\blocks\logs_that_burn.json
-405f1b9af280276b64bcebff8596965188f988c3 data\minecraft\tags\blocks\walls.json
 76544075025abe7e5f3b3bca118770c02fa6f640 data\minecraft\tags\blocks\slabs.json
+405f1b9af280276b64bcebff8596965188f988c3 data\minecraft\tags\blocks\walls.json
 ea1e3629ef1ebe3dc25147ea3364fe73cd046f7c data\minecraft\tags\blocks\stairs.json
 1536b5faa20e49eeb02cc32783cfe6af7dfd9559 data\minecraft\tags\blocks\fences.json
