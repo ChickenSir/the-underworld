@@ -119,9 +119,9 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE)));
 
-        createPressurePlateRecipe(RecipeCategory.REDSTONE, BlocksCollection.DREADWOOD_FENCE, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
+        createPressurePlateRecipe(RecipeCategory.REDSTONE, BlocksCollection.DREADWOOD_PRESSURE_PLATE, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
             .criterion(hasItem(BlocksCollection.DREADWOOD_PLANKS), conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
-            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_FENCE)));
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_PRESSURE_PLATE)));
 
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_WALL, BlocksCollection.DREADSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_WALL, BlocksCollection.COBBLED_DREADSTONE);
