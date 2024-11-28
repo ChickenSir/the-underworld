@@ -111,7 +111,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_DOOR)));
 
-        createDoorRecipe(BlocksCollection.DREADWOOD_FENCE, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
+        createDoorRecipe(BlocksCollection.DREADWOOD_DOOR, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
             .criterion(hasItem(BlocksCollection.DREADWOOD_PLANKS), conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_DOOR)));
 
