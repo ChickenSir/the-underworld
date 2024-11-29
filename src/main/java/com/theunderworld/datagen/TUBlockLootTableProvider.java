@@ -54,6 +54,7 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(BlocksCollection.DREADSTONE_BRICK_WALL);
 
         addDrop(BlocksCollection.UNDERWORLD_SOIL);
+        addDrop(BlocksCollection.UNDERWORLD_GRASS, BlocksCollection.UNDERWORLD_SOIL);
     }
     
 }
