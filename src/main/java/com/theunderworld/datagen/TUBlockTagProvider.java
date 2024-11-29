@@ -79,6 +79,35 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
             .add(BlocksCollection.HOLLOW_OAK_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.SOUL_FIRE_BASE_BLOCKS)
+            .add(BlocksCollection.HOLLOW_OAK_LOG)
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
+            .add(BlocksCollection.HOLLOW_OAK_WOOD)
+            .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)
+            .add(BlocksCollection.HOLLOW_OAK_PLANKS)
+            .add(BlocksCollection.HOLLOW_OAK_STAIRS)
+            .add(BlocksCollection.HOLLOW_OAK_SLAB)
+            .add(BlocksCollection.HOLLOW_OAK_FENCE)
+            .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE)
+            .add(BlocksCollection.HOLLOW_OAK_BUTTON)
+            .add(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE)
+            .add(BlocksCollection.HOLLOW_OAK_DOOR)
+            .add(BlocksCollection.HOLLOW_OAK_TRAPDOOR)
+            .add(BlocksCollection.HOLLOW_OAK_LEAVES)
+            .add(BlocksCollection.DREADWOOD_LOG)
+            .add(BlocksCollection.STRIPPED_DREADWOOD_LOG)
+            .add(BlocksCollection.DREADWOOD_WOOD)
+            .add(BlocksCollection.STRIPPED_DREADWOOD_WOOD)
+            .add(BlocksCollection.DREADWOOD_PLANKS)
+            .add(BlocksCollection.DREADWOOD_STAIRS)
+            .add(BlocksCollection.DREADWOOD_SLAB)
+            .add(BlocksCollection.DREADWOOD_FENCE)
+            .add(BlocksCollection.DREADWOOD_FENCE_GATE)
+            .add(BlocksCollection.DREADWOOD_BUTTON)
+            .add(BlocksCollection.DREADWOOD_PRESSURE_PLATE)
+            .add(BlocksCollection.DREADWOOD_DOOR)
+            .add(BlocksCollection.DREADWOOD_TRAPDOOR);
     }
     
 }
