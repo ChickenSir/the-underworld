@@ -2,6 +2,7 @@ package com.theunderworld.Collections;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
@@ -129,6 +130,21 @@ public class BlocksCollection {
         StrippableBlockRegistry.register(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
         StrippableBlockRegistry.register(HOLLOW_OAK_WOOD, STRIPPED_HOLLOW_OAK_WOOD);
 
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_HOLLOW_OAK_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_HOLLOW_OAK_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_STAIRS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_SLAB, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_FENCE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_FENCE_GATE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_BUTTON, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_PRESSURE_PLATE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_DOOR, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_TRAPDOOR, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_LEAVES, 30, 60);
+
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_log"), DREADWOOD_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_log"), new BlockItem(DREADWOOD_LOG, new FabricItemSettings()));
 
@@ -170,6 +186,20 @@ public class BlocksCollection {
 
         StrippableBlockRegistry.register(DREADWOOD_LOG, STRIPPED_DREADWOOD_LOG);
         StrippableBlockRegistry.register(DREADWOOD_WOOD, STRIPPED_DREADWOOD_WOOD);
+
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_DREADWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(STRIPPED_DREADWOOD_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_STAIRS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_SLAB, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_FENCE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_FENCE_GATE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_BUTTON, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_PRESSURE_PLATE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_DOOR, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_TRAPDOOR, 5, 20);
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone"), DREADSTONE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone"), new BlockItem(DREADSTONE, new FabricItemSettings()));
