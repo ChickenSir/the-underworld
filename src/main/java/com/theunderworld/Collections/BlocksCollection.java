@@ -70,7 +70,7 @@ public class BlocksCollection {
     public static final Block COBBLED_DREADSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
 
     public static final Block DREADSTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool());
-    public static final Block DREADSTONE_BRICK_STAIRS = new StairsBlock(DREADSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS));
+    public static final Block DREADSTONE_BRICK_STAIRS = new StairsBlock(DREADSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS));
     public static final Block DREADSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB));
     public static final Block DREADSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
 
