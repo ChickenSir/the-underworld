@@ -38,5 +38,7 @@
     "block.theunderworld.dreadstone_bricks": "Dreadstone Bricks",
     "block.theunderworld.dreadstone_brick_stairs": "Dreadstone Brick Stairs",
     "block.theunderworld.dreadstone_brick_slab": "Dreadstone Brick Slab",
-    "block.theunderworld.dreadstone_brick_wall": "Dreadstone Brick Wall"
+    "block.theunderworld.dreadstone_brick_wall": "Dreadstone Brick Wall",
+
+    "block.theunderworld.underworld_soil": "Underworld Soil"
 }
