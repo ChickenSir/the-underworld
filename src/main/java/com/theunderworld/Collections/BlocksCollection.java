@@ -11,6 +11,7 @@ import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.GrassBlock;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
@@ -40,6 +41,8 @@ public class BlocksCollection {
 
     public static final Block HOLLOW_OAK_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR), BlockSetType.OAK);
     public static final Block HOLLOW_OAK_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK);
+
+    public static final Block HOLLOW_OAK_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
     
     // Dreadwood Blocks
     public static final Block DREADWOOD_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG));
@@ -119,6 +122,9 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_trapdoor"), HOLLOW_OAK_TRAPDOOR);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_trapdoor"), new BlockItem(HOLLOW_OAK_TRAPDOOR, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_leaves"), HOLLOW_OAK_LEAVES);
+        Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_leaves"), new BlockItem(HOLLOW_OAK_LEAVES, new FabricItemSettings()));
 
         StrippableBlockRegistry.register(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
         StrippableBlockRegistry.register(HOLLOW_OAK_WOOD, STRIPPED_HOLLOW_OAK_WOOD);
