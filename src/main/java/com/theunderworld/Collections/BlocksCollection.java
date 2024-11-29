@@ -69,6 +69,11 @@ public class BlocksCollection {
     public static final Block COBBLED_DREADSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_SLAB));
     public static final Block COBBLED_DREADSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
 
+    public static final Block DREADSTONE_BRICKS = new Block(FabricBlockSettings.copyOf(Blocks.STONE).requiresTool());
+    public static final Block DREADSTONE_BRICK_STAIRS = new StairsBlock(DREADSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS));
+    public static final Block DREADSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB));
+    public static final Block DREADSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
+
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_log"), new BlockItem(HOLLOW_OAK_LOG, new FabricItemSettings()));
@@ -177,5 +182,17 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "cobbled_dreadstone_wall"), COBBLED_DREADSTONE_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "cobbled_dreadstone_wall"), new BlockItem(COBBLED_DREADSTONE_WALL, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_bricks"), DREADSTONE_BRICKS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_bricks"), new BlockItem(DREADSTONE_BRICKS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_brick_stairs"), DREADSTONE_BRICK_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_brick_stairs"), new BlockItem(DREADSTONE_BRICK_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_brick_slab"), DREADSTONE_BRICK_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_brick_slab"), new BlockItem(DREADSTONE_BRICK_SLAB, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_brick_wall"), DREADSTONE_BRICK_WALL);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_brick_wall"), new BlockItem(DREADSTONE_BRICK_WALL, new FabricItemSettings()));
     }
 }
