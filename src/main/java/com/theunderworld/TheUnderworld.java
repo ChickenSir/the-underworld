@@ -58,6 +58,10 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.COBBLED_DREADSTONE_STAIRS);
 			entries.add(BlocksCollection.COBBLED_DREADSTONE_SLAB);
 			entries.add(BlocksCollection.COBBLED_DREADSTONE_WALL);
+			entries.add(BlocksCollection.DREADSTONE_BRICKS);
+			entries.add(BlocksCollection.DREADSTONE_BRICK_STAIRS);
+			entries.add(BlocksCollection.DREADSTONE_BRICK_SLAB);
+			entries.add(BlocksCollection.DREADSTONE_BRICK_WALL);
 		})
 		.build();
 
