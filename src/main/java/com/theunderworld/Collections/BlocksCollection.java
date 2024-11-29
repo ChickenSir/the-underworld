@@ -10,6 +10,7 @@ import net.minecraft.block.ButtonBlock;
 import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.GrassBlock;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.SlabBlock;
@@ -77,6 +78,7 @@ public class BlocksCollection {
     // Ground Terrain Blocks
 
     public static final Block UNDERWORLD_SOIL = new Block(FabricBlockSettings.copyOf(Blocks.DIRT));
+    public static final Block UNDERWORLD_GRASS = new GrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
@@ -201,5 +203,8 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_soil"), UNDERWORLD_SOIL);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_soil"), new BlockItem(UNDERWORLD_SOIL, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_grass"), UNDERWORLD_GRASS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_grass"), new BlockItem(UNDERWORLD_GRASS, new FabricItemSettings()));
     }
 }
