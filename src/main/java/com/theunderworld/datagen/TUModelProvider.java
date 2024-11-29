@@ -59,6 +59,11 @@ public class TUModelProvider extends FabricModelProvider {
         cobbled_dreadstone_pool.stairs(BlocksCollection.COBBLED_DREADSTONE_STAIRS);
         cobbled_dreadstone_pool.slab(BlocksCollection.COBBLED_DREADSTONE_SLAB);
         cobbled_dreadstone_pool.wall(BlocksCollection.COBBLED_DREADSTONE_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool dreadstone_bricks_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.DREADSTONE_BRICKS);
+        dreadstone_bricks_pool.stairs(BlocksCollection.DREADSTONE_BRICK_STAIRS);
+        dreadstone_bricks_pool.slab(BlocksCollection.DREADSTONE_BRICK_SLAB);
+        dreadstone_bricks_pool.wall(BlocksCollection.DREADSTONE_BRICK_WALL);
     }
 
     @Override

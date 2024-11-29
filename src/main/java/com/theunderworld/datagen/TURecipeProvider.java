@@ -68,6 +68,13 @@ public class TURecipeProvider extends FabricRecipeProvider {
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_BUTTON)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS)).offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICKS, 4)
+            .pattern("dd")
+            .pattern("dd")
+            .input('d', BlocksCollection.DREADSTONE)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADSTONE))
+            .offerTo(exporter);
+
         createStairsRecipe(BlocksCollection.HOLLOW_OAK_STAIRS, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_STAIRS)));
@@ -84,6 +91,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.COBBLED_DREADSTONE), conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.COBBLED_DREADSTONE_STAIRS)));
 
+        createStairsRecipe(BlocksCollection.DREADSTONE_BRICK_STAIRS, Ingredient.ofItems(BlocksCollection.DREADSTONE_BRICKS))
+            .criterion(hasItem(BlocksCollection.DREADSTONE_BRICKS), conditionsFromItem(BlocksCollection.DREADSTONE_BRICKS))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADSTONE_BRICK_STAIRS)));
+
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_SLAB, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_SLAB)));
@@ -99,6 +110,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_SLAB, Ingredient.ofItems(BlocksCollection.COBBLED_DREADSTONE))
             .criterion(hasItem(BlocksCollection.COBBLED_DREADSTONE), conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.COBBLED_DREADSTONE_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_SLAB, Ingredient.ofItems(BlocksCollection.DREADSTONE_BRICKS))
+            .criterion(hasItem(BlocksCollection.DREADSTONE_BRICKS), conditionsFromItem(BlocksCollection.DREADSTONE_BRICKS))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADSTONE_BRICK_SLAB)));
 
         createFenceRecipe(BlocksCollection.HOLLOW_OAK_FENCE, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
@@ -142,6 +157,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
 
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_WALL, BlocksCollection.DREADSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_WALL, BlocksCollection.COBBLED_DREADSTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE_BRICKS);
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_STAIRS, BlocksCollection.DREADSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_SLAB, BlocksCollection.DREADSTONE, 2);
@@ -150,6 +166,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_STAIRS, BlocksCollection.COBBLED_DREADSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_SLAB, BlocksCollection.COBBLED_DREADSTONE, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_WALL, BlocksCollection.COBBLED_DREADSTONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_STAIRS, BlocksCollection.DREADSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_SLAB, BlocksCollection.DREADSTONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE_BRICKS);
     }
     
 }
