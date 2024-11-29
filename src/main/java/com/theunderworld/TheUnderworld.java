@@ -64,6 +64,7 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.DREADSTONE_BRICK_WALL);
 			entries.add(BlocksCollection.UNDERWORLD_GRASS);
 			entries.add(BlocksCollection.UNDERWORLD_SOIL);
+			entries.add(BlocksCollection.HOLLOW_OAK_LEAVES);
 		})
 		.build();
 
