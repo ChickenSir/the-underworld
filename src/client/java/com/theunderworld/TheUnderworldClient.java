@@ -14,6 +14,7 @@ public class TheUnderworldClient implements ClientModInitializer {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.DREADWOOD_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.DREADWOOD_TRAPDOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.UNDERWORLD_GRASS, RenderLayer.getCutout());
 
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintindex) -> BiomeColors.getGrassColor(view, pos), BlocksCollection.UNDERWORLD_GRASS);
 	}
