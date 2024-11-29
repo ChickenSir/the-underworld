@@ -64,6 +64,8 @@ public class TUModelProvider extends FabricModelProvider {
         dreadstone_bricks_pool.stairs(BlocksCollection.DREADSTONE_BRICK_STAIRS);
         dreadstone_bricks_pool.slab(BlocksCollection.DREADSTONE_BRICK_SLAB);
         dreadstone_bricks_pool.wall(BlocksCollection.DREADSTONE_BRICK_WALL);
+
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.UNDERWORLD_SOIL);
     }
 
     @Override

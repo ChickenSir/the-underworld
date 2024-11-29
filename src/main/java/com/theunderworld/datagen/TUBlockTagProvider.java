@@ -69,6 +69,12 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_BRICK_STAIRS)
             .add(BlocksCollection.DREADSTONE_BRICK_SLAB)
             .add(BlocksCollection.DREADSTONE_BRICK_WALL);
+
+        getOrCreateTagBuilder(BlockTags.DIRT)
+            .add(BlocksCollection.UNDERWORLD_SOIL);
+
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+            .add(BlocksCollection.UNDERWORLD_SOIL);
     }
     
 }
