@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "theunderworld:underworld_soil"
+    "theunderworld:underworld_soil",
+    "theunderworld:underworld_grass"
   ]
 }

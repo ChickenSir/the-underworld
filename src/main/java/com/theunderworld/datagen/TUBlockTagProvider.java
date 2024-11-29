@@ -75,7 +75,8 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.UNDERWORLD_GRASS);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
-            .add(BlocksCollection.UNDERWORLD_SOIL);
+            .add(BlocksCollection.UNDERWORLD_SOIL)
+            .add(BlocksCollection.UNDERWORLD_GRASS);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
             .add(BlocksCollection.HOLLOW_OAK_LEAVES);
