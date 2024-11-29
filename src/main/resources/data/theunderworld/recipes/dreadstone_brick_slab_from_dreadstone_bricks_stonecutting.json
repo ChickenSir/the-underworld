@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "theunderworld:dreadstone_bricks"
+  },
+  "result": "theunderworld:dreadstone_brick_slab"
+}

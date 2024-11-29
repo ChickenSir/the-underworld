@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "d": {
+      "item": "theunderworld:dreadstone"
+    }
+  },
+  "pattern": [
+    "dd",
+    "dd"
+  ],
+  "result": {
+    "count": 4,
+    "item": "theunderworld:dreadstone_bricks"
+  },
+  "show_notification": true
+}

@@ -8,6 +8,10 @@
     "theunderworld:dreadstone_wall",
     "theunderworld:cobbled_dreadstone_stairs",
     "theunderworld:cobbled_dreadstone_slab",
-    "theunderworld:cobbled_dreadstone_wall"
+    "theunderworld:cobbled_dreadstone_wall",
+    "theunderworld:dreadstone_bricks",
+    "theunderworld:dreadstone_brick_stairs",
+    "theunderworld:dreadstone_brick_slab",
+    "theunderworld:dreadstone_brick_wall"
   ]
 }
