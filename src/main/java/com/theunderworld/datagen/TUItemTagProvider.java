@@ -32,6 +32,10 @@ public class TUItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(BlocksCollection.DREADWOOD_WOOD.asItem())
             .add(BlocksCollection.STRIPPED_DREADWOOD_WOOD.asItem())
             .add(BlocksCollection.DREADWOOD_PLANKS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+            .add(BlocksCollection.HOLLOW_OAK_SAPLING.asItem())
+            .add(BlocksCollection.DREADWOOD_SHRUB.asItem());
     }
     
 }

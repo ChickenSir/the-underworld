@@ -80,6 +80,10 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
             .add(BlocksCollection.HOLLOW_OAK_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+            .add(BlocksCollection.HOLLOW_OAK_SAPLING)
+            .add(BlocksCollection.DREADWOOD_SHRUB);
     }
     
 }
