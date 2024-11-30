@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-30T14:44:29.7706497	The Underworld/Block Loot Tables
+// 1.20.1	2024-11-30T15:01:15.1604411	The Underworld/Block Loot Tables
 bc490037ff945259a0b15a397ba1fff75b4e5816 data\theunderworld\loot_tables\blocks\hollow_oak_fence_gate.json
 3ccd489295dd4715f950829b2f423e77a40a4370 data\theunderworld\loot_tables\blocks\dreadwood_fence_gate.json
 700b35f21144936522fff95a38c245fd85665c87 data\theunderworld\loot_tables\blocks\dreadstone.json
@@ -6,7 +6,7 @@ bc490037ff945259a0b15a397ba1fff75b4e5816 data\theunderworld\loot_tables\blocks\h
 5ff62968fa1bd9935a165e7522ac4f734ab032b2 data\theunderworld\loot_tables\blocks\hollow_oak_stairs.json
 f2cdb95c66d181b0f82a65115a2a322156dc5227 data\theunderworld\loot_tables\blocks\stripped_hollow_oak_wood.json
 db8b0227566edb32ed7ff24f89db7b6f3f4b5603 data\theunderworld\loot_tables\blocks\dreadwood_door.json
-6710bb12b52e636027269824c1eddc387fe84465 data\theunderworld\loot_tables\blocks\hollow_oak_leaves.json
+cbd35067e01dd73d28fe4e1c36ab8f880a6c2c4b data\theunderworld\loot_tables\blocks\hollow_oak_leaves.json
 9db95d10489db2ec9541f0bad69870ea189103fe data\theunderworld\loot_tables\blocks\hollow_oak_fence.json
 a18044ca4f4c0ad1ff8b2eb4e93845d192064e46 data\theunderworld\loot_tables\blocks\cobbled_dreadstone_wall.json
 fb7e1e0ec95fa155d6da31be3e536f50a931911d data\theunderworld\loot_tables\blocks\dreadwood_slab.json
@@ -30,6 +30,7 @@ a6ff331c649ae3ec7d316225b236e33b718fb7f8 data\theunderworld\loot_tables\blocks\d
 7d2abee0d8a8b2d98c7a9d58cc598eb938775168 data\theunderworld\loot_tables\blocks\stripped_dreadwood_log.json
 2347c4ccdaab26e175cbb8e0c5a667ca4b274beb data\theunderworld\loot_tables\blocks\hollow_oak_wood.json
 4a8af8630291de41e1c8133dcf30e734899b9919 data\theunderworld\loot_tables\blocks\cobbled_dreadstone_stairs.json
+19de4a37306a320059c6f0a0571d6bc01aa155e7 data\theunderworld\loot_tables\blocks\hollow_oak_sapling.json
 98df7bf228e3663d91af5b28973c0fa19211e054 data\theunderworld\loot_tables\blocks\dreadstone_brick_slab.json
 749698618b6bdc1fe310f5e1d29222154314b440 data\theunderworld\loot_tables\blocks\dreadstone_wall.json
 55053243e1e891ec7898adfb802060f96b4c7d4c data\theunderworld\loot_tables\blocks\dreadwood_stairs.json
