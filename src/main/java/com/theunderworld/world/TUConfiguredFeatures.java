@@ -9,13 +9,14 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
+import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 public class TUConfiguredFeatures {
@@ -37,7 +38,7 @@ public class TUConfiguredFeatures {
         featureRegisterable.register(DREADWOOD_TREE, new ConfiguredFeature<>(Feature.TREE, 
             new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(BlocksCollection.DREADWOOD_LOG), 
-                new ForkingTrunkPlacer(4, 2, 0), 
+                new CherryTrunkPlacer(8, 2, 1, ConstantIntProvider.create(3), UniformIntProvider.create(2, 4), UniformIntProvider.create(-4, -3), UniformIntProvider.create(-1, 0)), 
                 BlockStateProvider.of(Blocks.AIR), 
                 new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0), 
                 new TwoLayersFeatureSize(1, 0, 1)
