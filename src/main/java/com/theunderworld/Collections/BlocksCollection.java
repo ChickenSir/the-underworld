@@ -1,5 +1,7 @@
 package com.theunderworld.Collections;
 
+import com.theunderworld.world.tree.HollowOakSaplingGenerator;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -15,6 +17,7 @@ import net.minecraft.block.GrassBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.TrapdoorBlock;
@@ -44,6 +47,7 @@ public class BlocksCollection {
     public static final Block HOLLOW_OAK_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK);
 
     public static final Block HOLLOW_OAK_LEAVES = new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES));
+    public static final Block HOLLOW_OAK_SAPLING = new SaplingBlock(new HollowOakSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING));
     
     // Dreadwood Blocks
     public static final Block DREADWOOD_LOG = new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LOG));
@@ -126,6 +130,9 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_leaves"), HOLLOW_OAK_LEAVES);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_leaves"), new BlockItem(HOLLOW_OAK_LEAVES, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_sapling"), HOLLOW_OAK_SAPLING);
+        Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_sapling"), new BlockItem(HOLLOW_OAK_SAPLING, new FabricItemSettings()));
 
         StrippableBlockRegistry.register(HOLLOW_OAK_LOG, STRIPPED_HOLLOW_OAK_LOG);
         StrippableBlockRegistry.register(HOLLOW_OAK_WOOD, STRIPPED_HOLLOW_OAK_WOOD);
