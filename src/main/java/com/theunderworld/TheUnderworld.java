@@ -65,6 +65,7 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.UNDERWORLD_GRASS);
 			entries.add(BlocksCollection.UNDERWORLD_SOIL);
 			entries.add(BlocksCollection.HOLLOW_OAK_LEAVES);
+			entries.add(BlocksCollection.HOLLOW_OAK_SAPLING);
 		})
 		.build();
 
