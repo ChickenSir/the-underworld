@@ -41,6 +41,7 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(BlocksCollection.DREADWOOD_PRESSURE_PLATE);
         addDrop(BlocksCollection.DREADWOOD_DOOR, doorDrops(BlocksCollection.DREADWOOD_DOOR));
         addDrop(BlocksCollection.DREADWOOD_TRAPDOOR);
+        addDrop(BlocksCollection.DREADWOOD_SHRUB);
         
         addDrop(BlocksCollection.DREADSTONE, BlocksCollection.COBBLED_DREADSTONE);
         addDrop(BlocksCollection.DREADSTONE_STAIRS);
