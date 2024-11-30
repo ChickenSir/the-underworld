@@ -23,9 +23,9 @@ public class TUConfiguredFeatures {
         featureRegisterable.register(HOLLOW_OAK_TREE, new ConfiguredFeature<>(Feature.TREE, 
             new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(BlocksCollection.HOLLOW_OAK_LOG), 
-                new StraightTrunkPlacer(8, 3, 0), 
+                new StraightTrunkPlacer(4, 2, 0), 
                 BlockStateProvider.of(BlocksCollection.HOLLOW_OAK_LEAVES), 
-                new BlobFoliagePlacer(ConstantIntProvider.create(5), ConstantIntProvider.create(0), 3), 
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3), 
                 new TwoLayersFeatureSize(1, 0, 1)
             ).build()
         ));
