@@ -67,6 +67,7 @@ public class TUModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.UNDERWORLD_SOIL);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.HOLLOW_OAK_LEAVES);
+        blockStateModelGenerator.registerTintableCross(BlocksCollection.HOLLOW_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
