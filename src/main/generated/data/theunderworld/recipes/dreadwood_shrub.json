@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "theunderworld:dreadwood_log"
+    }
+  },
+  "pattern": [
+    "d",
+    "d"
+  ],
+  "result": {
+    "item": "theunderworld:dreadwood_shrub"
+  },
+  "show_notification": true
+}
