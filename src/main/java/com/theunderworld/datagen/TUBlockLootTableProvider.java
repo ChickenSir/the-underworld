@@ -25,7 +25,7 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(BlocksCollection.HOLLOW_OAK_PRESSURE_PLATE);
         addDrop(BlocksCollection.HOLLOW_OAK_DOOR, doorDrops(BlocksCollection.HOLLOW_OAK_DOOR));
         addDrop(BlocksCollection.HOLLOW_OAK_TRAPDOOR);
-        addDrop(BlocksCollection.HOLLOW_OAK_LEAVES, leavesDrops(BlocksCollection.HOLLOW_OAK_LEAVES, BlocksCollection.HOLLOW_OAK_PLANKS, 0.005f));
+        addDrop(BlocksCollection.HOLLOW_OAK_LEAVES, leavesDrops(BlocksCollection.HOLLOW_OAK_LEAVES, BlocksCollection.HOLLOW_OAK_SAPLING, 0.005f));
         addDrop(BlocksCollection.HOLLOW_OAK_SAPLING);
 
         addDrop(BlocksCollection.DREADWOOD_LOG);
