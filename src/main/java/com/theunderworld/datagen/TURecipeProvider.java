@@ -67,6 +67,13 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlocksCollection.DREADWOOD_SHRUB)
+            .pattern("d")
+            .pattern("d")
+            .input('d', BlocksCollection.DREADWOOD_LOG)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG))
+            .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_BUTTON)
         .input(BlocksCollection.DREADWOOD_PLANKS).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_BUTTON), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_BUTTON)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), 
