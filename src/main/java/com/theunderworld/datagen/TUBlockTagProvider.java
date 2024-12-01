@@ -36,21 +36,24 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
             .add(BlocksCollection.DREADSTONE_WALL)
             .add(BlocksCollection.COBBLED_DREADSTONE_WALL)
-            .add(BlocksCollection.DREADSTONE_BRICK_WALL);
+            .add(BlocksCollection.DREADSTONE_BRICK_WALL)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
             .add(BlocksCollection.HOLLOW_OAK_STAIRS)
             .add(BlocksCollection.DREADWOOD_STAIRS)
             .add(BlocksCollection.DREADSTONE_STAIRS)
             .add(BlocksCollection.COBBLED_DREADSTONE_STAIRS)
-            .add(BlocksCollection.DREADSTONE_BRICK_STAIRS);
+            .add(BlocksCollection.DREADSTONE_BRICK_STAIRS)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
             .add(BlocksCollection.HOLLOW_OAK_SLAB)
             .add(BlocksCollection.DREADWOOD_SLAB)
             .add(BlocksCollection.DREADSTONE_SLAB)
             .add(BlocksCollection.COBBLED_DREADSTONE_SLAB)
-            .add(BlocksCollection.DREADSTONE_BRICK_SLAB);
+            .add(BlocksCollection.DREADSTONE_BRICK_SLAB)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
             .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE)
@@ -68,7 +71,11 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_BRICKS)
             .add(BlocksCollection.DREADSTONE_BRICK_STAIRS)
             .add(BlocksCollection.DREADSTONE_BRICK_SLAB)
-            .add(BlocksCollection.DREADSTONE_BRICK_WALL);
+            .add(BlocksCollection.DREADSTONE_BRICK_WALL)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
             .add(BlocksCollection.UNDERWORLD_SOIL)
@@ -76,7 +83,8 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
             .add(BlocksCollection.UNDERWORLD_SOIL)
-            .add(BlocksCollection.UNDERWORLD_GRASS);
+            .add(BlocksCollection.UNDERWORLD_GRASS)
+            .add(BlocksCollection.UNDERWORLD_SAND);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
             .add(BlocksCollection.HOLLOW_OAK_LEAVES);
@@ -84,6 +92,9 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SAPLINGS)
             .add(BlocksCollection.HOLLOW_OAK_SAPLING)
             .add(BlocksCollection.DREADWOOD_SHRUB);
+
+        getOrCreateTagBuilder(BlockTags.SAND)
+            .add(BlocksCollection.UNDERWORLD_SAND);
     }
     
 }

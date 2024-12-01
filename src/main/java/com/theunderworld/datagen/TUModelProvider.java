@@ -69,6 +69,13 @@ public class TUModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.HOLLOW_OAK_LEAVES);
         blockStateModelGenerator.registerTintableCross(BlocksCollection.HOLLOW_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(BlocksCollection.DREADWOOD_SHRUB, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.UNDERWORLD_SAND);
+
+        BlockStateModelGenerator.BlockTexturePool underworld_sandstone_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.UNDERWORLD_SANDSTONE);
+        underworld_sandstone_pool.stairs(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS);
+        underworld_sandstone_pool.slab(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB);
+        underworld_sandstone_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_WALL);
     }
 
     @Override

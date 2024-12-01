@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "u": {
+      "item": "theunderworld:underworld_sand"
+    }
+  },
+  "pattern": [
+    "uu",
+    "uu"
+  ],
+  "result": {
+    "item": "theunderworld:underworld_sandstone"
+  },
+  "show_notification": true
+}

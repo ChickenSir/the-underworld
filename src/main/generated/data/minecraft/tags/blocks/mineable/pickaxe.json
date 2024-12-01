@@ -12,6 +12,10 @@
     "theunderworld:dreadstone_bricks",
     "theunderworld:dreadstone_brick_stairs",
     "theunderworld:dreadstone_brick_slab",
-    "theunderworld:dreadstone_brick_wall"
+    "theunderworld:dreadstone_brick_wall",
+    "theunderworld:underworld_sandstone",
+    "theunderworld:underworld_sandstone_stairs",
+    "theunderworld:underworld_sandstone_slab",
+    "theunderworld:underworld_sandstone_wall"
   ]
 }

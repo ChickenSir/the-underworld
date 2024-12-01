@@ -269,15 +269,15 @@ public class BlocksCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand"), new BlockItem(UNDERWORLD_SAND, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone"), UNDERWORLD_SANDSTONE);
-        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand"), new BlockItem(UNDERWORLD_SANDSTONE, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone"), new BlockItem(UNDERWORLD_SANDSTONE, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_stairs"), UNDERWORLD_SANDSTONE_STAIRS);
-        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand_stairs"), new BlockItem(UNDERWORLD_SANDSTONE_STAIRS, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_stairs"), new BlockItem(UNDERWORLD_SANDSTONE_STAIRS, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_slab"), UNDERWORLD_SANDSTONE_SLAB);
-        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand_slab"), new BlockItem(UNDERWORLD_SANDSTONE_SLAB, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_slab"), new BlockItem(UNDERWORLD_SANDSTONE_SLAB, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_wall"), UNDERWORLD_SANDSTONE_WALL);
-        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand_wall"), new BlockItem(UNDERWORLD_SANDSTONE_WALL, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_wall"), new BlockItem(UNDERWORLD_SANDSTONE_WALL, new FabricItemSettings()));
     }
 }
