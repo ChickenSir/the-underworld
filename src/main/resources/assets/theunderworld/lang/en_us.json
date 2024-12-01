@@ -44,5 +44,11 @@
     "block.theunderworld.dreadstone_brick_wall": "Dreadstone Brick Wall",
 
     "block.theunderworld.underworld_soil": "Underworld Soil",
-    "block.theunderworld.underworld_grass": "Underworld Grass"
+    "block.theunderworld.underworld_grass": "Underworld Grass",
+    "block.theunderworld.underworld_sand": "Underworld Sand",
+
+    "block.theunderworld.underworld_sandstone": "Underworld Sandstone",
+    "block.theunderworld.underworld_sandstone_stairs": "Underworld Sandstone Stairs",
+    "block.theunderworld.underworld_sandstone_slab": "Underworld Sandstone Slab",
+    "block.theunderworld.underworld_sandstone_wall": "Underworld Sandstone Wall"
 }
