@@ -12,6 +12,7 @@ import net.minecraft.block.BlockSetType;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ButtonBlock;
 import net.minecraft.block.DoorBlock;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.GrassBlock;
@@ -90,6 +91,14 @@ public class BlocksCollection {
 
     public static final Block UNDERWORLD_SOIL = new Block(FabricBlockSettings.copyOf(Blocks.DIRT));
     public static final Block UNDERWORLD_GRASS = new GrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS_BLOCK));
+    public static final Block UNDERWORLD_SAND = new FallingBlock(FabricBlockSettings.copyOf(Blocks.SAND));
+
+    // Underworld Sandstone Blocks
+
+    public static final Block UNDERWORLD_SANDSTONE = new Block(FabricBlockSettings.copyOf(Blocks.SANDSTONE).requiresTool());
+    public static final Block UNDERWORLD_SANDSTONE_STAIRS = new StairsBlock(UNDERWORLD_SANDSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SANDSTONE_STAIRS));
+    public static final Block UNDERWORLD_SANDSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_SLAB));
+    public static final Block UNDERWORLD_SANDSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_WALL));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
@@ -255,5 +264,20 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_grass"), UNDERWORLD_GRASS);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_grass"), new BlockItem(UNDERWORLD_GRASS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sand"), UNDERWORLD_SAND);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand"), new BlockItem(UNDERWORLD_SAND, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone"), UNDERWORLD_SANDSTONE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand"), new BlockItem(UNDERWORLD_SANDSTONE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_stairs"), UNDERWORLD_SANDSTONE_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand_stairs"), new BlockItem(UNDERWORLD_SANDSTONE_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_slab"), UNDERWORLD_SANDSTONE_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand_slab"), new BlockItem(UNDERWORLD_SANDSTONE_SLAB, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_wall"), UNDERWORLD_SANDSTONE_WALL);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand_wall"), new BlockItem(UNDERWORLD_SANDSTONE_WALL, new FabricItemSettings()));
     }
 }
