@@ -213,6 +213,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_STAIRS, BlocksCollection.DREADSTONE_BRICKS);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_SLAB, BlocksCollection.DREADSTONE_BRICKS, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICKS, BlocksCollection.DREADSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_STAIRS, BlocksCollection.DREADSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_SLAB, BlocksCollection.DREADSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE);
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS, BlocksCollection.UNDERWORLD_SANDSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SLAB, BlocksCollection.UNDERWORLD_SANDSTONE, 2);
@@ -221,6 +225,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS, BlocksCollection.UNDERWORLD_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED, BlocksCollection.UNDERWORLD_SANDSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB, BlocksCollection.UNDERWORLD_SANDSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL, BlocksCollection.UNDERWORLD_SANDSTONE);
 
         offerSmelting(exporter, DREADSTONE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE, 0.1f, 200, "dreadstone");
     }
