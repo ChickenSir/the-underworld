@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "theunderworld:dreadstone"
+  },
+  "result": "theunderworld:dreadstone_brick_stairs"
+}
