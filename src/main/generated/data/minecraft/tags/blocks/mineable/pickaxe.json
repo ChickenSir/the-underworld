@@ -16,6 +16,10 @@
     "theunderworld:underworld_sandstone",
     "theunderworld:underworld_sandstone_stairs",
     "theunderworld:underworld_sandstone_slab",
-    "theunderworld:underworld_sandstone_wall"
+    "theunderworld:underworld_sandstone_wall",
+    "theunderworld:underworld_sandstone_cobbled",
+    "theunderworld:underworld_sandstone_cobbled_stairs",
+    "theunderworld:underworld_sandstone_cobbled_slab",
+    "theunderworld:underworld_sandstone_cobbled_wall"
   ]
 }

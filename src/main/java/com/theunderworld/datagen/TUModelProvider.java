@@ -72,10 +72,10 @@ public class TUModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.UNDERWORLD_SAND);
 
-        BlockStateModelGenerator.BlockTexturePool underworld_sandstone_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.UNDERWORLD_SANDSTONE);
-        underworld_sandstone_pool.stairs(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS);
-        underworld_sandstone_pool.slab(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB);
-        underworld_sandstone_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_WALL);
+        BlockStateModelGenerator.BlockTexturePool underworld_sandstone_cobbled_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
+        underworld_sandstone_cobbled_pool.stairs(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS);
+        underworld_sandstone_cobbled_pool.slab(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB);
+        underworld_sandstone_cobbled_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
     }
 
     @Override

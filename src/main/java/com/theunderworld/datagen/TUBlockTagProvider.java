@@ -37,7 +37,8 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_WALL)
             .add(BlocksCollection.COBBLED_DREADSTONE_WALL)
             .add(BlocksCollection.DREADSTONE_BRICK_WALL)
-            .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL);
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
             .add(BlocksCollection.HOLLOW_OAK_STAIRS)
@@ -45,7 +46,8 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_STAIRS)
             .add(BlocksCollection.COBBLED_DREADSTONE_STAIRS)
             .add(BlocksCollection.DREADSTONE_BRICK_STAIRS)
-            .add(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS);
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
             .add(BlocksCollection.HOLLOW_OAK_SLAB)
@@ -53,7 +55,8 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_SLAB)
             .add(BlocksCollection.COBBLED_DREADSTONE_SLAB)
             .add(BlocksCollection.DREADSTONE_BRICK_SLAB)
-            .add(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB);
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
             .add(BlocksCollection.HOLLOW_OAK_FENCE_GATE)
@@ -75,7 +78,11 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.UNDERWORLD_SANDSTONE)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB)
-            .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL);
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
             .add(BlocksCollection.UNDERWORLD_SOIL)

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "theunderworld:block/underworld_sandstone_cobbled",
+    "side": "theunderworld:block/underworld_sandstone_cobbled",
+    "top": "theunderworld:block/underworld_sandstone_cobbled"
+  }
+}

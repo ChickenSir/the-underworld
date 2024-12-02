@@ -93,6 +93,13 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.UNDERWORLD_SAND), FabricRecipeProvider.conditionsFromItem(BlocksCollection.UNDERWORLD_SAND))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED, 2)
+            .pattern("u")
+            .pattern("u")
+            .input('u', BlocksCollection.UNDERWORLD_SANDSTONE)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.UNDERWORLD_SANDSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE))
+            .offerTo(exporter);
+
         createStairsRecipe(BlocksCollection.HOLLOW_OAK_STAIRS, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_STAIRS)));
@@ -117,6 +124,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.UNDERWORLD_SANDSTONE), conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS)));
 
+        createStairsRecipe(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS, Ingredient.ofItems(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED))
+            .criterion(hasItem(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED), conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS)));
+
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_SLAB, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_SLAB)));
@@ -140,6 +151,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SLAB, Ingredient.ofItems(BlocksCollection.UNDERWORLD_SANDSTONE))
             .criterion(hasItem(BlocksCollection.UNDERWORLD_SANDSTONE), conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB, Ingredient.ofItems(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED))
+            .criterion(hasItem(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED), conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB)));
 
         createFenceRecipe(BlocksCollection.HOLLOW_OAK_FENCE, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
@@ -185,6 +200,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_WALL, BlocksCollection.COBBLED_DREADSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE_BRICKS);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_WALL, BlocksCollection.UNDERWORLD_SANDSTONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
 
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_STAIRS, BlocksCollection.DREADSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_SLAB, BlocksCollection.DREADSTONE, 2);
@@ -201,6 +217,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS, BlocksCollection.UNDERWORLD_SANDSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SLAB, BlocksCollection.UNDERWORLD_SANDSTONE, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_WALL, BlocksCollection.UNDERWORLD_SANDSTONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
 
         offerSmelting(exporter, DREADSTONE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE, 0.1f, 200, "dreadstone");
     }

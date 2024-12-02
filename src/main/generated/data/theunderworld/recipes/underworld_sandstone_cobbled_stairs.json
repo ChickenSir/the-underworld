@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "theunderworld:underworld_sandstone_cobbled"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "theunderworld:underworld_sandstone_cobbled_stairs"
+  },
+  "show_notification": true
+}
