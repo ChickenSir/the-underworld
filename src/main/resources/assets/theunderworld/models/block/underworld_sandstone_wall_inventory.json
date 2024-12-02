@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/wall_inventory",
   "textures": {
-    "wall": "theunderworld:block/underworld_sandstone"
+    "wall": "theunderworld:block/underworld_sandstone_side"
   }
 }
