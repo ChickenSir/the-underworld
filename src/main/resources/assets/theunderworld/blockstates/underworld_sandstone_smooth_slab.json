@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "theunderworld:block/underworld_sandstone_smooth_slab"
+    },
+    "type=double": {
+      "model": "theunderworld:block/underworld_sandstone_smooth"
+    },
+    "type=top": {
+      "model": "theunderworld:block/underworld_sandstone_smooth_slab_top"
+    }
+  }
+}

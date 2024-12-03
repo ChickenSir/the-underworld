@@ -69,6 +69,11 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS);
         addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB, slabDrops(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB));
         addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
+
+        addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH);
+        addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_STAIRS);
+        addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_SLAB, slabDrops(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_SLAB));
+        addDrop(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL);
     }
     
 }

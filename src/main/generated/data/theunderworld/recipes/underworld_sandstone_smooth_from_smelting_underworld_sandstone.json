@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "underworld_sandstone_smooth",
+  "ingredient": {
+    "item": "theunderworld:underworld_sandstone"
+  },
+  "result": "theunderworld:underworld_sandstone_smooth"
+}

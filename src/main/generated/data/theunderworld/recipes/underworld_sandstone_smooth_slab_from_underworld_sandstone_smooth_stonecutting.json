@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "theunderworld:underworld_sandstone_smooth"
+  },
+  "result": "theunderworld:underworld_sandstone_smooth_slab"
+}

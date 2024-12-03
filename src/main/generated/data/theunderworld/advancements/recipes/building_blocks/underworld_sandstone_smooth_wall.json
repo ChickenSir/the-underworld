@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "theunderworld:underworld_sandstone_smooth_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_underworld_sandstone_smooth": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theunderworld:underworld_sandstone_smooth"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_underworld_sandstone_smooth",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "theunderworld:underworld_sandstone_smooth_wall"
+    ]
+  },
+  "sends_telemetry_event": false
+}
