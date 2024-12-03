@@ -1,6 +1,7 @@
 package com.theunderworld.datagen;
 
 import com.theunderworld.world.TUConfiguredFeatures;
+import com.theunderworld.world.TUPlacedFeatures;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -23,5 +24,6 @@ public class TheUnderworldDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, TUConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, TUPlacedFeatures::bootstrap);
 	}
 }

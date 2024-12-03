@@ -21,6 +21,7 @@ public class TUWorldGenProvider extends FabricDynamicRegistryProvider {
     @Override
     protected void configure(WrapperLookup registries, Entries entries) {
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
     }
     
 }
