@@ -24,7 +24,7 @@ public class TUPlacedFeatures {
 
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                PlacedFeatures.createCountExtraModifier(1, 0.1f, 1), 
+                PlacedFeatures.createCountExtraModifier(0, 0.05f, 1), 
                 BlocksCollection.HOLLOW_OAK_SAPLING)
         ));
     }
