@@ -76,6 +76,10 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS);
 			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB);
 			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
+			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH);
+			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_STAIRS);
+			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_SLAB);
+			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL);
 		})
 		.build();
 
