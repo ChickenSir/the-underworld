@@ -17,6 +17,7 @@ import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 public class TUPlacedFeatures {
     // Trees
     public static final RegistryKey<PlacedFeature> HOLLOW_OAK_TREE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "hollow_oak_tree_placed"));
+    public static final RegistryKey<PlacedFeature> HOLLOW_OAK_FOREST_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "hollow_oak_forest_placed"));
     
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -25,6 +26,12 @@ public class TUPlacedFeatures {
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                 PlacedFeatures.createCountExtraModifier(0, 0.05f, 1), 
+                BlocksCollection.HOLLOW_OAK_SAPLING)
+        ));
+
+        featureRegisterable.register(HOLLOW_OAK_FOREST_PLACED, new PlacedFeature(hollowOakTree, 
+            VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                PlacedFeatures.createCountExtraModifier(10, 0.1f, 1), 
                 BlocksCollection.HOLLOW_OAK_SAPLING)
         ));
     }

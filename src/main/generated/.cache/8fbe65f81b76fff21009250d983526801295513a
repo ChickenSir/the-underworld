@@ -1,13 +1,13 @@
-// 1.20.1	2024-12-03T20:43:04.3367449	The Underworld/Tags for minecraft:block
-99dd71e8a2a219e981b4dde195fe908ccbc86e51 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.1	2024-12-03T20:56:21.4218911	The Underworld/Tags for minecraft:block
 af730acf6372c709f98ec2251be3b0550f3949e8 data\minecraft\tags\blocks\fence_gates.json
+99dd71e8a2a219e981b4dde195fe908ccbc86e51 data\minecraft\tags\blocks\mineable\pickaxe.json
+9172f7f581f6a7fcbf4e58f4f5d7c7fd2454ddae data\minecraft\tags\blocks\mineable\shovel.json
 335b5c9d0d0bcd2faec254b9efb7db5577ba9b56 data\minecraft\tags\blocks\logs_that_burn.json
 ef487ecb4d61f1149a0aa4d4920dd98af145f944 data\minecraft\tags\blocks\walls.json
-b827702ea67ee368ecdb594fdd273301cd3c464d data\minecraft\tags\blocks\dirt.json
-d28ce209e97b0975b6b270e7f4992914d3489e3a data\minecraft\tags\blocks\saplings.json
-9172f7f581f6a7fcbf4e58f4f5d7c7fd2454ddae data\minecraft\tags\blocks\mineable\shovel.json
 8ca4a25d88d9612a6c824a7a544a08e8d057fbd8 data\minecraft\tags\blocks\slabs.json
+b827702ea67ee368ecdb594fdd273301cd3c464d data\minecraft\tags\blocks\dirt.json
 6fc2b341c73f1a2952780dd7aeab827385296d1a data\minecraft\tags\blocks\stairs.json
+d28ce209e97b0975b6b270e7f4992914d3489e3a data\minecraft\tags\blocks\saplings.json
 ed3d6429a4a9120fc85b31243e701f894c3546b1 data\minecraft\tags\blocks\leaves.json
 1536b5faa20e49eeb02cc32783cfe6af7dfd9559 data\minecraft\tags\blocks\fences.json
 f75246bbfef61845ff639e7605a34c4b7b044263 data\minecraft\tags\blocks\sand.json
