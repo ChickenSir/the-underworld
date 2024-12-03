@@ -105,6 +105,11 @@ public class BlocksCollection {
     public static final Block UNDERWORLD_SANDSTONE_COBBLED_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_SLAB));
     public static final Block UNDERWORLD_SANDSTONE_COBBLED_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_WALL));
 
+    public static final Block UNDERWORLD_SANDSTONE_SMOOTH = new Block(FabricBlockSettings.copyOf(Blocks.SANDSTONE).requiresTool());
+    public static final Block UNDERWORLD_SANDSTONE_SMOOTH_STAIRS = new StairsBlock(UNDERWORLD_SANDSTONE_SMOOTH.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SANDSTONE_STAIRS));
+    public static final Block UNDERWORLD_SANDSTONE_SMOOTH_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_SLAB));
+    public static final Block UNDERWORLD_SANDSTONE_SMOOTH_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_WALL));
+
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_log"), new BlockItem(HOLLOW_OAK_LOG, new FabricItemSettings()));
@@ -296,5 +301,17 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_cobbled_wall"), UNDERWORLD_SANDSTONE_COBBLED_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_cobbled_wall"), new BlockItem(UNDERWORLD_SANDSTONE_COBBLED_WALL, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_smooth"), UNDERWORLD_SANDSTONE_SMOOTH);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_smooth"), new BlockItem(UNDERWORLD_SANDSTONE_SMOOTH, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_smooth_stairs"), UNDERWORLD_SANDSTONE_SMOOTH_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_smooth_stairs"), new BlockItem(UNDERWORLD_SANDSTONE_SMOOTH_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_smooth_slab"), UNDERWORLD_SANDSTONE_SMOOTH_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_smooth_slab"), new BlockItem(UNDERWORLD_SANDSTONE_SMOOTH_SLAB, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_smooth_wall"), UNDERWORLD_SANDSTONE_SMOOTH_WALL);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_smooth_wall"), new BlockItem(UNDERWORLD_SANDSTONE_SMOOTH_WALL, new FabricItemSettings()));
     }
 }
