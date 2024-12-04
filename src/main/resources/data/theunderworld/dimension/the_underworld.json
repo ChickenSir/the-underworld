@@ -2,7 +2,7 @@
     "type": "theunderworld:the_underworld",
     "generator": {
         "type": "minecraft:noise",
-        "settings": "minecraft:overworld",
+        "settings": "theunderworld:the_underworld",
         "biome_source": {
             "type": "minecraft:fixed",
             "biome": "theunderworld:the_hollows"
