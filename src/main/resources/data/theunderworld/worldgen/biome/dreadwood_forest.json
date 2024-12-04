@@ -5,10 +5,10 @@
     "effects": {
         "fog_color": 12638463,
         "sky_color": 7907327,
-        "water_color": 4152292,
+        "water_color": 10923997,
         "water_fog_color": 329011,
-        "foliage_color": 7377099,
-        "grass_color": 7377099
+        "foliage_color": 5198426,
+        "grass_color": 5198426
     },
     "carvers": {
         "air": [
@@ -30,7 +30,7 @@
             "minecraft:spring_water"
         ],
         [
-            "theunderworld:hollow_oak_tree_placed"
+            "theunderworld:dreadwood_forest_placed"
         ],
         []
     ],
