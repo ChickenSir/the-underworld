@@ -1,0 +1,10 @@
+{
+    "type": "theunderworld:the_underworld",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "minecraft:the_overworld",
+        "biome_source": {
+            "biomes": []
+        }
+    }
+}
