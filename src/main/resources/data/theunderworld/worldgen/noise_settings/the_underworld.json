@@ -410,7 +410,9 @@
             "if_true": {
                 "type": "minecraft:biome",
                 "biome_is": [
-                    "theunderworld:the_hollows"
+                    "theunderworld:the_hollows",
+                    "theunderworld:hollow_oak_forest",
+                    "theunderworld:dreadwood_forest"
                 ]
             },
             "then_run": {
