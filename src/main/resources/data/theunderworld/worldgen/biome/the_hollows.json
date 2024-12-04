@@ -10,7 +10,13 @@
         "foliage_color": 7377099,
         "grass_color": 7377099
     },
-    "carvers": {},
+    "carvers": {
+        "air": [
+            "minecraft:cave",
+            "minecraft:cave_extra_underground",
+            "minecraft:canyon"
+        ]
+    },
     "features": [
         [],
         [],
