@@ -2,10 +2,47 @@
     "type": "theunderworld:the_underworld",
     "generator": {
         "type": "minecraft:noise",
-        "settings": "theunderworld:the_underworld",
         "biome_source": {
-            "type": "minecraft:fixed",
-            "biome": "theunderworld:the_hollows"
-        }
+            "biomes": [
+                {
+                    "biome": "theunderworld:the_hollows",
+                    "parameters": {
+                        "continentalness": 0.0,
+                        "depth": 0.0,
+                        "erosion": 0.0,
+                        "humidity": 0.0,
+                        "offset": 0.0,
+                        "temperature": 0.0,
+                        "weirdness": 0.0
+                    }
+                },
+                {
+                    "biome": "theunderworld:hollow_oak_forest",
+                    "parameters": {
+                        "continentalness": 0.0,
+                        "depth": 0.0,
+                        "erosion": 0.0,
+                        "humidity": 0.0,
+                        "offset": 0.0,
+                        "temperature": 0.0,
+                        "weirdness": 0.0
+                    }
+                },
+                {
+                    "biome": "theunderworld:dreadwood_forest",
+                    "parameters": {
+                        "continentalness": 0.0,
+                        "depth": 0.0,
+                        "erosion": 0.0,
+                        "humidity": 0.0,
+                        "offset": 0.0,
+                        "temperature": 0.0,
+                        "weirdness": 0.0
+                    }
+                }
+            ],
+            "type": "minecraft:multi_noise"
+        },
+        "settings": "theunderworld:the_underworld"
     }
 }
