@@ -1,0 +1,37 @@
+{
+    "has_precipitation": true,
+    "temperature": 0.8,
+    "downfall": 0.4,
+    "effects": {
+        "fog_color": 12638463,
+        "sky_color": 7907327,
+        "water_color": 4159204,
+        "water_fog_color": 329011,
+        "foliage_color": 7377099,
+        "grass_color": 7377099
+    },
+    "carvers": {
+        "air": [
+            "minecraft:cave"
+        ]
+    },
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "minecraft:spring_water"
+        ],
+        [
+            "the_underworld:hollow_oak_tree_placed"
+        ],
+        []
+    ],
+    "spawners": {},
+    "spawn_costs": {}
+}

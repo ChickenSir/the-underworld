@@ -4,7 +4,11 @@
         "type": "minecraft:noise",
         "settings": "minecraft:the_overworld",
         "biome_source": {
-            "biomes": []
+            "biomes": [
+                {
+                    "biome": "theunderworld:the_hollows"
+                }
+            ]
         }
     }
 }
