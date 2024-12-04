@@ -46,9 +46,9 @@
                     "argument1": {
                       "type": "minecraft:y_clamped_gradient",
                       "from_value": 0.0,
-                      "from_y": -64,
+                      "from_y": 0,
                       "to_value": 1.0,
-                      "to_y": -40
+                      "to_y": 24
                     },
                     "argument2": {
                       "type": "minecraft:add",
@@ -164,7 +164,7 @@
             }
           }
         },
-        "argument2": "minecraft:overworld/caves/noodle"
+        "argument2": 1
       },
       "fluid_level_floodedness": {
         "type": "minecraft:noise",
