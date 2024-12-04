@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "theunderworld:dreadstone",
+    "theunderworld:underworld_grass",
+    "theunderworld:underworld_soil",
+    "theunderworld:underworld_sand",
+    "theunderworld:underworld_sandstone"
+  ]
+}

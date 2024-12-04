@@ -109,6 +109,13 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SAND)
             .add(BlocksCollection.UNDERWORLD_SAND);
+
+        getOrCreateTagBuilder(BlockTags.OVERWORLD_CARVER_REPLACEABLES)
+            .add(BlocksCollection.DREADSTONE)
+            .add(BlocksCollection.UNDERWORLD_GRASS)
+            .add(BlocksCollection.UNDERWORLD_SOIL)
+            .add(BlocksCollection.UNDERWORLD_SAND)
+            .add(BlocksCollection.UNDERWORLD_SANDSTONE);
     }
     
 }
