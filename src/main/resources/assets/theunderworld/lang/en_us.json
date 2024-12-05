@@ -58,5 +58,10 @@
     "block.theunderworld.underworld_sandstone_smooth": "Smooth Underworld Sandstone",
     "block.theunderworld.underworld_sandstone_smooth_stairs": "Smooth Underworld Sandstone Stairs",
     "block.theunderworld.underworld_sandstone_smooth_slab": "Smooth Underworld Sandstone Slab",
-    "block.theunderworld.underworld_sandstone_smooth_wall": "Smooth Underworld Sandstone Wall"
+    "block.theunderworld.underworld_sandstone_smooth_wall": "Smooth Underworld Sandstone Wall",
+
+    "biome.theunderworld.the_hollows": "The Hollows",
+    "biome.theunderworld.hollow_oak_forest": "Hollow Oak Forest",
+    "biome.theunderworld.dreadwood_forest": "Dreadwood Forest",
+    "biome.theunderworld.underworld_desert": "Underworld Desert"
 }
