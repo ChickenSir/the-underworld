@@ -15,6 +15,7 @@ import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.FernBlock;
 import net.minecraft.block.GrassBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.PillarBlock;
@@ -109,6 +110,10 @@ public class BlocksCollection {
     public static final Block UNDERWORLD_SANDSTONE_SMOOTH_STAIRS = new StairsBlock(UNDERWORLD_SANDSTONE_SMOOTH.getDefaultState(), FabricBlockSettings.copyOf(Blocks.SANDSTONE_STAIRS));
     public static final Block UNDERWORLD_SANDSTONE_SMOOTH_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_SLAB));
     public static final Block UNDERWORLD_SANDSTONE_SMOOTH_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.SANDSTONE_WALL));
+
+    // Vegetation Blocks
+    
+    public static final Block UNDERWORLD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
@@ -313,5 +318,8 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_smooth_wall"), UNDERWORLD_SANDSTONE_SMOOTH_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_smooth_wall"), new BlockItem(UNDERWORLD_SANDSTONE_SMOOTH_WALL, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_shrub"), UNDERWORLD_SHRUB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "underworld_shrub"), new BlockItem(UNDERWORLD_SHRUB, new FabricItemSettings()));
     }
 }
