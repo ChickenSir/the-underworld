@@ -30,7 +30,8 @@
             "minecraft:spring_water"
         ],
         [
-            "theunderworld:dreadwood_forest_placed"
+            "theunderworld:dreadwood_forest_placed",
+            "theunderworld:shrub_patch_placed"
         ],
         []
     ],

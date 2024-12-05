@@ -30,7 +30,8 @@
             "minecraft:spring_water"
         ],
         [
-            "theunderworld:hollow_oak_forest_placed"
+            "theunderworld:hollow_oak_forest_placed",
+            "theunderworld:shrub_patch_placed"
         ],
         []
     ],
