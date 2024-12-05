@@ -11,6 +11,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.feature.RandomPatchFeatureConfig;
+import net.minecraft.world.gen.feature.SimpleBlockFeatureConfig;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
@@ -22,6 +25,9 @@ public class TUConfiguredFeatures {
     // Trees
     public static final RegistryKey<ConfiguredFeature<?, ?>> HOLLOW_OAK_TREE = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "hollow_oak_tree"));
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADWOOD_TREE = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "dreadwood_tree"));
+
+    // Vegetation
+    public static final RegistryKey<ConfiguredFeature<?, ?>> SHRUB_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch"));
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
         featureRegisterable.register(HOLLOW_OAK_TREE, new ConfiguredFeature<>(Feature.TREE, 
@@ -42,6 +48,13 @@ public class TUConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0), 
                 new TwoLayersFeatureSize(1, 0, 1)
             ).build()
+        ));
+
+        featureRegisterable.register(SHRUB_PATCH, new ConfiguredFeature<>(Feature.RANDOM_PATCH, 
+            new RandomPatchFeatureConfig(32, 7, 3, PlacedFeatures.createEntry(
+                Feature.SIMPLE_BLOCK, 
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.UNDERWORLD_SHRUB))
+            ))
         ));
     }
 }
