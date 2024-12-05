@@ -19,11 +19,15 @@ public class TUPlacedFeatures {
     public static final RegistryKey<PlacedFeature> HOLLOW_OAK_TREE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "hollow_oak_tree_placed"));
     public static final RegistryKey<PlacedFeature> HOLLOW_OAK_FOREST_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "hollow_oak_forest_placed"));
     public static final RegistryKey<PlacedFeature> DREADWOOD_FOREST_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "dreadwood_forest_placed"));
+
+    // Vegetation
+    public static final RegistryKey<PlacedFeature> SHRUB_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch_placed"));
     
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         RegistryEntry<ConfiguredFeature<?, ?>> hollowOakTree = registryEntryLookup.getOrThrow(TUConfiguredFeatures.HOLLOW_OAK_TREE);
         RegistryEntry<ConfiguredFeature<?, ?>> dreadwoodTree = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADWOOD_TREE);
+        RegistryEntry<ConfiguredFeature<?, ?>> shrubPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.SHRUB_PATCH);
 
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
@@ -41,6 +45,10 @@ public class TUPlacedFeatures {
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                 PlacedFeatures.createCountExtraModifier(10, 0.1f, 1), 
                 BlocksCollection.DREADWOOD_SHRUB)
+        ));
+
+        featureRegisterable.register(SHRUB_PATCH_PLACED, new PlacedFeature(shrubPatch, 
+            VegetationPlacedFeatures.modifiers(2)
         ));
     }
 }
