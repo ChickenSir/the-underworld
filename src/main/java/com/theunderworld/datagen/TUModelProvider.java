@@ -76,6 +76,8 @@ public class TUModelProvider extends FabricModelProvider {
         underworld_sandstone_cobbled_pool.stairs(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS);
         underworld_sandstone_cobbled_pool.slab(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB);
         underworld_sandstone_cobbled_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
+
+        blockStateModelGenerator.registerTintableCross(BlocksCollection.UNDERWORLD_SHRUB, BlockStateModelGenerator.TintType.TINTED);
     }
 
     @Override
