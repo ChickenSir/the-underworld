@@ -114,7 +114,7 @@ public class BlocksCollection {
     // Vegetation Blocks
     
     public static final Block UNDERWORLD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS));
-    public static final Block RADIANT_MUSHROOM = new FernBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(1));
+    public static final Block RADIANT_MUSHROOM = new FernBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(3));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
