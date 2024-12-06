@@ -79,6 +79,7 @@ public class TUModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCross(BlocksCollection.UNDERWORLD_SHRUB, BlockStateModelGenerator.TintType.TINTED);
         blockStateModelGenerator.registerTintableCross(BlocksCollection.RADIANT_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(BlocksCollection.DREADSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

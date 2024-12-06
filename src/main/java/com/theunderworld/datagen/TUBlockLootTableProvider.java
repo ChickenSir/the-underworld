@@ -77,6 +77,7 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
 
         grassDrops(BlocksCollection.UNDERWORLD_SHRUB);
         addDrop(BlocksCollection.RADIANT_MUSHROOM);
+        addDrop(BlocksCollection.DREADSHROOM);
     }
     
 }

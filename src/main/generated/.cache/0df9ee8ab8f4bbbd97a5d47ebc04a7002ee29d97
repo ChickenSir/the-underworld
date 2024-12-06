@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-06T18:45:55.0878605	The Underworld/Block Loot Tables
+// 1.20.1	2024-12-06T21:10:55.8571173	The Underworld/Block Loot Tables
 3ccd489295dd4715f950829b2f423e77a40a4370 data\theunderworld\loot_tables\blocks\dreadwood_fence_gate.json
 700b35f21144936522fff95a38c245fd85665c87 data\theunderworld\loot_tables\blocks\dreadstone.json
 5b24ee2fa3db368a5d2e9697abb8d495f404b433 data\theunderworld\loot_tables\blocks\dreadstone_slab.json
@@ -41,6 +41,7 @@ fb7e1e0ec95fa155d6da31be3e536f50a931911d data\theunderworld\loot_tables\blocks\d
 f7dfa51cad5f79733c0bc16a13c84c95ffb30c6e data\theunderworld\loot_tables\blocks\dreadwood_trapdoor.json
 e1e96d154a9fbd22801bb5de94485a7f509449b5 data\theunderworld\loot_tables\blocks\hollow_oak_pressure_plate.json
 d0452d4e7b2f1c7afa2fd3b53ce403655cfbe33b data\theunderworld\loot_tables\blocks\dreadstone_bricks.json
+5f7db5f06238600cce1f94df9cc97aba698c7016 data\theunderworld\loot_tables\blocks\dreadshroom.json
 f2bd834d54e9318bc214e5d2c010693a1cb8ff5b data\theunderworld\loot_tables\blocks\underworld_sandstone_smooth.json
 d5c77ec1f3cc669b90ed5bcf523ed8c80d91bc90 data\theunderworld\loot_tables\blocks\hollow_oak_button.json
 a8a2df04afb99e0c11e481fdb91834ddd49a0654 data\theunderworld\loot_tables\blocks\dreadwood_shrub.json
