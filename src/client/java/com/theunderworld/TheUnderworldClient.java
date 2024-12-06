@@ -19,6 +19,7 @@ public class TheUnderworldClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.HOLLOW_OAK_SAPLING, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.DREADWOOD_SHRUB, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.UNDERWORLD_SHRUB, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.RADIANT_MUSHROOM, RenderLayer.getCutout());
 
 		ColorProviderRegistry.BLOCK.register((state, view, pos, tintindex) -> BiomeColors.getGrassColor(view, pos), BlocksCollection.UNDERWORLD_GRASS);
 		ColorProviderRegistry.ITEM.register((stack, tintindex) -> 0x7090cb, BlocksCollection.UNDERWORLD_GRASS);
