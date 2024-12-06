@@ -1,5 +1,7 @@
 package com.theunderworld.world;
 
+import java.util.List;
+
 import com.theunderworld.TheUnderworld;
 import com.theunderworld.Collections.BlocksCollection;
 
@@ -13,6 +15,10 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
+import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 public class TUPlacedFeatures {
     // Trees
@@ -56,11 +62,11 @@ public class TUPlacedFeatures {
         ));
 
         featureRegisterable.register(RADIANT_MUSHROOM_PATCH_PLACED, new PlacedFeature(radiantMushroomPatch, 
-            VegetationPlacedFeatures.modifiers(2)
+            List.of(CountPlacementModifier.of(3), RarityFilterPlacementModifier.of(12), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of())
         ));
 
         featureRegisterable.register(DREADSHROOM_PATCH_PLACED, new PlacedFeature(dreadshroomPatch, 
-            VegetationPlacedFeatures.modifiers(2)
+            List.of(CountPlacementModifier.of(3), RarityFilterPlacementModifier.of(12), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of())
         ));
     }
 }
