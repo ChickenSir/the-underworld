@@ -78,6 +78,7 @@ public class TUModelProvider extends FabricModelProvider {
         underworld_sandstone_cobbled_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
 
         blockStateModelGenerator.registerTintableCross(BlocksCollection.UNDERWORLD_SHRUB, BlockStateModelGenerator.TintType.TINTED);
+        blockStateModelGenerator.registerTintableCross(BlocksCollection.RADIANT_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
