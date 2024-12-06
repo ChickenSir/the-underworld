@@ -22,12 +22,16 @@ public class TUPlacedFeatures {
 
     // Vegetation
     public static final RegistryKey<PlacedFeature> SHRUB_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch_placed"));
+    public static final RegistryKey<PlacedFeature> RADIANT_MUSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch_placed"));
+    public static final RegistryKey<PlacedFeature> DREADSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch_placed"));
     
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         RegistryEntry<ConfiguredFeature<?, ?>> hollowOakTree = registryEntryLookup.getOrThrow(TUConfiguredFeatures.HOLLOW_OAK_TREE);
         RegistryEntry<ConfiguredFeature<?, ?>> dreadwoodTree = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADWOOD_TREE);
         RegistryEntry<ConfiguredFeature<?, ?>> shrubPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.SHRUB_PATCH);
+        RegistryEntry<ConfiguredFeature<?, ?>> radiantMushroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.RADIANT_MUSHROOM_PATCH);
+        RegistryEntry<ConfiguredFeature<?, ?>> dreadshroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADSHROOM_PATCH);
 
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
@@ -48,6 +52,14 @@ public class TUPlacedFeatures {
         ));
 
         featureRegisterable.register(SHRUB_PATCH_PLACED, new PlacedFeature(shrubPatch, 
+            VegetationPlacedFeatures.modifiers(2)
+        ));
+
+        featureRegisterable.register(RADIANT_MUSHROOM_PATCH_PLACED, new PlacedFeature(radiantMushroomPatch, 
+            VegetationPlacedFeatures.modifiers(2)
+        ));
+
+        featureRegisterable.register(DREADSHROOM_PATCH_PLACED, new PlacedFeature(dreadshroomPatch, 
             VegetationPlacedFeatures.modifiers(2)
         ));
     }

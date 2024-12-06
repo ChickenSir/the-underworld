@@ -28,6 +28,8 @@ public class TUConfiguredFeatures {
 
     // Vegetation
     public static final RegistryKey<ConfiguredFeature<?, ?>> SHRUB_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch"));
+    public static final RegistryKey<ConfiguredFeature<?, ?>> RADIANT_MUSHROOM_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch"));
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSHROOM_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch"));
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
         featureRegisterable.register(HOLLOW_OAK_TREE, new ConfiguredFeature<>(Feature.TREE, 
@@ -55,6 +57,20 @@ public class TUConfiguredFeatures {
                 Feature.SIMPLE_BLOCK, 
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.UNDERWORLD_SHRUB))
             ))
+        ));
+
+        featureRegisterable.register(RADIANT_MUSHROOM_PATCH, new ConfiguredFeature<>(Feature.RANDOM_PATCH, 
+            new RandomPatchFeatureConfig(96, 7, 3, PlacedFeatures.createEntry(
+                Feature.SIMPLE_BLOCK, 
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.RADIANT_MUSHROOM))
+                ))
+        ));
+
+        featureRegisterable.register(DREADSHROOM_PATCH, new ConfiguredFeature<>(Feature.RANDOM_PATCH, 
+            new RandomPatchFeatureConfig(96, 7, 3, PlacedFeatures.createEntry(
+                Feature.SIMPLE_BLOCK, 
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.DREADSHROOM))
+                ))
         ));
     }
 }
