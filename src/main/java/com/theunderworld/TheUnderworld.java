@@ -81,6 +81,7 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_SLAB);
 			entries.add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL);
 			entries.add(BlocksCollection.UNDERWORLD_SHRUB);
+			entries.add(BlocksCollection.RADIANT_MUSHROOM);
 		})
 		.build();
 
