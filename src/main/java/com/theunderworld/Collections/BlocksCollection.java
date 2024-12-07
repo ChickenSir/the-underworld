@@ -121,6 +121,9 @@ public class BlocksCollection {
     // Flower Pot Blocks
 
     public static final Block POTTED_HOLLOW_OAK_SAPLING = new FlowerPotBlock(HOLLOW_OAK_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING));
+    public static final Block POTTED_DREADWOOD_SHRUB = new FlowerPotBlock(DREADWOOD_SHRUB, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING));
+    public static final Block POTTED_RADIANT_MUSHROOM = new FlowerPotBlock(RADIANT_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM));
+    public static final Block POTTED_DREADSHROOM = new FlowerPotBlock(DREADSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
@@ -334,5 +337,10 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadshroom"), DREADSHROOM);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadshroom"), new BlockItem(DREADSHROOM, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "potted_hollow_oak_sapling"), POTTED_HOLLOW_OAK_SAPLING);
+        Registry.register(Registries.BLOCK, new Identifier(modID, "potted_dreadwood_shrub"), POTTED_DREADWOOD_SHRUB);
+        Registry.register(Registries.BLOCK, new Identifier(modID, "potted_radiant_mushroom"), POTTED_RADIANT_MUSHROOM);
+        Registry.register(Registries.BLOCK, new Identifier(modID, "potted_dreadshroom"), POTTED_DREADSHROOM);
     }
 }
