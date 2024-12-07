@@ -16,6 +16,7 @@ import net.minecraft.block.FallingBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.FernBlock;
+import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.block.GrassBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.PillarBlock;
@@ -116,6 +117,10 @@ public class BlocksCollection {
     public static final Block UNDERWORLD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS));
     public static final Block RADIANT_MUSHROOM = new FernBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(3));
     public static final Block DREADSHROOM = new FernBlock(FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM));
+
+    // Flower Pot Blocks
+
+    public static final Block POTTED_HOLLOW_OAK_SAPLING = new FlowerPotBlock(HOLLOW_OAK_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING));
 
     public static void Register(String modID) {
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
