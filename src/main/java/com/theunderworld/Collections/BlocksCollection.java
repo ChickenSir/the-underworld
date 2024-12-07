@@ -16,6 +16,7 @@ import net.minecraft.block.FallingBlock;
 import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.FernBlock;
+import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.block.GrassBlock;
 import net.minecraft.block.LeavesBlock;
@@ -27,6 +28,7 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.block.TrapdoorBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.WoodType;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -115,8 +117,8 @@ public class BlocksCollection {
     // Vegetation Blocks
     
     public static final Block UNDERWORLD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS));
-    public static final Block RADIANT_MUSHROOM = new FernBlock(FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(3));
-    public static final Block DREADSHROOM = new FernBlock(FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM));
+    public static final Block RADIANT_MUSHROOM = new FlowerBlock(StatusEffects.GLOWING, 15, FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(3));
+    public static final Block DREADSHROOM = new FlowerBlock(StatusEffects.BLINDNESS, 5, FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM));
 
     // Flower Pot Blocks
 
