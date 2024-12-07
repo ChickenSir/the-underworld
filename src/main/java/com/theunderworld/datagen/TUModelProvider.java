@@ -67,8 +67,6 @@ public class TUModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.UNDERWORLD_SOIL);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.HOLLOW_OAK_LEAVES);
-        blockStateModelGenerator.registerTintableCross(BlocksCollection.HOLLOW_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(BlocksCollection.DREADWOOD_SHRUB, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.UNDERWORLD_SAND);
 
@@ -78,8 +76,11 @@ public class TUModelProvider extends FabricModelProvider {
         underworld_sandstone_cobbled_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
 
         blockStateModelGenerator.registerTintableCross(BlocksCollection.UNDERWORLD_SHRUB, BlockStateModelGenerator.TintType.TINTED);
-        blockStateModelGenerator.registerTintableCross(BlocksCollection.RADIANT_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(BlocksCollection.DREADSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.HOLLOW_OAK_SAPLING, BlocksCollection.POTTED_HOLLOW_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.DREADWOOD_SHRUB, BlocksCollection.POTTED_DREADWOOD_SHRUB, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.RADIANT_MUSHROOM, BlocksCollection.POTTED_RADIANT_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.DREADSHROOM, BlocksCollection.POTTED_DREADSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override

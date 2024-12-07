@@ -78,6 +78,11 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         grassDrops(BlocksCollection.UNDERWORLD_SHRUB);
         addDrop(BlocksCollection.RADIANT_MUSHROOM);
         addDrop(BlocksCollection.DREADSHROOM);
+
+        addPottedPlantDrops(BlocksCollection.POTTED_HOLLOW_OAK_SAPLING);
+        addPottedPlantDrops(BlocksCollection.POTTED_DREADWOOD_SHRUB);
+        addPottedPlantDrops(BlocksCollection.POTTED_RADIANT_MUSHROOM);
+        addPottedPlantDrops(BlocksCollection.POTTED_DREADSHROOM);
     }
     
 }
