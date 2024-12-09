@@ -1,6 +1,7 @@
 package com.theunderworld.datagen;
 
 import com.theunderworld.Collections.BlocksCollection;
+import com.theunderworld.Collections.ItemsCollection;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -83,6 +84,8 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         addPottedPlantDrops(BlocksCollection.POTTED_DREADWOOD_SHRUB);
         addPottedPlantDrops(BlocksCollection.POTTED_RADIANT_MUSHROOM);
         addPottedPlantDrops(BlocksCollection.POTTED_DREADSHROOM);
+
+        addDrop(BlocksCollection.OPACITITE_ORE, oreDrops(BlocksCollection.OPACITITE_ORE, ItemsCollection.RAW_OPACITITE));
     }
     
 }

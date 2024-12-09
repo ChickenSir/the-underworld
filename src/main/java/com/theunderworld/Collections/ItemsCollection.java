@@ -24,6 +24,8 @@ public class ItemsCollection {
     // Materials
     public static final Item RADIANT_DUST = new Item(new FabricItemSettings());
     public static final Item DREADDED_DUST = new Item(new FabricItemSettings());
+    public static final Item RAW_OPACITITE = new Item(new FabricItemSettings());
+    public static final Item OPACITITE_INGOT = new Item(new FabricItemSettings());
     
     public static void Register(String modID) {
         // Dreadstone Toolset
@@ -36,5 +38,7 @@ public class ItemsCollection {
         // Materials
         Registry.register(Registries.ITEM, new Identifier(modID, "radiant_dust"), RADIANT_DUST);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_dust"), DREADDED_DUST);
+        Registry.register(Registries.ITEM, new Identifier(modID, "raw_opacitite"), RAW_OPACITITE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "opacitite_ingot"), OPACITITE_INGOT);
     }
 }

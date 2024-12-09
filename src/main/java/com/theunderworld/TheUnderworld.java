@@ -92,6 +92,8 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(ItemsCollection.DREADSTONE_HOE);
 			entries.add(ItemsCollection.RADIANT_DUST);
 			entries.add(ItemsCollection.DREADDED_DUST);
+			entries.add(ItemsCollection.RAW_OPACITITE);
+			entries.add(ItemsCollection.OPACITITE_INGOT);
 		})
 		.build();
 

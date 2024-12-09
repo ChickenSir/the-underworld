@@ -20,6 +20,7 @@ import net.minecraft.util.Identifier;
 public class TURecipeProvider extends FabricRecipeProvider {
     List<ItemConvertible> DREADSTONE_SMELTABLES = List.of(BlocksCollection.COBBLED_DREADSTONE);
     List<ItemConvertible> UNDERWORLD_SANDSTONE_SMOOTH_SMELTABLES = List.of(BlocksCollection.UNDERWORLD_SANDSTONE);
+    List<ItemConvertible> OPACITITE_SMELTABLES = List.of(BlocksCollection.OPACITITE_ORE, ItemsCollection.RAW_OPACITITE);
 
     public TURecipeProvider(FabricDataOutput generator) {
         super(generator);
@@ -305,6 +306,9 @@ public class TURecipeProvider extends FabricRecipeProvider {
         .input(BlocksCollection.DREADSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.DREADDED_DUST), 
         FabricRecipeProvider.conditionsFromItem(ItemsCollection.DREADDED_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADSHROOM), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADSHROOM)).offerTo(exporter);
+
+        offerSmelting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 200, "opacitite_ingot");
+        offerBlasting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 100, "opacitite_ingot");
     }
     
 }

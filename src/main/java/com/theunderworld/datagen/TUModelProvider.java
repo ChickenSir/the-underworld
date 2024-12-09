@@ -97,6 +97,8 @@ public class TUModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ItemsCollection.RADIANT_DUST, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.DREADDED_DUST, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.RAW_OPACITITE, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_INGOT, Models.GENERATED);
     }
     
 }
