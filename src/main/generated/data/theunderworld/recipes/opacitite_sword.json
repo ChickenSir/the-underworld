@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "o": {
+      "item": "theunderworld:opacitite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " o ",
+    " o ",
+    " s "
+  ],
+  "result": {
+    "item": "theunderworld:opacitite_sword"
+  },
+  "show_notification": true
+}

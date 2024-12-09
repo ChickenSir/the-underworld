@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "o": {
+      "item": "theunderworld:opacitite_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "oo ",
+    " s ",
+    " s "
+  ],
+  "result": {
+    "item": "theunderworld:opacitite_hoe"
+  },
+  "show_notification": true
+}

@@ -1,8 +1,8 @@
-// 1.20.1	2024-12-09T19:30:02.3273289	The Underworld/Block Loot Tables
+// 1.20.1	2024-12-09T20:04:34.6455202	The Underworld/Block Loot Tables
 700b35f21144936522fff95a38c245fd85665c87 data\theunderworld\loot_tables\blocks\dreadstone.json
 3ccd489295dd4715f950829b2f423e77a40a4370 data\theunderworld\loot_tables\blocks\dreadwood_fence_gate.json
-5b24ee2fa3db368a5d2e9697abb8d495f404b433 data\theunderworld\loot_tables\blocks\dreadstone_slab.json
 b6f9cbf26b95ae7795eccad20e488b45e7bbfe50 data\theunderworld\loot_tables\blocks\opacitite_ore.json
+5b24ee2fa3db368a5d2e9697abb8d495f404b433 data\theunderworld\loot_tables\blocks\dreadstone_slab.json
 cbd35067e01dd73d28fe4e1c36ab8f880a6c2c4b data\theunderworld\loot_tables\blocks\hollow_oak_leaves.json
 d049f1c0c696806b268403559140214704c6a8a7 data\theunderworld\loot_tables\blocks\potted_radiant_mushroom.json
 47b21d9722cb8e585687839809eb3a5b29235077 data\theunderworld\loot_tables\blocks\underworld_sandstone_cobbled.json

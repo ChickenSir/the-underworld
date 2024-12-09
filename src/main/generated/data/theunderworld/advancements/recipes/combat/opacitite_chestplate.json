@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opacitite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theunderworld:opacitite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "theunderworld:opacitite_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_opacitite_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "theunderworld:opacitite_chestplate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "o": {
+      "item": "theunderworld:opacitite_ingot"
+    }
+  },
+  "pattern": [
+    "ooo",
+    "o o"
+  ],
+  "result": {
+    "item": "theunderworld:opacitite_helmet"
+  },
+  "show_notification": true
+}

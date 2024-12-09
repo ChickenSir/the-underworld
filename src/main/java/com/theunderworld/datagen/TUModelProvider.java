@@ -99,6 +99,17 @@ public class TUModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemsCollection.DREADDED_DUST, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.RAW_OPACITITE, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.OPACITITE_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ItemsCollection.OPACITITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ItemsCollection.OPACITITE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.OPACITITE_BOOTS, Models.GENERATED);
     }
     
 }

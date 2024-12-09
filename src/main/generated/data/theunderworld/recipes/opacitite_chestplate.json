@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "o": {
+      "item": "theunderworld:opacitite_ingot"
+    }
+  },
+  "pattern": [
+    "o o",
+    "ooo",
+    "ooo"
+  ],
+  "result": {
+    "item": "theunderworld:opacitite_chestplate"
+  },
+  "show_notification": true
+}

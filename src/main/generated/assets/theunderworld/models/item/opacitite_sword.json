@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "theunderworld:item/opacitite_sword"
+  }
+}

@@ -297,6 +297,81 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.COBBLED_DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.OPACITITE_SWORD)
+            .pattern(" o ")
+            .pattern(" o ")
+            .pattern(" s ")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.OPACITITE_PICKAXE)
+            .pattern("ooo")
+            .pattern(" s ")
+            .pattern(" s ")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.OPACITITE_AXE)
+            .pattern("oo ")
+            .pattern("os ")
+            .pattern(" s ")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.OPACITITE_SHOVEL)
+            .pattern(" o ")
+            .pattern(" s ")
+            .pattern(" s ")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.OPACITITE_HOE)
+            .pattern("oo ")
+            .pattern(" s ")
+            .pattern(" s ")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemsCollection.OPACITITE_HELMET)
+            .pattern("ooo")
+            .pattern("o o")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemsCollection.OPACITITE_CHESTPLATE)
+            .pattern("o o")
+            .pattern("ooo")
+            .pattern("ooo")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemsCollection.OPACITITE_LEGGINGS)
+            .pattern("ooo")
+            .pattern("o o")
+            .pattern("o o")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ItemsCollection.OPACITITE_BOOTS)
+            .pattern("o o")
+            .pattern("o o")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemsCollection.RADIANT_DUST)
         .input(BlocksCollection.RADIANT_MUSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_DUST), 
         FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.RADIANT_MUSHROOM), 
