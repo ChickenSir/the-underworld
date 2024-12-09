@@ -83,6 +83,8 @@ public class TUModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.DREADWOOD_SHRUB, BlocksCollection.POTTED_DREADWOOD_SHRUB, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.RADIANT_MUSHROOM, BlocksCollection.POTTED_RADIANT_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.DREADSHROOM, BlocksCollection.POTTED_DREADSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.OPACITITE_ORE);
     }
 
     @Override

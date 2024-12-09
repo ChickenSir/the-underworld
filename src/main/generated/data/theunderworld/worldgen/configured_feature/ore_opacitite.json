@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 8,
+    "targets": [
+      {
+        "state": {
+          "Name": "theunderworld:opacitite_ore"
+        },
+        "target": {
+          "block": "theunderworld:dreadstone",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

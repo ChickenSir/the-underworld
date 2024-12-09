@@ -1,5 +1,7 @@
 package com.theunderworld.world;
 
+import java.util.List;
+
 import com.theunderworld.TheUnderworld;
 import com.theunderworld.Collections.BlocksCollection;
 
@@ -7,10 +9,13 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.structure.rule.BlockMatchRuleTest;
+import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.RandomPatchFeatureConfig;
 import net.minecraft.world.gen.feature.SimpleBlockFeatureConfig;
@@ -31,7 +36,13 @@ public class TUConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> RADIANT_MUSHROOM_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch"));
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSHROOM_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch"));
 
+    // Ores
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_OPACITITE = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite"));
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
+        RuleTest dreadstoneReplacables = new BlockMatchRuleTest(BlocksCollection.DREADSTONE);
+        List<OreFeatureConfig.Target> opacititeOre = List.of(OreFeatureConfig.createTarget(dreadstoneReplacables, BlocksCollection.OPACITITE_ORE.getDefaultState()));
+
         featureRegisterable.register(HOLLOW_OAK_TREE, new ConfiguredFeature<>(Feature.TREE, 
             new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(BlocksCollection.HOLLOW_OAK_LOG), 
@@ -71,6 +82,10 @@ public class TUConfiguredFeatures {
                 Feature.SIMPLE_BLOCK, 
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.DREADSHROOM))
                 ))
+        ));
+
+        featureRegisterable.register(ORE_OPACITITE, new ConfiguredFeature<>(Feature.ORE, 
+            new OreFeatureConfig(opacititeOre, 8)
         ));
     }
 }

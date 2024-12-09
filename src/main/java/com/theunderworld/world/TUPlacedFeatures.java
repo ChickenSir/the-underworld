@@ -11,12 +11,14 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
+import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
@@ -30,6 +32,9 @@ public class TUPlacedFeatures {
     public static final RegistryKey<PlacedFeature> SHRUB_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch_placed"));
     public static final RegistryKey<PlacedFeature> RADIANT_MUSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch_placed"));
     public static final RegistryKey<PlacedFeature> DREADSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch_placed"));
+
+    //Ores
+    public static final RegistryKey<PlacedFeature> ORE_OPACITITE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite_placed"));
     
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -38,6 +43,7 @@ public class TUPlacedFeatures {
         RegistryEntry<ConfiguredFeature<?, ?>> shrubPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.SHRUB_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> radiantMushroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.RADIANT_MUSHROOM_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> dreadshroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADSHROOM_PATCH);
+        RegistryEntry<ConfiguredFeature<?, ?>> oreOpacitite = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_OPACITITE);
 
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
@@ -67,6 +73,10 @@ public class TUPlacedFeatures {
 
         featureRegisterable.register(DREADSHROOM_PATCH_PLACED, new PlacedFeature(dreadshroomPatch, 
             List.of(CountPlacementModifier.of(3), RarityFilterPlacementModifier.of(12), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of())
+        ));
+
+        featureRegisterable.register(ORE_OPACITITE_PLACED, new PlacedFeature(oreOpacitite, 
+            List.of(CountPlacementModifier.of(8), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.fixed(32)), BiomePlacementModifier.of())
         ));
     }
 }
