@@ -1,5 +1,6 @@
 package com.theunderworld.Collections;
 
+import com.theunderworld.Items.OpacititeArmorItem;
 import com.theunderworld.Materials.OpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeToolMaterial;
 
@@ -13,7 +14,6 @@ import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterials;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorItem.Type;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -41,10 +41,10 @@ public class ItemsCollection {
     public static final ToolItem OPACITITE_HOE = new HoeItem(OpacititeToolMaterial.INSTANCE, -1, -2.0f, new FabricItemSettings());
 
     public static final ArmorMaterial OPACITITE_ARMOR_MATERIAL = new OpacititeArmorMaterial();
-    public static final Item OPACITITE_HELMET = new ArmorItem(OPACITITE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
-    public static final Item OPACITITE_CHESTPLATE = new ArmorItem(OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
-    public static final Item OPACITITE_LEGGINGS = new ArmorItem(OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
-    public static final Item OPACITITE_BOOTS = new ArmorItem(OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
+    public static final Item OPACITITE_HELMET = new OpacititeArmorItem(OPACITITE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
+    public static final Item OPACITITE_CHESTPLATE = new OpacititeArmorItem(OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
+    public static final Item OPACITITE_LEGGINGS = new OpacititeArmorItem(OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
+    public static final Item OPACITITE_BOOTS = new OpacititeArmorItem(OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
     
     public static void Register(String modID) {
         // Dreadstone Toolset

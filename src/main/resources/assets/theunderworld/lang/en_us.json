@@ -91,5 +91,7 @@
     "item.theunderworld.opacitite_helmet": "Opacitite Helmet",
     "item.theunderworld.opacitite_chestplate": "Opacitite Chestplate",
     "item.theunderworld.opacitite_leggings": "Opacitite Leggings",
-    "item.theunderworld.opacitite_boots": "Opacitite Boots"
+    "item.theunderworld.opacitite_boots": "Opacitite Boots",
+
+    "tooltip.theunderworld.generic.alter_properties": "This item can be combined with select materials to alter it's properties"
 }
