@@ -3,6 +3,7 @@ package com.theunderworld.Collections;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
@@ -19,6 +20,10 @@ public class ItemsCollection {
     public static final ToolItem DREADSTONE_AXE = new AxeItem(ToolMaterials.STONE, 7.0f, -3.2f, new FabricItemSettings());
     public static final ToolItem DREADSTONE_SHOVEL = new ShovelItem(ToolMaterials.STONE, 1.5f, -3.0f, new FabricItemSettings());
     public static final ToolItem DREADSTONE_HOE = new HoeItem(ToolMaterials.STONE, -1, -2.0f, new FabricItemSettings());
+
+    // Materials
+    public static final Item RADIANT_DUST = new Item(new FabricItemSettings());
+    public static final Item DREADDED_DUST = new Item(new FabricItemSettings());
     
     public static void Register(String modID) {
         // Dreadstone Toolset
@@ -27,5 +32,9 @@ public class ItemsCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_axe"), DREADSTONE_AXE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_shovel"), DREADSTONE_SHOVEL);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_hoe"), DREADSTONE_HOE);
+
+        // Materials
+        Registry.register(Registries.ITEM, new Identifier(modID, "radiant_dust"), RADIANT_DUST);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_dust"), DREADDED_DUST);
     }
 }

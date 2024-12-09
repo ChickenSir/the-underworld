@@ -89,6 +89,8 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(ItemsCollection.DREADSTONE_AXE);
 			entries.add(ItemsCollection.DREADSTONE_SHOVEL);
 			entries.add(ItemsCollection.DREADSTONE_HOE);
+			entries.add(ItemsCollection.RADIANT_DUST);
+			entries.add(ItemsCollection.DREADDED_DUST);
 		})
 		.build();
 

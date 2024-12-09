@@ -92,6 +92,9 @@ public class TUModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemsCollection.DREADSTONE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ItemsCollection.DREADSTONE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ItemsCollection.DREADSTONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.register(ItemsCollection.RADIANT_DUST, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.DREADDED_DUST, Models.GENERATED);
     }
     
 }
