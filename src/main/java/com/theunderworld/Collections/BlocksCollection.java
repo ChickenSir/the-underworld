@@ -128,6 +128,7 @@ public class BlocksCollection {
     public static final Block POTTED_DREADSHROOM = new FlowerPotBlock(DREADSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM));
 
     public static void Register(String modID) {
+        // Hollow Oak Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_log"), HOLLOW_OAK_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_log"), new BlockItem(HOLLOW_OAK_LOG, new FabricItemSettings()));
 
@@ -191,6 +192,7 @@ public class BlocksCollection {
         FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_TRAPDOOR, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(HOLLOW_OAK_LEAVES, 30, 60);
 
+        // Dreadwood Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_log"), DREADWOOD_LOG);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_log"), new BlockItem(DREADWOOD_LOG, new FabricItemSettings()));
 
@@ -250,6 +252,7 @@ public class BlocksCollection {
         FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_DOOR, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(DREADWOOD_TRAPDOOR, 5, 20);
 
+        // Dreadstone Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone"), DREADSTONE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone"), new BlockItem(DREADSTONE, new FabricItemSettings()));
 
@@ -286,6 +289,7 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_brick_wall"), DREADSTONE_BRICK_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_brick_wall"), new BlockItem(DREADSTONE_BRICK_WALL, new FabricItemSettings()));
 
+        // Terrain Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_soil"), UNDERWORLD_SOIL);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_soil"), new BlockItem(UNDERWORLD_SOIL, new FabricItemSettings()));
 
@@ -295,6 +299,7 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sand"), UNDERWORLD_SAND);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sand"), new BlockItem(UNDERWORLD_SAND, new FabricItemSettings()));
 
+        // Underworld Sandstone Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone"), UNDERWORLD_SANDSTONE);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone"), new BlockItem(UNDERWORLD_SANDSTONE, new FabricItemSettings()));
 
@@ -331,6 +336,7 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_sandstone_smooth_wall"), UNDERWORLD_SANDSTONE_SMOOTH_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_sandstone_smooth_wall"), new BlockItem(UNDERWORLD_SANDSTONE_SMOOTH_WALL, new FabricItemSettings()));
 
+        // Vegetation Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_shrub"), UNDERWORLD_SHRUB);
         Registry.register(Registries.ITEM, new Identifier(modID, "underworld_shrub"), new BlockItem(UNDERWORLD_SHRUB, new FabricItemSettings()));
 
