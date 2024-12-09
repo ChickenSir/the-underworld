@@ -93,5 +93,8 @@
     "item.theunderworld.opacitite_leggings": "Opacitite Leggings",
     "item.theunderworld.opacitite_boots": "Opacitite Boots",
 
-    "tooltip.theunderworld.generic.alter_properties": "This item can be combined with select materials to alter it's properties"
+    "tooltip.theunderworld.generic.alter_properties": "Can Alter Properties With:",
+    "tooltip.theunderworld.opacitite_armor.radiant_dust": " Radiant Dust",
+    "tooltip.theunderworld.opacitite_armor.dreadded_dust": " Dreadded Dust",
+    "tooltip.theunderworld.opacitite_armor.redstone_dust": " Redstone Dust"
 }

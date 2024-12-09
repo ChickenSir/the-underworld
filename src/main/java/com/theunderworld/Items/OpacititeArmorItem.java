@@ -19,5 +19,8 @@ public class OpacititeArmorItem extends ArmorItem {
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.of(""));
         tooltip.add(Text.translatable("tooltip.theunderworld.generic.alter_properties").formatted(Formatting.GRAY));
+        tooltip.add(Text.translatable("tooltip.theunderworld.opacitite_armor.radiant_dust").formatted(Formatting.BLUE));
+        tooltip.add(Text.translatable("tooltip.theunderworld.opacitite_armor.dreadded_dust").formatted(Formatting.BLUE));
+        tooltip.add(Text.translatable("tooltip.theunderworld.opacitite_armor.redstone_dust").formatted(Formatting.BLUE));
     }
 }
