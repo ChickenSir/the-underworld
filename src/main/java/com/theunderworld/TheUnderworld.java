@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.theunderworld.Collections.BlocksCollection;
+import com.theunderworld.Collections.ItemsCollection;
 
 public class TheUnderworld implements ModInitializer {
 	public static final String modID = "theunderworld";
@@ -92,6 +93,11 @@ public class TheUnderworld implements ModInitializer {
 		LOGGER.info("Registering Blocks!");
 
 		BlocksCollection.Register(modID);
+
+		// Register Items
+		LOGGER.info("Registering Items!");
+
+		ItemsCollection.Register(modID);
 
 		// Register Item Group
 		LOGGER.info("Registering Item Group!");

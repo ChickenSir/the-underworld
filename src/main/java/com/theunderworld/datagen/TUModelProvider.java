@@ -1,11 +1,13 @@
 package com.theunderworld.datagen;
 
 import com.theunderworld.Collections.BlocksCollection;
+import com.theunderworld.Collections.ItemsCollection;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
 
 public class TUModelProvider extends FabricModelProvider {
     public TUModelProvider(FabricDataOutput generator) {
@@ -85,7 +87,11 @@ public class TUModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        
+        itemModelGenerator.register(ItemsCollection.DREADSTONE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.DREADSTONE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.DREADSTONE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.DREADSTONE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.DREADSTONE_HOE, Models.HANDHELD);
     }
     
 }

@@ -20,7 +20,7 @@ public class ItemsCollection {
     public static final ToolItem DREADSTONE_SHOVEL = new ShovelItem(ToolMaterials.STONE, 1.5f, -3.0f, new FabricItemSettings());
     public static final ToolItem DREADSTONE_HOE = new HoeItem(ToolMaterials.STONE, -1, -2.0f, new FabricItemSettings());
     
-    public static void register(String modID) {
+    public static void Register(String modID) {
         // Dreadstone Toolset
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_sword"), DREADSTONE_SWORD);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_pickaxe"), DREADSTONE_PICKAXE);
