@@ -84,6 +84,11 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.UNDERWORLD_SHRUB);
 			entries.add(BlocksCollection.RADIANT_MUSHROOM);
 			entries.add(BlocksCollection.DREADSHROOM);
+			entries.add(ItemsCollection.DREADSTONE_SWORD);
+			entries.add(ItemsCollection.DREADSTONE_PICKAXE);
+			entries.add(ItemsCollection.DREADSTONE_AXE);
+			entries.add(ItemsCollection.DREADSTONE_SHOVEL);
+			entries.add(ItemsCollection.DREADSTONE_HOE);
 		})
 		.build();
 

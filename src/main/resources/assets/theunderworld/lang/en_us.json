@@ -67,5 +67,11 @@
     "biome.theunderworld.the_hollows": "The Hollows",
     "biome.theunderworld.hollow_oak_forest": "Hollow Oak Forest",
     "biome.theunderworld.dreadwood_forest": "Dreadwood Forest",
-    "biome.theunderworld.underworld_desert": "Underworld Desert"
+    "biome.theunderworld.underworld_desert": "Underworld Desert",
+
+    "item.theunderworld.dreadstone_sword": "Dreadstone Sword",
+    "item.theunderworld.dreadstone_pickaxe": "Dreadstone Pickaxe",
+    "item.theunderworld.dreadstone_axe": "Dreadstone Axe",
+    "item.theunderworld.dreadstone_shovel": "Dreadstone Shovel",
+    "item.theunderworld.dreadstone_hoe": "Dreadstone Hoe"
 }
