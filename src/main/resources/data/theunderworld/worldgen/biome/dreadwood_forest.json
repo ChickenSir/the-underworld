@@ -24,7 +24,9 @@
         [],
         [],
         [],
-        [],
+        [
+            "theunderworld:ore_opacitite_placed"
+        ],
         [],
         [
             "minecraft:spring_water"
