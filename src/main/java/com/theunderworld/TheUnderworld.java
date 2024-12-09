@@ -94,6 +94,15 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(ItemsCollection.DREADDED_DUST);
 			entries.add(ItemsCollection.RAW_OPACITITE);
 			entries.add(ItemsCollection.OPACITITE_INGOT);
+			entries.add(ItemsCollection.OPACITITE_SWORD);
+			entries.add(ItemsCollection.OPACITITE_PICKAXE);
+			entries.add(ItemsCollection.OPACITITE_AXE);
+			entries.add(ItemsCollection.OPACITITE_SHOVEL);
+			entries.add(ItemsCollection.OPACITITE_HOE);
+			entries.add(ItemsCollection.OPACITITE_HELMET);
+			entries.add(ItemsCollection.OPACITITE_CHESTPLATE);
+			entries.add(ItemsCollection.OPACITITE_LEGGINGS);
+			entries.add(ItemsCollection.OPACITITE_BOOTS);
 		})
 		.build();
 

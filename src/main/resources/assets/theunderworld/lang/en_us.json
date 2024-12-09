@@ -80,5 +80,16 @@
     "item.theunderworld.radiant_dust": "Radiant Dust",
     "item.theunderworld.dreadded_dust": "Dreadded Dust",
     "item.theunderworld.raw_opacitite": "Raw Opacitite",
-    "item.theunderworld.opacitite_ingot": "Opacitite Ingot"
+    "item.theunderworld.opacitite_ingot": "Opacitite Ingot",
+
+    "item.theunderworld.opacitite_sword": "Opacitite Sword",
+    "item.theunderworld.opacitite_pickaxe": "Opacitite Pickaxe",
+    "item.theunderworld.opacitite_axe": "Opacitite Axe",
+    "item.theunderworld.opacitite_shovel": "Opacitite Shovel",
+    "item.theunderworld.opacitite_hoe": "Opacitite Hoe",
+
+    "item.theunderworld.opacitite_helmet": "Opacitite Helmet",
+    "item.theunderworld.opacitite_chestplate": "Opacitite Chestplate",
+    "item.theunderworld.opacitite_leggings": "Opacitite Leggings",
+    "item.theunderworld.opacitite_boots": "Opacitite Boots"
 }
