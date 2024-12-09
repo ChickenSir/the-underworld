@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "theunderworld:dreadshroom"
+    }
+  ],
+  "result": {
+    "item": "theunderworld:dreadded_dust"
+  }
+}

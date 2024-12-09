@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "d": {
+      "item": "theunderworld:cobbled_dreadstone"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " d ",
+    " d ",
+    " s "
+  ],
+  "result": {
+    "item": "theunderworld:dreadstone_sword"
+  },
+  "show_notification": true
+}

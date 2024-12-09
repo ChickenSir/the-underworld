@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 import com.theunderworld.Collections.BlocksCollection;
+import com.theunderworld.Collections.ItemsCollection;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -11,6 +12,7 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -25,6 +27,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
+        // Block Recipes
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_PLANKS, 4)
         .input(BlocksCollection.HOLLOW_OAK_LOG).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), 
@@ -246,6 +249,62 @@ public class TURecipeProvider extends FabricRecipeProvider {
 
         offerSmelting(exporter, DREADSTONE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE, 0.1f, 200, "dreadstone");
         offerSmelting(exporter, UNDERWORLD_SANDSTONE_SMOOTH_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH, 0.1f, 200, "underworld_sandstone_smooth");
+
+        // Item Recipes
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.DREADSTONE_SWORD)
+            .pattern(" d ")
+            .pattern(" d ")
+            .pattern(" s ")
+            .input('d', BlocksCollection.COBBLED_DREADSTONE)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.COBBLED_DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.DREADSTONE_PICKAXE)
+            .pattern("ddd")
+            .pattern(" s ")
+            .pattern(" s ")
+            .input('d', BlocksCollection.COBBLED_DREADSTONE)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.COBBLED_DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.DREADSTONE_AXE)
+            .pattern("dd ")
+            .pattern("ds ")
+            .pattern(" s ")
+            .input('d', BlocksCollection.COBBLED_DREADSTONE)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.COBBLED_DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.DREADSTONE_SHOVEL)
+            .pattern(" d ")
+            .pattern(" s ")
+            .pattern(" s ")
+            .input('d', BlocksCollection.COBBLED_DREADSTONE)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.COBBLED_DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ItemsCollection.DREADSTONE_HOE)
+            .pattern("dd ")
+            .pattern(" s ")
+            .pattern(" s ")
+            .input('d', BlocksCollection.COBBLED_DREADSTONE)
+            .input('s', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.COBBLED_DREADSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.COBBLED_DREADSTONE))
+            .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemsCollection.RADIANT_DUST)
+        .input(BlocksCollection.RADIANT_MUSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_DUST), 
+        FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.RADIANT_MUSHROOM), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.RADIANT_MUSHROOM)).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemsCollection.DREADDED_DUST)
+        .input(BlocksCollection.DREADSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.DREADDED_DUST), 
+        FabricRecipeProvider.conditionsFromItem(ItemsCollection.DREADDED_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADSHROOM), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADSHROOM)).offerTo(exporter);
     }
     
 }
