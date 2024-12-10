@@ -105,6 +105,11 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(ItemsCollection.OPACITITE_CHESTPLATE);
 			entries.add(ItemsCollection.OPACITITE_LEGGINGS);
 			entries.add(ItemsCollection.OPACITITE_BOOTS);
+			entries.add(ItemsCollection.RADIANT_OPACITITE_SWORD);
+			entries.add(ItemsCollection.RADIANT_OPACITITE_HELMET);
+			entries.add(ItemsCollection.RADIANT_OPACITITE_CHESTPLATE);
+			entries.add(ItemsCollection.RADIANT_OPACITITE_LEGGINGS);
+			entries.add(ItemsCollection.RADIANT_OPACITITE_BOOTS);
 		})
 		.build();
 

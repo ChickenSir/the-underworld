@@ -112,6 +112,12 @@ public class TUModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemsCollection.OPACITITE_CHESTPLATE, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.OPACITITE_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.OPACITITE_BOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ItemsCollection.RADIANT_OPACITITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ItemsCollection.RADIANT_OPACITITE_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.RADIANT_OPACITITE_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.RADIANT_OPACITITE_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.RADIANT_OPACITITE_BOOTS, Models.GENERATED);
     }
     
 }
