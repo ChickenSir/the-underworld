@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "r": {
+      "item": "theunderworld:radiant_coal"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "r",
+    "s"
+  ],
+  "result": {
+    "item": "minecraft:soul_torch"
+  },
+  "show_notification": true
+}
