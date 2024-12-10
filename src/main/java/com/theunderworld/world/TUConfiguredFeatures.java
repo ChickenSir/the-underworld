@@ -40,10 +40,14 @@ public class TUConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_OPACITITE = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite"));
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_RADIANT_COAL = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "ore_radiant_coal"));
 
+    // Terrain Ores
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_UNDERWORLD_SOIL = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "ore_underworld_soil"));
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> featureRegisterable) {
         RuleTest dreadstoneReplacables = new BlockMatchRuleTest(BlocksCollection.DREADSTONE);
         List<OreFeatureConfig.Target> opacititeOre = List.of(OreFeatureConfig.createTarget(dreadstoneReplacables, BlocksCollection.OPACITITE_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> radiantCoalOre = List.of(OreFeatureConfig.createTarget(dreadstoneReplacables, BlocksCollection.RADIANT_COAL_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> underworldSoilOre = List.of(OreFeatureConfig.createTarget(dreadstoneReplacables, BlocksCollection.UNDERWORLD_SOIL.getDefaultState()));
 
         featureRegisterable.register(HOLLOW_OAK_TREE, new ConfiguredFeature<>(Feature.TREE, 
             new TreeFeatureConfig.Builder(
@@ -92,6 +96,10 @@ public class TUConfiguredFeatures {
 
         featureRegisterable.register(ORE_RADIANT_COAL, new ConfiguredFeature<>(Feature.ORE, 
             new OreFeatureConfig(radiantCoalOre, 16)
+        ));
+
+        featureRegisterable.register(ORE_UNDERWORLD_SOIL, new ConfiguredFeature<>(Feature.ORE, 
+            new OreFeatureConfig(underworldSoilOre, 32)
         ));
     }
 }

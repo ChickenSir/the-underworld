@@ -33,9 +33,12 @@ public class TUPlacedFeatures {
     public static final RegistryKey<PlacedFeature> RADIANT_MUSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch_placed"));
     public static final RegistryKey<PlacedFeature> DREADSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch_placed"));
 
-    //Ores
+    // Ores
     public static final RegistryKey<PlacedFeature> ORE_OPACITITE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite_placed"));
     public static final RegistryKey<PlacedFeature> ORE_RADIANT_COAL_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_radiant_coal_placed"));
+
+    // Terrain Ores
+    public static final RegistryKey<PlacedFeature> ORE_UNDERWORLD_SOIL_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_underworld_soil_placed"));
     
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -46,6 +49,7 @@ public class TUPlacedFeatures {
         RegistryEntry<ConfiguredFeature<?, ?>> dreadshroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADSHROOM_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> oreOpacitite = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_OPACITITE);
         RegistryEntry<ConfiguredFeature<?, ?>> oreRadiantCoal = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_RADIANT_COAL);
+        RegistryEntry<ConfiguredFeature<?, ?>> oreUnderworldSoil = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_UNDERWORLD_SOIL);
 
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
@@ -83,6 +87,10 @@ public class TUPlacedFeatures {
 
         featureRegisterable.register(ORE_RADIANT_COAL_PLACED, new PlacedFeature(oreRadiantCoal, 
             List.of(CountPlacementModifier.of(16), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.fixed(15), YOffset.fixed(55)), BiomePlacementModifier.of())
+        ));
+
+        featureRegisterable.register(ORE_UNDERWORLD_SOIL_PLACED, new PlacedFeature(oreUnderworldSoil, 
+            List.of(CountPlacementModifier.of(6), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.fixed(25), YOffset.fixed(60)), BiomePlacementModifier.of())
         ));
     }
 }
