@@ -2,6 +2,7 @@ package com.theunderworld.Collections;
 
 import com.theunderworld.Items.OpacititeArmorItem;
 import com.theunderworld.Items.RadiantOpacititeArmorItem;
+import com.theunderworld.Items.RadiantOpacititeSwordItem;
 import com.theunderworld.Items.SwiftOpacititeArmorItem;
 import com.theunderworld.Materials.DreaddedOpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeArmorMaterial;
@@ -53,7 +54,7 @@ public class ItemsCollection {
     public static final Item OPACITITE_LEGGINGS = new OpacititeArmorItem(OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
     public static final Item OPACITITE_BOOTS = new OpacititeArmorItem(OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
 
-    public static final ToolItem RADIANT_OPACITITE_SWORD = new SwordItem(OpacititeToolMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings());
+    public static final ToolItem RADIANT_OPACITITE_SWORD = new RadiantOpacititeSwordItem(OpacititeToolMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings());
     public static final ArmorMaterial RADIANT_OPACITITE_ARMOR_MATERIAL = new RadiantOpacititeArmorMaterial();
     public static final Item RADIANT_OPACITITE_HELMET = new RadiantOpacititeArmorItem(RADIANT_OPACITITE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
     public static final Item RADIANT_OPACITITE_CHESTPLATE = new RadiantOpacititeArmorItem(RADIANT_OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());

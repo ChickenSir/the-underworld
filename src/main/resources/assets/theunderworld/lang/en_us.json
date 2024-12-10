@@ -103,6 +103,8 @@
     "tooltip.theunderworld.radiant_opacitite_armor.status_buff": " Unlimited Night Vision",
     "tooltip.theunderworld.swift_opacitite_armor.status_buff": " Increased Speed",
 
+    "tooltip.theunderworld.radiant_opacitite_sword.bonus_effect": "Sets mobs on fire upon being hit",
+
     "item.theunderworld.radiant_opacitite_sword": "Radiant Opacitite Sword",
     "item.theunderworld.radiant_opacitite_helmet": "Radiant Opacitite Helmet",
     "item.theunderworld.radiant_opacitite_chestplate": "Radiant Opacitite Chestplate",
