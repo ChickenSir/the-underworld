@@ -85,6 +85,7 @@ public class TUModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.DREADSHROOM, BlocksCollection.POTTED_DREADSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.OPACITITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.RADIANT_COAL_ORE);
     }
 
     @Override
@@ -99,6 +100,7 @@ public class TUModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ItemsCollection.DREADDED_DUST, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.RAW_OPACITITE, Models.GENERATED);
         itemModelGenerator.register(ItemsCollection.OPACITITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ItemsCollection.RADIANT_COAL, Models.GENERATED);
 
         itemModelGenerator.register(ItemsCollection.OPACITITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ItemsCollection.OPACITITE_PICKAXE, Models.HANDHELD);

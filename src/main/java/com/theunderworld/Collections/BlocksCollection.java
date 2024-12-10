@@ -129,6 +129,7 @@ public class BlocksCollection {
 
     // Ores
     public static final Block OPACITITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).requiresTool());
+    public static final Block RADIANT_COAL_ORE = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE).requiresTool());
 
     public static void Register(String modID) {
         // Hollow Oak Blocks
@@ -357,5 +358,8 @@ public class BlocksCollection {
         // Ores
         Registry.register(Registries.BLOCK, new Identifier(modID, "opacitite_ore"), OPACITITE_ORE);
         Registry.register(Registries.ITEM, new Identifier(modID, "opacitite_ore"), new BlockItem(OPACITITE_ORE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "radiant_coal_ore"), RADIANT_COAL_ORE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "radiant_coal_ore"), new BlockItem(RADIANT_COAL_ORE, new FabricItemSettings()));
     }
 }

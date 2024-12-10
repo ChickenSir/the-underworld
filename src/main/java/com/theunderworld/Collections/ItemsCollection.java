@@ -5,6 +5,7 @@ import com.theunderworld.Materials.OpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeToolMaterial;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
@@ -32,6 +33,7 @@ public class ItemsCollection {
     public static final Item DREADDED_DUST = new Item(new FabricItemSettings());
     public static final Item RAW_OPACITITE = new Item(new FabricItemSettings());
     public static final Item OPACITITE_INGOT = new Item(new FabricItemSettings());
+    public static final Item RADIANT_COAL = new Item(new FabricItemSettings());
 
     // Opacitite Gear
     public static final ToolItem OPACITITE_SWORD = new SwordItem(OpacititeToolMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings());
@@ -59,6 +61,9 @@ public class ItemsCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_dust"), DREADDED_DUST);
         Registry.register(Registries.ITEM, new Identifier(modID, "raw_opacitite"), RAW_OPACITITE);
         Registry.register(Registries.ITEM, new Identifier(modID, "opacitite_ingot"), OPACITITE_INGOT);
+        Registry.register(Registries.ITEM, new Identifier(modID, "radiant_coal"), RADIANT_COAL);
+
+        FuelRegistry.INSTANCE.add(RADIANT_COAL, 2400);
 
         // Opacitite Gear
         Registry.register(Registries.ITEM, new Identifier(modID, "opacitite_sword"), OPACITITE_SWORD);
