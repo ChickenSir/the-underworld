@@ -5,6 +5,7 @@ import com.theunderworld.Materials.DreaddedOpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeToolMaterial;
 import com.theunderworld.Materials.RadiantOpacititeArmorMaterial;
+import com.theunderworld.Materials.SwiftOpacititeArmorMaterial;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -63,6 +64,13 @@ public class ItemsCollection {
     public static final Item DREADDED_OPACITITE_CHESTPLATE = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
     public static final Item DREADDED_OPACITITE_LEGGINGS = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
     public static final Item DREADDED_OPACITITE_BOOTS = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
+
+    public static final ToolItem SWIFT_OPACITITE_SWORD = new SwordItem(OpacititeToolMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings());
+    public static final ArmorMaterial SWIFT_OPACITITE_ARMOR_MATERIAL = new SwiftOpacititeArmorMaterial();
+    public static final Item SWIFT_OPACITITE_HELMET = new OpacititeArmorItem(SWIFT_OPACITITE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
+    public static final Item SWIFT_OPACITITE_CHESTPLATE = new OpacititeArmorItem(SWIFT_OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
+    public static final Item SWIFT_OPACITITE_LEGGINGS = new OpacititeArmorItem(SWIFT_OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
+    public static final Item SWIFT_OPACITITE_BOOTS = new OpacititeArmorItem(SWIFT_OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
     
     public static void Register(String modID) {
         // Dreadstone Toolset
@@ -104,5 +112,11 @@ public class ItemsCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_chestplate"), DREADDED_OPACITITE_CHESTPLATE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_leggings"), DREADDED_OPACITITE_LEGGINGS);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_boots"), DREADDED_OPACITITE_BOOTS);
+
+        Registry.register(Registries.ITEM, new Identifier(modID, "swift_opacitite_sword"), SWIFT_OPACITITE_SWORD);
+        Registry.register(Registries.ITEM, new Identifier(modID, "swift_opacitite_helmet"), SWIFT_OPACITITE_HELMET);
+        Registry.register(Registries.ITEM, new Identifier(modID, "swift_opacitite_chestplate"), SWIFT_OPACITITE_CHESTPLATE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "swift_opacitite_leggings"), SWIFT_OPACITITE_LEGGINGS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "swift_opacitite_boots"), SWIFT_OPACITITE_BOOTS);
     }
 }
