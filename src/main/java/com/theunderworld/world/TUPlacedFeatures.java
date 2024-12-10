@@ -35,6 +35,7 @@ public class TUPlacedFeatures {
 
     //Ores
     public static final RegistryKey<PlacedFeature> ORE_OPACITITE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite_placed"));
+    public static final RegistryKey<PlacedFeature> ORE_RADIANT_COAL_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_radiant_coal_placed"));
     
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable) {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = featureRegisterable.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -44,6 +45,7 @@ public class TUPlacedFeatures {
         RegistryEntry<ConfiguredFeature<?, ?>> radiantMushroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.RADIANT_MUSHROOM_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> dreadshroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADSHROOM_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> oreOpacitite = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_OPACITITE);
+        RegistryEntry<ConfiguredFeature<?, ?>> oreRadiantCoal = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_RADIANT_COAL);
 
         featureRegisterable.register(HOLLOW_OAK_TREE_PLACED, new PlacedFeature(hollowOakTree, 
             VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
@@ -77,6 +79,10 @@ public class TUPlacedFeatures {
 
         featureRegisterable.register(ORE_OPACITITE_PLACED, new PlacedFeature(oreOpacitite, 
             List.of(CountPlacementModifier.of(8), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.fixed(10), YOffset.fixed(32)), BiomePlacementModifier.of())
+        ));
+
+        featureRegisterable.register(ORE_RADIANT_COAL_PLACED, new PlacedFeature(oreRadiantCoal, 
+            List.of(CountPlacementModifier.of(16), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.fixed(15), YOffset.fixed(55)), BiomePlacementModifier.of())
         ));
     }
 }

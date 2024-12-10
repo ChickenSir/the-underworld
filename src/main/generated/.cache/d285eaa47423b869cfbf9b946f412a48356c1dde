@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-10T15:50:40.1517512	The Underworld/World Gen
+// 1.20.1	2024-12-10T15:58:40.0331215	The Underworld/World Gen
 d270c6fa0408f765145a9d49d0e98f8b8f8509b0 data\theunderworld\worldgen\configured_feature\dreadshroom_patch.json
 ef1ba1f33671f28f67718079be43941dafb71775 data\theunderworld\worldgen\configured_feature\dreadwood_tree.json
 6cb0241a2a0a29daf9bc06d3e8db6e121bba6657 data\theunderworld\worldgen\configured_feature\ore_opacitite.json
@@ -6,7 +6,9 @@ cba550a34cf76a615a67c758973ef2f5b1b79efd data\theunderworld\worldgen\placed_feat
 1fe7dd8608da53fab02cd66e6561d6df600c71e0 data\theunderworld\worldgen\configured_feature\shrub_patch.json
 f97548312075056e1e4636cf5ef022dc3ec6eb67 data\theunderworld\worldgen\placed_feature\shrub_patch_placed.json
 8192eae0710f5539a76aa53243067919865e848c data\theunderworld\worldgen\configured_feature\hollow_oak_tree.json
+5dfe6dcb0139c40457b8c8ace703bc6a27a7b037 data\theunderworld\worldgen\configured_feature\ore_radiant_coal.json
 d06f1583de0d373a05275ac6268ae87bb6d1e519 data\theunderworld\worldgen\placed_feature\radiant_mushroom_patch_placed.json
+e90a6092d2d47976b7e15857c9cc0674127004d9 data\theunderworld\worldgen\placed_feature\ore_radiant_coal_placed.json
 10ac678a73e38ae34903b4b03ee9df937ed8a849 data\theunderworld\worldgen\placed_feature\ore_opacitite_placed.json
 3fc503ee3e9deea0ed959335ca5ce45ada955c1f data\theunderworld\worldgen\placed_feature\hollow_oak_tree_placed.json
 1a85c7a2f72cff538c5603303679a4238b720d0b data\theunderworld\worldgen\placed_feature\hollow_oak_forest_placed.json
