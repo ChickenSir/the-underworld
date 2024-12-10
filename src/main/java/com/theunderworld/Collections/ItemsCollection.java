@@ -1,6 +1,7 @@
 package com.theunderworld.Collections;
 
 import com.theunderworld.Items.OpacititeArmorItem;
+import com.theunderworld.Materials.DreaddedOpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeArmorMaterial;
 import com.theunderworld.Materials.OpacititeToolMaterial;
 import com.theunderworld.Materials.RadiantOpacititeArmorMaterial;
@@ -55,6 +56,13 @@ public class ItemsCollection {
     public static final Item RADIANT_OPACITITE_CHESTPLATE = new OpacititeArmorItem(RADIANT_OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
     public static final Item RADIANT_OPACITITE_LEGGINGS = new OpacititeArmorItem(RADIANT_OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
     public static final Item RADIANT_OPACITITE_BOOTS = new OpacititeArmorItem(RADIANT_OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
+
+    public static final ToolItem DREADDED_OPACITITE_SWORD = new SwordItem(OpacititeToolMaterial.INSTANCE, 3, -2.4f, new FabricItemSettings());
+    public static final ArmorMaterial DREADDED_OPACITITE_ARMOR_MATERIAL = new DreaddedOpacititeArmorMaterial();
+    public static final Item DREADDED_OPACITITE_HELMET = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.HELMET, new Item.Settings());
+    public static final Item DREADDED_OPACITITE_CHESTPLATE = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.CHESTPLATE, new Item.Settings());
+    public static final Item DREADDED_OPACITITE_LEGGINGS = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.LEGGINGS, new Item.Settings());
+    public static final Item DREADDED_OPACITITE_BOOTS = new OpacititeArmorItem(DREADDED_OPACITITE_ARMOR_MATERIAL, Type.BOOTS, new Item.Settings());
     
     public static void Register(String modID) {
         // Dreadstone Toolset
@@ -90,5 +98,11 @@ public class ItemsCollection {
         Registry.register(Registries.ITEM, new Identifier(modID, "radiant_opacitite_chestplate"), RADIANT_OPACITITE_CHESTPLATE);
         Registry.register(Registries.ITEM, new Identifier(modID, "radiant_opacitite_leggings"), RADIANT_OPACITITE_LEGGINGS);
         Registry.register(Registries.ITEM, new Identifier(modID, "radiant_opacitite_boots"), RADIANT_OPACITITE_BOOTS);
+
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_sword"), DREADDED_OPACITITE_SWORD);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_helmet"), DREADDED_OPACITITE_HELMET);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_chestplate"), DREADDED_OPACITITE_CHESTPLATE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_leggings"), DREADDED_OPACITITE_LEGGINGS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadded_opacitite_boots"), DREADDED_OPACITITE_BOOTS);
     }
 }
