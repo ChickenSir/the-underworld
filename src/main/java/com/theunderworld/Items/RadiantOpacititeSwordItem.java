@@ -28,7 +28,6 @@ public class RadiantOpacititeSwordItem extends SwordItem {
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.of(""));
-        tooltip.add(Text.translatable("tooltip.theunderworld.radiant_opacitite_sword.bonus_effect").formatted(Formatting.BLUE));
+        tooltip.add(Text.translatable("tooltip.theunderworld.radiant_opacitite_sword.bonus_effect").formatted(Formatting.GRAY));
     }
 }
