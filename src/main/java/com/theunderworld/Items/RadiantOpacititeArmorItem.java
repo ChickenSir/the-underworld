@@ -35,7 +35,7 @@ public class RadiantOpacititeArmorItem extends ArmorItem {
             if (entity instanceof PlayerEntity player) {
                 if (isWearingFullSet(player)) {
                     // Add status effect if full set is worn
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1, 0, false, false, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 300, 0, false, false, false));
                 }
             }
         }
