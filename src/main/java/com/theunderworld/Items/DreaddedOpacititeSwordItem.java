@@ -25,7 +25,7 @@ public class DreaddedOpacititeSwordItem extends SwordItem {
 
         // Apply wither status effect to target
         if (!target.hasStatusEffect(StatusEffects.WITHER)) {
-            target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 5, 0, false, false, false));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 100, 0, false, true, true));
         }
         return true;
     }
