@@ -35,7 +35,7 @@ public class SwiftOpacititeArmorItem extends ArmorItem {
             if (entity instanceof PlayerEntity player) {
                 if (isWearingFullSet(player)) {
                     // Add status effect if full set is worn
-                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1, 1, false, false, true));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1, 1, false, false, false));
                 }
             }
         }

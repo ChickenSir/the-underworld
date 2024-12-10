@@ -100,8 +100,8 @@
     "tooltip.theunderworld.opacitite_armor.dreadded_dust": " Dreadded Dust",
     "tooltip.theunderworld.opacitite_armor.redstone_dust": " Redstone Dust",
     "tooltip.theunderworld.generic.when_full_set": "When Full Set Equipped:",
-    "tooltip.theunderworld.radiant_opacitite_armor.status_buff": " Unlimited Night Vision",
-    "tooltip.theunderworld.swift_opacitite_armor.status_buff": " Increased Speed",
+    "tooltip.theunderworld.radiant_opacitite_armor.status_buff": " Grants Night Vision",
+    "tooltip.theunderworld.swift_opacitite_armor.status_buff": " Increased Movement Speed",
 
     "tooltip.theunderworld.radiant_opacitite_sword.bonus_effect": "Sets mobs on fire upon being hit",
     "tooltip.theunderworld.dreadded_opacitite_sword.bonus_effect": "Inflicts wither on use",
