@@ -24,7 +24,9 @@
         [],
         [],
         [],
-        [],
+        [
+            "theunderworld:ore_radiant_coal_placed"
+        ],
         [],
         [
             "minecraft:spring_water"
