@@ -372,7 +372,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
             .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SOUL_TORCH)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, Items.SOUL_TORCH, 4)
             .pattern("r")
             .pattern("s")
             .input('r', ItemsCollection.RADIANT_COAL)
