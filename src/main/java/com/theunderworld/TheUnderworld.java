@@ -119,7 +119,7 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(ItemsCollection.SWIFT_OPACITITE_HELMET);
 			entries.add(ItemsCollection.SWIFT_OPACITITE_CHESTPLATE);
 			entries.add(ItemsCollection.SWIFT_OPACITITE_LEGGINGS);
-			entries.add(ItemsCollection.DREADDED_OPACITITE_BOOTS);
+			entries.add(ItemsCollection.SWIFT_OPACITITE_BOOTS);
 		})
 		.build();
 
