@@ -99,6 +99,9 @@
     "tooltip.theunderworld.opacitite_armor.radiant_dust": " Radiant Dust",
     "tooltip.theunderworld.opacitite_armor.dreadded_dust": " Dreadded Dust",
     "tooltip.theunderworld.opacitite_armor.redstone_dust": " Redstone Dust",
+    "tooltip.theunderworld.generic.when_full_set": "When Full Set Equipped:",
+    "tooltip.theunderworld.radiant_opacitite_armor.status_buff": " Unlimited Night Vision",
+    "tooltip.theunderworld.swift_opacitite_armor.status_buff": " Increased Speed",
 
     "item.theunderworld.radiant_opacitite_sword": "Radiant Opacitite Sword",
     "item.theunderworld.radiant_opacitite_helmet": "Radiant Opacitite Helmet",
