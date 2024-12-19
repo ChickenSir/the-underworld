@@ -134,7 +134,7 @@ public class BlocksCollection {
 
     // Material Blocks
 
-    public static final Block OPACITITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).requiresTool());
+    public static final Block OPACITITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).requiresTool().nonOpaque());
 
     public static void Register(String modID) {
         // Hollow Oak Blocks
