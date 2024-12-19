@@ -105,6 +105,14 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.UNDERWORLD_SANDSTONE), FabricRecipeProvider.conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.OPACITITE_BLOCK)
+            .pattern("ooo")
+            .pattern("ooo")
+            .pattern("ooo")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
         createStairsRecipe(BlocksCollection.HOLLOW_OAK_STAIRS, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_STAIRS)));
@@ -380,14 +388,6 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_COAL), FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_COAL))
             .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.OPACITITE_BLOCK)
-            .pattern("ooo")
-            .pattern("ooo")
-            .pattern("ooo")
-            .input('o', ItemsCollection.OPACITITE_INGOT)
-            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
-            .offerTo(exporter);
-
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemsCollection.RADIANT_DUST)
         .input(BlocksCollection.RADIANT_MUSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_DUST), 
         FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.RADIANT_MUSHROOM), 
@@ -397,6 +397,11 @@ public class TURecipeProvider extends FabricRecipeProvider {
         .input(BlocksCollection.DREADSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.DREADDED_DUST), 
         FabricRecipeProvider.conditionsFromItem(ItemsCollection.DREADDED_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADSHROOM), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADSHROOM)).offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 9)
+        .input(BlocksCollection.OPACITITE_BLOCK).criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), 
+        FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.OPACITITE_BLOCK), 
+        FabricRecipeProvider.conditionsFromItem(BlocksCollection.OPACITITE_BLOCK)).offerTo(exporter);
 
         offerSmelting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 200, "opacitite_ingot");
         offerBlasting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 100, "opacitite_ingot");

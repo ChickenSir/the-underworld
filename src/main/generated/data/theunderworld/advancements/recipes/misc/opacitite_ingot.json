@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_opacitite_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theunderworld:opacitite_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_opacitite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theunderworld:opacitite_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "theunderworld:opacitite_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_opacitite_ingot",
+      "has_opacitite_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "theunderworld:opacitite_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}
