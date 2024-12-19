@@ -380,6 +380,14 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_COAL), FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_COAL))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.OPACITITE_BLOCK)
+            .pattern("ooo")
+            .pattern("ooo")
+            .pattern("ooo")
+            .input('o', ItemsCollection.OPACITITE_INGOT)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
+            .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ItemsCollection.RADIANT_DUST)
         .input(BlocksCollection.RADIANT_MUSHROOM).criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_DUST), 
         FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_DUST)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.RADIANT_MUSHROOM), 

@@ -87,6 +87,8 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(BlocksCollection.OPACITITE_ORE, oreDrops(BlocksCollection.OPACITITE_ORE, ItemsCollection.RAW_OPACITITE));
         addDrop(BlocksCollection.RADIANT_COAL_ORE, oreDrops(BlocksCollection.RADIANT_COAL_ORE, ItemsCollection.RADIANT_COAL));
+
+        addDrop(BlocksCollection.OPACITITE_BLOCK);
     }
     
 }

@@ -128,8 +128,13 @@ public class BlocksCollection {
     public static final Block POTTED_DREADSHROOM = new FlowerPotBlock(DREADSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_BROWN_MUSHROOM));
 
     // Ores
+
     public static final Block OPACITITE_ORE = new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).requiresTool());
     public static final Block RADIANT_COAL_ORE = new Block(FabricBlockSettings.copyOf(Blocks.COAL_ORE).requiresTool());
+
+    // Material Blocks
+
+    public static final Block OPACITITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).requiresTool());
 
     public static void Register(String modID) {
         // Hollow Oak Blocks
@@ -361,5 +366,9 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "radiant_coal_ore"), RADIANT_COAL_ORE);
         Registry.register(Registries.ITEM, new Identifier(modID, "radiant_coal_ore"), new BlockItem(RADIANT_COAL_ORE, new FabricItemSettings()));
+
+        // Material Blocks
+        Registry.register(Registries.BLOCK, new Identifier(modID, "opacitite_block"), OPACITITE_BLOCK);
+        Registry.register(Registries.ITEM, new Identifier(modID, "opacitite_block"), new BlockItem(OPACITITE_BLOCK, new FabricItemSettings()));
     }
 }

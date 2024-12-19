@@ -86,6 +86,8 @@ public class TUModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.OPACITITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.RADIANT_COAL_ORE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksCollection.OPACITITE_BLOCK);
     }
 
     @Override
