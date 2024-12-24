@@ -78,6 +78,7 @@ public class TUModelProvider extends FabricModelProvider {
         underworld_sandstone_cobbled_pool.wall(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL);
 
         blockStateModelGenerator.registerTintableCross(BlocksCollection.UNDERWORLD_SHRUB, BlockStateModelGenerator.TintType.TINTED);
+        blockStateModelGenerator.registerTintableCross(BlocksCollection.DEAD_SHRUB, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.HOLLOW_OAK_SAPLING, BlocksCollection.POTTED_HOLLOW_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(BlocksCollection.DREADWOOD_SHRUB, BlocksCollection.POTTED_DREADWOOD_SHRUB, BlockStateModelGenerator.TintType.NOT_TINTED);

@@ -119,6 +119,7 @@ public class BlocksCollection {
     public static final Block UNDERWORLD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS));
     public static final Block RADIANT_MUSHROOM = new FlowerBlock(StatusEffects.GLOWING, 15, FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(3));
     public static final Block DREADSHROOM = new FlowerBlock(StatusEffects.BLINDNESS, 5, FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM));
+    public static final Block DEAD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BUSH));
 
     // Flower Pot Blocks
 
@@ -359,6 +360,9 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "potted_dreadwood_shrub"), POTTED_DREADWOOD_SHRUB);
         Registry.register(Registries.BLOCK, new Identifier(modID, "potted_radiant_mushroom"), POTTED_RADIANT_MUSHROOM);
         Registry.register(Registries.BLOCK, new Identifier(modID, "potted_dreadshroom"), POTTED_DREADSHROOM);
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dead_shrub"), DEAD_SHRUB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dead_shrub"), new BlockItem(DEAD_SHRUB, new FabricItemSettings()));
 
         // Ores
         Registry.register(Registries.BLOCK, new Identifier(modID, "opacitite_ore"), OPACITITE_ORE);
