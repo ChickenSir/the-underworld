@@ -21,6 +21,7 @@ public class TheUnderworldClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.UNDERWORLD_SHRUB, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.RADIANT_MUSHROOM, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.DREADSHROOM, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.DEAD_SHRUB, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.POTTED_HOLLOW_OAK_SAPLING, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.POTTED_DREADWOOD_SHRUB, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(BlocksCollection.POTTED_RADIANT_MUSHROOM, RenderLayer.getCutout());
