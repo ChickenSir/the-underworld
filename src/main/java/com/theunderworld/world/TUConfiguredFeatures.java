@@ -35,6 +35,7 @@ public class TUConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> SHRUB_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch"));
     public static final RegistryKey<ConfiguredFeature<?, ?>> RADIANT_MUSHROOM_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch"));
     public static final RegistryKey<ConfiguredFeature<?, ?>> DREADSHROOM_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch"));
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_SHRUB_PATCH = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "dead_shrub_patch"));
 
     // Ores
     public static final RegistryKey<ConfiguredFeature<?, ?>> ORE_OPACITITE = RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite"));
@@ -88,6 +89,13 @@ public class TUConfiguredFeatures {
                 Feature.SIMPLE_BLOCK, 
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.DREADSHROOM))
                 ))
+        ));
+
+        featureRegisterable.register(DEAD_SHRUB_PATCH, new ConfiguredFeature<>(Feature.RANDOM_PATCH, 
+            new RandomPatchFeatureConfig(32, 7, 3, PlacedFeatures.createEntry(
+                Feature.SIMPLE_BLOCK, 
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(BlocksCollection.DEAD_SHRUB))
+            ))
         ));
 
         featureRegisterable.register(ORE_OPACITITE, new ConfiguredFeature<>(Feature.ORE, 

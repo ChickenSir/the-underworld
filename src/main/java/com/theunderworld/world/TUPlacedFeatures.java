@@ -32,6 +32,7 @@ public class TUPlacedFeatures {
     public static final RegistryKey<PlacedFeature> SHRUB_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "shrub_patch_placed"));
     public static final RegistryKey<PlacedFeature> RADIANT_MUSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "radiant_mushroom_patch_placed"));
     public static final RegistryKey<PlacedFeature> DREADSHROOM_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "dreadshroom_patch_placed"));
+    public static final RegistryKey<PlacedFeature> DEAD_SHRUB_PATCH_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "dead_shrub_patch_placed"));
 
     // Ores
     public static final RegistryKey<PlacedFeature> ORE_OPACITITE_PLACED = RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(TheUnderworld.modID, "ore_opacitite_placed"));
@@ -47,6 +48,7 @@ public class TUPlacedFeatures {
         RegistryEntry<ConfiguredFeature<?, ?>> shrubPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.SHRUB_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> radiantMushroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.RADIANT_MUSHROOM_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> dreadshroomPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DREADSHROOM_PATCH);
+        RegistryEntry<ConfiguredFeature<?, ?>> deadShrubPatch = registryEntryLookup.getOrThrow(TUConfiguredFeatures.DEAD_SHRUB_PATCH);
         RegistryEntry<ConfiguredFeature<?, ?>> oreOpacitite = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_OPACITITE);
         RegistryEntry<ConfiguredFeature<?, ?>> oreRadiantCoal = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_RADIANT_COAL);
         RegistryEntry<ConfiguredFeature<?, ?>> oreUnderworldSoil = registryEntryLookup.getOrThrow(TUConfiguredFeatures.ORE_UNDERWORLD_SOIL);
@@ -79,6 +81,10 @@ public class TUPlacedFeatures {
 
         featureRegisterable.register(DREADSHROOM_PATCH_PLACED, new PlacedFeature(dreadshroomPatch, 
             List.of(CountPlacementModifier.of(3), RarityFilterPlacementModifier.of(12), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of())
+        ));
+
+        featureRegisterable.register(DEAD_SHRUB_PATCH_PLACED, new PlacedFeature(deadShrubPatch, 
+            VegetationPlacedFeatures.modifiers(2)
         ));
 
         featureRegisterable.register(ORE_OPACITITE_PLACED, new PlacedFeature(oreOpacitite, 
