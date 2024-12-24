@@ -11,6 +11,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ButtonBlock;
+import net.minecraft.block.DeadBushBlock;
 import net.minecraft.block.DoorBlock;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.FenceBlock;
@@ -119,7 +120,7 @@ public class BlocksCollection {
     public static final Block UNDERWORLD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.GRASS));
     public static final Block RADIANT_MUSHROOM = new FlowerBlock(StatusEffects.GLOWING, 15, FabricBlockSettings.copyOf(Blocks.RED_MUSHROOM).luminance(3));
     public static final Block DREADSHROOM = new FlowerBlock(StatusEffects.BLINDNESS, 5, FabricBlockSettings.copyOf(Blocks.BROWN_MUSHROOM));
-    public static final Block DEAD_SHRUB = new FernBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BUSH));
+    public static final Block DEAD_SHRUB = new DeadBushBlock(FabricBlockSettings.copyOf(Blocks.DEAD_BUSH));
 
     // Flower Pot Blocks
 
