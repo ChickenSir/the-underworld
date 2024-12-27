@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "theunderworld:smooth_dreadstone"
+  },
+  "result": "theunderworld:smooth_dreadstone_wall"
+}

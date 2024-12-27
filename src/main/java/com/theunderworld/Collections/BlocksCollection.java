@@ -92,6 +92,11 @@ public class BlocksCollection {
     public static final Block DREADSTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB));
     public static final Block DREADSTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
 
+    public static final Block SMOOTH_DREADSTONE = new Block(FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE).requiresTool());
+    public static final Block SMOOTH_DREADSTONE_STAIRS = new StairsBlock(SMOOTH_DREADSTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_STAIRS));
+    public static final Block SMOOTH_DREADSTONE_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.SMOOTH_STONE_SLAB));
+    public static final Block SMOOTH_DREADSTONE_WALL = new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL));
+
     // Ground Terrain Blocks
 
     public static final Block UNDERWORLD_SOIL = new Block(FabricBlockSettings.copyOf(Blocks.DIRT));
@@ -299,6 +304,18 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadstone_brick_wall"), DREADSTONE_BRICK_WALL);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadstone_brick_wall"), new BlockItem(DREADSTONE_BRICK_WALL, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "smooth_dreadstone"), SMOOTH_DREADSTONE);
+        Registry.register(Registries.ITEM, new Identifier(modID, "smooth_dreadstone"), new BlockItem(SMOOTH_DREADSTONE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "smooth_dreadstone_stairs"), SMOOTH_DREADSTONE_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "smooth_dreadstone_stairs"), new BlockItem(SMOOTH_DREADSTONE_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "smooth_dreadstone_slab"), SMOOTH_DREADSTONE_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "smooth_dreadstone_slab"), new BlockItem(SMOOTH_DREADSTONE_SLAB, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "smooth_dreadstone_wall"), SMOOTH_DREADSTONE_WALL);
+        Registry.register(Registries.ITEM, new Identifier(modID, "smooth_dreadstone_wall"), new BlockItem(SMOOTH_DREADSTONE_WALL, new FabricItemSettings()));
 
         // Terrain Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "underworld_soil"), UNDERWORLD_SOIL);

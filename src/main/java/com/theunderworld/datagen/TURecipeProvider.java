@@ -19,6 +19,7 @@ import net.minecraft.util.Identifier;
 
 public class TURecipeProvider extends FabricRecipeProvider {
     List<ItemConvertible> DREADSTONE_SMELTABLES = List.of(BlocksCollection.COBBLED_DREADSTONE);
+    List<ItemConvertible> SMOOTH_DREADSTONE_SMELTABLES = List.of(BlocksCollection.DREADSTONE);
     List<ItemConvertible> UNDERWORLD_SANDSTONE_SMOOTH_SMELTABLES = List.of(BlocksCollection.UNDERWORLD_SANDSTONE);
     List<ItemConvertible> OPACITITE_SMELTABLES = List.of(BlocksCollection.OPACITITE_ORE, ItemsCollection.RAW_OPACITITE);
 
@@ -133,6 +134,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.DREADSTONE_BRICKS), conditionsFromItem(BlocksCollection.DREADSTONE_BRICKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADSTONE_BRICK_STAIRS)));
 
+        createStairsRecipe(BlocksCollection.SMOOTH_DREADSTONE_STAIRS, Ingredient.ofItems(BlocksCollection.SMOOTH_DREADSTONE))
+            .criterion(hasItem(BlocksCollection.SMOOTH_DREADSTONE), conditionsFromItem(BlocksCollection.SMOOTH_DREADSTONE))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.SMOOTH_DREADSTONE_STAIRS)));
+
         createStairsRecipe(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS, Ingredient.ofItems(BlocksCollection.UNDERWORLD_SANDSTONE))
             .criterion(hasItem(BlocksCollection.UNDERWORLD_SANDSTONE), conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS)));
@@ -164,6 +169,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_SLAB, Ingredient.ofItems(BlocksCollection.DREADSTONE_BRICKS))
             .criterion(hasItem(BlocksCollection.DREADSTONE_BRICKS), conditionsFromItem(BlocksCollection.DREADSTONE_BRICKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADSTONE_BRICK_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.SMOOTH_DREADSTONE_SLAB, Ingredient.ofItems(BlocksCollection.SMOOTH_DREADSTONE))
+            .criterion(hasItem(BlocksCollection.SMOOTH_DREADSTONE), conditionsFromItem(BlocksCollection.SMOOTH_DREADSTONE))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.SMOOTH_DREADSTONE_SLAB)));
 
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SLAB, Ingredient.ofItems(BlocksCollection.UNDERWORLD_SANDSTONE))
             .criterion(hasItem(BlocksCollection.UNDERWORLD_SANDSTONE), conditionsFromItem(BlocksCollection.UNDERWORLD_SANDSTONE))
@@ -220,6 +229,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_WALL, BlocksCollection.DREADSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.COBBLED_DREADSTONE_WALL, BlocksCollection.COBBLED_DREADSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.SMOOTH_DREADSTONE_WALL, BlocksCollection.SMOOTH_DREADSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_WALL, BlocksCollection.UNDERWORLD_SANDSTONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL, BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL, BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH);
@@ -240,6 +250,10 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_SLAB, BlocksCollection.DREADSTONE, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_BRICK_WALL, BlocksCollection.DREADSTONE);
 
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.SMOOTH_DREADSTONE_STAIRS, BlocksCollection.SMOOTH_DREADSTONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.SMOOTH_DREADSTONE_SLAB, BlocksCollection.SMOOTH_DREADSTONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.SMOOTH_DREADSTONE_WALL, BlocksCollection.SMOOTH_DREADSTONE);
+
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS, BlocksCollection.UNDERWORLD_SANDSTONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SLAB, BlocksCollection.UNDERWORLD_SANDSTONE, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_WALL, BlocksCollection.UNDERWORLD_SANDSTONE);
@@ -257,6 +271,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL, BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH);
 
         offerSmelting(exporter, DREADSTONE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE, 0.1f, 200, "dreadstone");
+        offerSmelting(exporter, SMOOTH_DREADSTONE_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.SMOOTH_DREADSTONE, 0.1f, 200, "smooth_dreadstone");
         offerSmelting(exporter, UNDERWORLD_SANDSTONE_SMOOTH_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH, 0.1f, 200, "underworld_sandstone_smooth");
 
         // Item Recipes
