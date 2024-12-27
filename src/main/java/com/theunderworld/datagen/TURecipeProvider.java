@@ -52,7 +52,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlocksCollection.HOLLOW_OAK_TILES)
             .pattern("h")
             .pattern("h")
-            .input('h', BlocksCollection.HOLLOW_OAK_PLANKS)
+            .input('h', BlocksCollection.HOLLOW_OAK_SLAB)
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter);
 
