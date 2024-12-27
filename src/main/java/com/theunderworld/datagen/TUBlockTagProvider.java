@@ -37,6 +37,7 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_WALL)
             .add(BlocksCollection.COBBLED_DREADSTONE_WALL)
             .add(BlocksCollection.DREADSTONE_BRICK_WALL)
+            .add(BlocksCollection.SMOOTH_DREADSTONE_WALL)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_WALL)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_WALL)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL);
@@ -47,6 +48,7 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_STAIRS)
             .add(BlocksCollection.COBBLED_DREADSTONE_STAIRS)
             .add(BlocksCollection.DREADSTONE_BRICK_STAIRS)
+            .add(BlocksCollection.SMOOTH_DREADSTONE_WALL)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_STAIRS)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_STAIRS)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_STAIRS);
@@ -57,6 +59,7 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.DREADSTONE_SLAB)
             .add(BlocksCollection.COBBLED_DREADSTONE_SLAB)
             .add(BlocksCollection.DREADSTONE_BRICK_SLAB)
+            .add(BlocksCollection.SMOOTH_DREADSTONE_WALL)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_SLAB)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_COBBLED_SLAB)
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_SLAB);
