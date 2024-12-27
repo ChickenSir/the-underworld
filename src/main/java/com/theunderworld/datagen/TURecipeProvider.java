@@ -49,6 +49,13 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_LOG))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlocksCollection.HOLLOW_OAK_TILES)
+            .pattern("h")
+            .pattern("h")
+            .input('h', BlocksCollection.HOLLOW_OAK_PLANKS)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
+            .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_BUTTON)
         .input(BlocksCollection.HOLLOW_OAK_PLANKS).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_BUTTON), 
         FabricRecipeProvider.conditionsFromItem(BlocksCollection.HOLLOW_OAK_BUTTON)).criterion(FabricRecipeProvider.hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), 
@@ -71,6 +78,13 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .pattern("dd")
             .input('d', BlocksCollection.STRIPPED_DREADWOOD_LOG)
             .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_LOG), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_LOG))
+            .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlocksCollection.DREADWOOD_TILES)
+            .pattern("d")
+            .pattern("d")
+            .input('d', BlocksCollection.DREADWOOD_SLAB)
+            .criterion(FabricRecipeProvider.hasItem(BlocksCollection.DREADWOOD_PLANKS), FabricRecipeProvider.conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
             .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlocksCollection.DREADWOOD_SHRUB)
@@ -117,10 +131,18 @@ public class TURecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(BlocksCollection.HOLLOW_OAK_STAIRS, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_STAIRS)));
+            
+        createStairsRecipe(BlocksCollection.HOLLOW_OAK_TILES_STAIRS, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_TILES))
+            .criterion(hasItem(BlocksCollection.HOLLOW_OAK_TILES), conditionsFromItem(BlocksCollection.HOLLOW_OAK_TILES))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_TILES_STAIRS)));
 
         createStairsRecipe(BlocksCollection.DREADWOOD_STAIRS, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
             .criterion(hasItem(BlocksCollection.DREADWOOD_PLANKS), conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_STAIRS)));
+
+        createStairsRecipe(BlocksCollection.DREADWOOD_TILES_STAIRS, Ingredient.ofItems(BlocksCollection.DREADWOOD_TILES))
+            .criterion(hasItem(BlocksCollection.DREADWOOD_TILES), conditionsFromItem(BlocksCollection.DREADWOOD_TILES))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_TILES_STAIRS)));
         
         createStairsRecipe(BlocksCollection.DREADSTONE_STAIRS, Ingredient.ofItems(BlocksCollection.DREADSTONE))
             .criterion(hasItem(BlocksCollection.DREADSTONE), conditionsFromItem(BlocksCollection.DREADSTONE))
@@ -154,9 +176,17 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_SLAB)));
 
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.HOLLOW_OAK_TILES_SLAB, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_TILES))
+            .criterion(hasItem(BlocksCollection.HOLLOW_OAK_TILES), conditionsFromItem(BlocksCollection.HOLLOW_OAK_TILES))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_TILES_SLAB)));
+
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_SLAB, Ingredient.ofItems(BlocksCollection.DREADWOOD_PLANKS))
             .criterion(hasItem(BlocksCollection.DREADWOOD_PLANKS), conditionsFromItem(BlocksCollection.DREADWOOD_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_SLAB)));
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADWOOD_TILES_SLAB, Ingredient.ofItems(BlocksCollection.DREADWOOD_TILES))
+            .criterion(hasItem(BlocksCollection.DREADWOOD_TILES), conditionsFromItem(BlocksCollection.DREADWOOD_TILES))
+            .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.DREADWOOD_TILES_SLAB)));
 
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.DREADSTONE_SLAB, Ingredient.ofItems(BlocksCollection.DREADSTONE))
             .criterion(hasItem(BlocksCollection.DREADSTONE), conditionsFromItem(BlocksCollection.DREADSTONE))

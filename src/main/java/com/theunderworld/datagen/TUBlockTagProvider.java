@@ -21,13 +21,15 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.HOLLOW_OAK_LOG)
             .add(BlocksCollection.STRIPPED_HOLLOW_OAK_LOG)
             .add(BlocksCollection.HOLLOW_OAK_PLANKS)
+            .add(BlocksCollection.HOLLOW_OAK_TILES)
             .add(BlocksCollection.HOLLOW_OAK_WOOD)
             .add(BlocksCollection.STRIPPED_HOLLOW_OAK_WOOD)
             .add(BlocksCollection.DREADWOOD_LOG)
             .add(BlocksCollection.STRIPPED_DREADWOOD_LOG)
             .add(BlocksCollection.DREADWOOD_WOOD)
             .add(BlocksCollection.STRIPPED_DREADWOOD_WOOD)
-            .add(BlocksCollection.DREADWOOD_PLANKS);
+            .add(BlocksCollection.DREADWOOD_PLANKS)
+            .add(BlocksCollection.DREADWOOD_TILES);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
             .add(BlocksCollection.HOLLOW_OAK_FENCE)
@@ -44,7 +46,9 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
             .add(BlocksCollection.HOLLOW_OAK_STAIRS)
+            .add(BlocksCollection.HOLLOW_OAK_TILES_STAIRS)
             .add(BlocksCollection.DREADWOOD_STAIRS)
+            .add(BlocksCollection.DREADWOOD_TILES_STAIRS)
             .add(BlocksCollection.DREADSTONE_STAIRS)
             .add(BlocksCollection.COBBLED_DREADSTONE_STAIRS)
             .add(BlocksCollection.DREADSTONE_BRICK_STAIRS)
@@ -55,7 +59,9 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SLABS)
             .add(BlocksCollection.HOLLOW_OAK_SLAB)
+            .add(BlocksCollection.HOLLOW_OAK_TILES_SLAB)
             .add(BlocksCollection.DREADWOOD_SLAB)
+            .add(BlocksCollection.DREADWOOD_TILES_SLAB)
             .add(BlocksCollection.DREADSTONE_SLAB)
             .add(BlocksCollection.COBBLED_DREADSTONE_SLAB)
             .add(BlocksCollection.DREADSTONE_BRICK_SLAB)

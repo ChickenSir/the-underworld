@@ -34,6 +34,10 @@ public class TUModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(BlocksCollection.HOLLOW_OAK_DOOR);
         blockStateModelGenerator.registerTrapdoor(BlocksCollection.HOLLOW_OAK_TRAPDOOR);
 
+        BlockStateModelGenerator.BlockTexturePool hollow_oak_tiles_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.HOLLOW_OAK_TILES);
+        hollow_oak_tiles_pool.stairs(BlocksCollection.HOLLOW_OAK_TILES_STAIRS);
+        hollow_oak_tiles_pool.slab(BlocksCollection.HOLLOW_OAK_TILES_SLAB);
+
         blockStateModelGenerator.registerLog(BlocksCollection.DREADWOOD_LOG)
             .log(BlocksCollection.DREADWOOD_LOG)
             .wood(BlocksCollection.DREADWOOD_WOOD);
@@ -51,6 +55,10 @@ public class TUModelProvider extends FabricModelProvider {
         dreadwood_pool.pressurePlate(BlocksCollection.DREADWOOD_PRESSURE_PLATE);
         blockStateModelGenerator.registerDoor(BlocksCollection.DREADWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(BlocksCollection.DREADWOOD_TRAPDOOR);
+
+        BlockStateModelGenerator.BlockTexturePool dreadwood_tiles_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.DREADWOOD_TILES);
+        dreadwood_tiles_pool.stairs(BlocksCollection.DREADWOOD_TILES_STAIRS);
+        dreadwood_tiles_pool.slab(BlocksCollection.DREADWOOD_TILES_SLAB);
 
         BlockStateModelGenerator.BlockTexturePool dreadstone_pool = blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksCollection.DREADSTONE);
         dreadstone_pool.stairs(BlocksCollection.DREADSTONE_STAIRS);

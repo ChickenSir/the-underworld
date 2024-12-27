@@ -32,6 +32,9 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.HOLLOW_OAK_PLANKS);
 			entries.add(BlocksCollection.HOLLOW_OAK_STAIRS);
 			entries.add(BlocksCollection.HOLLOW_OAK_SLAB);
+			entries.add(BlocksCollection.HOLLOW_OAK_TILES);
+			entries.add(BlocksCollection.HOLLOW_OAK_TILES_STAIRS);
+			entries.add(BlocksCollection.HOLLOW_OAK_TILES_SLAB);
 			entries.add(BlocksCollection.HOLLOW_OAK_FENCE);
 			entries.add(BlocksCollection.HOLLOW_OAK_FENCE_GATE);
 			entries.add(BlocksCollection.HOLLOW_OAK_BUTTON);
@@ -45,6 +48,9 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.DREADWOOD_PLANKS);
 			entries.add(BlocksCollection.DREADWOOD_STAIRS);
 			entries.add(BlocksCollection.DREADWOOD_SLAB);
+			entries.add(BlocksCollection.DREADWOOD_TILES);
+			entries.add(BlocksCollection.DREADWOOD_TILES_STAIRS);
+			entries.add(BlocksCollection.DREADWOOD_TILES_SLAB);
 			entries.add(BlocksCollection.DREADWOOD_FENCE);
 			entries.add(BlocksCollection.DREADWOOD_FENCE_GATE);
 			entries.add(BlocksCollection.DREADWOOD_BUTTON);

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "theunderworld:dreadwood_slab"
+    }
+  },
+  "pattern": [
+    "d",
+    "d"
+  ],
+  "result": {
+    "item": "theunderworld:dreadwood_tiles"
+  },
+  "show_notification": true
+}

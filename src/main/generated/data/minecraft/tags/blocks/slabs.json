@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "theunderworld:hollow_oak_slab",
+    "theunderworld:hollow_oak_tiles_slab",
     "theunderworld:dreadwood_slab",
+    "theunderworld:dreadwood_tiles_slab",
     "theunderworld:dreadstone_slab",
     "theunderworld:cobbled_dreadstone_slab",
     "theunderworld:dreadstone_brick_slab",

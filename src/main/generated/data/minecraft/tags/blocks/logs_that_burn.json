@@ -4,12 +4,14 @@
     "theunderworld:hollow_oak_log",
     "theunderworld:stripped_hollow_oak_log",
     "theunderworld:hollow_oak_planks",
+    "theunderworld:hollow_oak_tiles",
     "theunderworld:hollow_oak_wood",
     "theunderworld:stripped_hollow_oak_wood",
     "theunderworld:dreadwood_log",
     "theunderworld:stripped_dreadwood_log",
     "theunderworld:dreadwood_wood",
     "theunderworld:stripped_dreadwood_wood",
-    "theunderworld:dreadwood_planks"
+    "theunderworld:dreadwood_planks",
+    "theunderworld:dreadwood_tiles"
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "h": {
+      "item": "theunderworld:hollow_oak_planks"
+    }
+  },
+  "pattern": [
+    "h",
+    "h"
+  ],
+  "result": {
+    "item": "theunderworld:hollow_oak_tiles"
+  },
+  "show_notification": true
+}

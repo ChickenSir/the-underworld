@@ -42,6 +42,7 @@ public class BlocksCollection {
     public static final Block HOLLOW_OAK_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD));
     public static final Block STRIPPED_HOLLOW_OAK_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD));
     public static final Block HOLLOW_OAK_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
+    public static final Block HOLLOW_OAK_TILES = new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS));
 
     public static final Block HOLLOW_OAK_STAIRS = new StairsBlock(HOLLOW_OAK_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS));
     public static final Block HOLLOW_OAK_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB));
@@ -49,6 +50,8 @@ public class BlocksCollection {
     public static final Block HOLLOW_OAK_FENCE_GATE = new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK);
     public static final Block HOLLOW_OAK_BUTTON = new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK, 30, true);
     public static final Block HOLLOW_OAK_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PLANKS), BlockSetType.OAK);
+    public static final Block HOLLOW_OAK_TILES_STAIRS = new StairsBlock(HOLLOW_OAK_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS));
+    public static final Block HOLLOW_OAK_TILES_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB));
 
     public static final Block HOLLOW_OAK_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR), BlockSetType.OAK);
     public static final Block HOLLOW_OAK_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK);
@@ -62,6 +65,7 @@ public class BlocksCollection {
     public static final Block DREADWOOD_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_WOOD));
     public static final Block STRIPPED_DREADWOOD_WOOD = new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_WOOD));
     public static final Block DREADWOOD_PLANKS = new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS));
+    public static final Block DREADWOOD_TILES = new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS));
 
     public static final Block DREADWOOD_STAIRS = new StairsBlock(DREADWOOD_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS));
     public static final Block DREADWOOD_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB));
@@ -69,6 +73,8 @@ public class BlocksCollection {
     public static final Block DREADWOOD_FENCE_GATE = new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE), WoodType.CHERRY);
     public static final Block DREADWOOD_BUTTON = new ButtonBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY, 30, true);
     public static final Block DREADWOOD_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS), BlockSetType.CHERRY);
+    public static final Block DREADWOOD_TILES_STAIRS = new StairsBlock(DREADWOOD_TILES.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS));
+    public static final Block DREADWOOD_TILES_SLAB = new SlabBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB));
 
     public static final Block DREADWOOD_DOOR = new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).nonOpaque(), BlockSetType.CHERRY);
     public static final Block DREADWOOD_TRAPDOOR = new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).nonOpaque(), BlockSetType.CHERRY);
@@ -159,6 +165,9 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_planks"), HOLLOW_OAK_PLANKS);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_planks"), new BlockItem(HOLLOW_OAK_PLANKS, new FabricItemSettings()));
+        
+        Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_tiles"), HOLLOW_OAK_TILES);
+        Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_tiles"), new BlockItem(HOLLOW_OAK_TILES, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_stairs"), HOLLOW_OAK_STAIRS);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_stairs"), new BlockItem(HOLLOW_OAK_STAIRS, new FabricItemSettings()));
@@ -177,6 +186,12 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_pressure_plate"), HOLLOW_OAK_PRESSURE_PLATE);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_pressure_plate"), new BlockItem(HOLLOW_OAK_PRESSURE_PLATE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_tiles_stairs"), HOLLOW_OAK_TILES_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_tiles_stairs"), new BlockItem(HOLLOW_OAK_TILES_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_tiles_slab"), HOLLOW_OAK_TILES_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_tiles_slab"), new BlockItem(HOLLOW_OAK_TILES_SLAB, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "hollow_oak_door"), HOLLOW_OAK_DOOR);
         Registry.register(Registries.ITEM, new Identifier(modID, "hollow_oak_door"), new BlockItem(HOLLOW_OAK_DOOR, new FabricItemSettings()));
@@ -224,6 +239,9 @@ public class BlocksCollection {
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_planks"), DREADWOOD_PLANKS);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_planks"), new BlockItem(DREADWOOD_PLANKS, new FabricItemSettings()));
 
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_tiles"), DREADWOOD_TILES);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_tiles"), new BlockItem(DREADWOOD_TILES, new FabricItemSettings()));
+
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_stairs"), DREADWOOD_STAIRS);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_stairs"), new BlockItem(DREADWOOD_STAIRS, new FabricItemSettings()));
 
@@ -241,6 +259,12 @@ public class BlocksCollection {
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_pressure_plate"), DREADWOOD_PRESSURE_PLATE);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_pressure_plate"), new BlockItem(DREADWOOD_PRESSURE_PLATE, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_tiles_stairs"), DREADWOOD_TILES_STAIRS);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_tiles_stairs"), new BlockItem(DREADWOOD_TILES_STAIRS, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_tiles_slab"), DREADWOOD_TILES_SLAB);
+        Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_tiles_slab"), new BlockItem(DREADWOOD_TILES_SLAB, new FabricItemSettings()));
 
         Registry.register(Registries.BLOCK, new Identifier(modID, "dreadwood_door"), DREADWOOD_DOOR);
         Registry.register(Registries.ITEM, new Identifier(modID, "dreadwood_door"), new BlockItem(DREADWOOD_DOOR, new FabricItemSettings()));
