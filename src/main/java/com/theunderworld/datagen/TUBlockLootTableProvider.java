@@ -100,6 +100,7 @@ public class TUBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(BlocksCollection.RADIANT_COAL_ORE, oreDrops(BlocksCollection.RADIANT_COAL_ORE, ItemsCollection.RADIANT_COAL));
 
         addDrop(BlocksCollection.OPACITITE_BLOCK);
+        addDrop(BlocksCollection.RADIANT_COAL_BLOCK);
     }
     
 }

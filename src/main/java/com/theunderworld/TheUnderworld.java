@@ -98,6 +98,7 @@ public class TheUnderworld implements ModInitializer {
 			entries.add(BlocksCollection.OPACITITE_ORE);
 			entries.add(BlocksCollection.OPACITITE_BLOCK);
 			entries.add(BlocksCollection.RADIANT_COAL_ORE);
+			entries.add(BlocksCollection.RADIANT_COAL_BLOCK);
 			entries.add(ItemsCollection.DREADSTONE_SWORD);
 			entries.add(ItemsCollection.DREADSTONE_PICKAXE);
 			entries.add(ItemsCollection.DREADSTONE_AXE);

@@ -128,6 +128,14 @@ public class TURecipeProvider extends FabricRecipeProvider {
             .criterion(FabricRecipeProvider.hasItem(ItemsCollection.OPACITITE_INGOT), FabricRecipeProvider.conditionsFromItem(ItemsCollection.OPACITITE_INGOT))
             .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksCollection.RADIANT_COAL_BLOCK)
+            .pattern("rrr")
+            .pattern("rrr")
+            .pattern("rrr")
+            .input('r', ItemsCollection.RADIANT_COAL)
+            .criterion(FabricRecipeProvider.hasItem(ItemsCollection.RADIANT_COAL), FabricRecipeProvider.conditionsFromItem(ItemsCollection.RADIANT_COAL))
+            .offerTo(exporter);
+
         createStairsRecipe(BlocksCollection.HOLLOW_OAK_STAIRS, Ingredient.ofItems(BlocksCollection.HOLLOW_OAK_PLANKS))
             .criterion(hasItem(BlocksCollection.HOLLOW_OAK_PLANKS), conditionsFromItem(BlocksCollection.HOLLOW_OAK_PLANKS))
             .offerTo(exporter, new Identifier(getRecipeName(BlocksCollection.HOLLOW_OAK_STAIRS)));

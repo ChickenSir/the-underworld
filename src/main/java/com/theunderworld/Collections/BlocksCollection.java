@@ -6,6 +6,7 @@ import com.theunderworld.world.tree.HollowOakSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSetType;
@@ -148,6 +149,7 @@ public class BlocksCollection {
     // Material Blocks
 
     public static final Block OPACITITE_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).requiresTool().nonOpaque());
+    public static final Block RADIANT_COAL_BLOCK = new Block(FabricBlockSettings.copyOf(Blocks.COAL_BLOCK).requiresTool());
 
     public static void Register(String modID) {
         // Hollow Oak Blocks
@@ -416,5 +418,10 @@ public class BlocksCollection {
         // Material Blocks
         Registry.register(Registries.BLOCK, new Identifier(modID, "opacitite_block"), OPACITITE_BLOCK);
         Registry.register(Registries.ITEM, new Identifier(modID, "opacitite_block"), new BlockItem(OPACITITE_BLOCK, new FabricItemSettings()));
+
+        Registry.register(Registries.BLOCK, new Identifier(modID, "radiant_coal_block"), RADIANT_COAL_BLOCK);
+        Registry.register(Registries.ITEM, new Identifier(modID, "radiant_coal_block"), new BlockItem(RADIANT_COAL_BLOCK, new FabricItemSettings()));
+
+        FuelRegistry.INSTANCE.add(BlocksCollection.RADIANT_COAL_BLOCK, 24000);
     }
 }

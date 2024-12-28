@@ -105,7 +105,8 @@ public class TUBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(BlocksCollection.UNDERWORLD_SANDSTONE_SMOOTH_WALL)
             .add(BlocksCollection.OPACITITE_ORE)
             .add(BlocksCollection.RADIANT_COAL_ORE)
-            .add(BlocksCollection.OPACITITE_BLOCK);
+            .add(BlocksCollection.OPACITITE_BLOCK)
+            .add(BlocksCollection.RADIANT_COAL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.DIRT)
             .add(BlocksCollection.UNDERWORLD_SOIL)
