@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.1,
-  "group": "radaint_coal",
+  "group": "radiant_coal",
   "ingredient": {
     "item": "theunderworld:radiant_coal_ore"
   },

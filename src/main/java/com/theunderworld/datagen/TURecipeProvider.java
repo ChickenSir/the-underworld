@@ -461,7 +461,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 100, "opacitite_ingot");
 
         offerSmelting(exporter, RADIANT_COAL_SMELTABLES, RecipeCategory.MISC, ItemsCollection.RADIANT_COAL, 0.1f, 200, "radiant_coal");
-        offerBlasting(exporter, RADIANT_COAL_SMELTABLES, RecipeCategory.MISC, ItemsCollection.RADIANT_COAL, 0.1f, 100, "radaint_coal");
+        offerBlasting(exporter, RADIANT_COAL_SMELTABLES, RecipeCategory.MISC, ItemsCollection.RADIANT_COAL, 0.1f, 100, "radiant_coal");
     }
     
 }
