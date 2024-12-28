@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "radaint_coal",
+  "ingredient": {
+    "item": "theunderworld:radiant_coal_ore"
+  },
+  "result": "theunderworld:radiant_coal"
+}

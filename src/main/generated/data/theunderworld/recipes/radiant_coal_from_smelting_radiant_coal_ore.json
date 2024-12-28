@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "radiant_coal",
+  "ingredient": {
+    "item": "theunderworld:radiant_coal_ore"
+  },
+  "result": "theunderworld:radiant_coal"
+}

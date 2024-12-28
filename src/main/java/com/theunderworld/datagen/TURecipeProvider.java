@@ -22,6 +22,7 @@ public class TURecipeProvider extends FabricRecipeProvider {
     List<ItemConvertible> SMOOTH_DREADSTONE_SMELTABLES = List.of(BlocksCollection.DREADSTONE);
     List<ItemConvertible> UNDERWORLD_SANDSTONE_SMOOTH_SMELTABLES = List.of(BlocksCollection.UNDERWORLD_SANDSTONE);
     List<ItemConvertible> OPACITITE_SMELTABLES = List.of(BlocksCollection.OPACITITE_ORE, ItemsCollection.RAW_OPACITITE);
+    List<ItemConvertible> RADIANT_COAL_SMELTABLES = List.of(BlocksCollection.RADIANT_COAL_ORE);
 
     public TURecipeProvider(FabricDataOutput generator) {
         super(generator);
@@ -458,6 +459,9 @@ public class TURecipeProvider extends FabricRecipeProvider {
 
         offerSmelting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 200, "opacitite_ingot");
         offerBlasting(exporter, OPACITITE_SMELTABLES, RecipeCategory.MISC, ItemsCollection.OPACITITE_INGOT, 1.0f, 100, "opacitite_ingot");
+
+        offerSmelting(exporter, RADIANT_COAL_SMELTABLES, RecipeCategory.MISC, ItemsCollection.RADIANT_COAL, 0.1f, 200, "radiant_coal");
+        offerBlasting(exporter, RADIANT_COAL_SMELTABLES, RecipeCategory.MISC, ItemsCollection.RADIANT_COAL, 0.1f, 100, "radaint_coal");
     }
     
 }
